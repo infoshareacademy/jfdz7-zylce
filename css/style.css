@@ -74,8 +74,9 @@ button:focus {
     margin-top: 300px;
 }
 
+/*Icons size*/
 #about-eig .app-description img {
-    width: inherit;
+    width: 250px;
     padding: 0 0;
     border-radius: 10px;
 }
@@ -115,7 +116,6 @@ button:focus {
 }
 
 .app-functions-img {
-
 }
 
 /*App additional info*/
