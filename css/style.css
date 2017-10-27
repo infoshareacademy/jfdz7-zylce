@@ -13,12 +13,12 @@ header h1{
     text-shadow: 1px 1px #000;
 
 }.welcome-text {
-    color: rgb(43, 45, 66);
+    color: #D90429;
     font-weight: bold;
-    font-size: 3em;
-    text-shadow: 1px 1px rgb(237, 242, 244); /* #EAF1F9 */
+    font-size: 3.2em;
+    text-shadow: 3px 3px rgb(43, 45, 66); /* #EAF1F9 */
     margin-top: 30%;
-    background-color: rgba(141, 153, 174, 0.6); /* #728798 */
+    background-color: rgba(141, 153, 174, 0); /* #728798 */
     line-height: 400%;
 }
 
@@ -26,7 +26,21 @@ nav {
     font-family:  'Raleway', 'Open Sans', sans-serif;
     background-color: rgba(43, 45, 66, 1) /* #eaf1f9 */
 }
-/*Horizontal menu*/
+
+.navbar-toggler {
+    border: 1px dotted #D90429;
+    background: rgba(141, 153, 174, 0.2);
+    /*min-width: 100px;*/
+    align-items: center;
+    margin: 0 0;
+}
+
+.navbar-toggler-icon {
+    color: #EDF2F4;
+    font-size: 20px;
+    line-height: 150%;
+    width: inherit;
+}
 .nav-item a {
     color: #EDF2F4;
     font-size: 20px;
@@ -127,4 +141,16 @@ footer{
 hr {
     border: 8px solid #2B2D42;
     margin: 0 0;
+}
+
+
+/*Media Queries*/
+@media all and (max-width: 868px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    header {
+        background: #8D99AE;
+    }
 }
