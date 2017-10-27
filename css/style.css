@@ -19,7 +19,6 @@ header h1{
     text-shadow: 3px 3px rgb(43, 45, 66); /* #EAF1F9 */
     margin-top: 30%;
     background-color: rgba(141, 153, 174, 0); /* #728798 */
-    line-height: 400%;
 }
 
 nav {
@@ -62,7 +61,7 @@ nav {
 }
 
 #about-eig .app-description{
-    margin-top: 150px;
+    margin-top: 300px;
 }
 
 #about-eig .app-description img {
