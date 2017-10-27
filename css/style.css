@@ -1,46 +1,38 @@
-/* Site width 100%*/
-.container-fluid {
-    width: 100%;
-    padding: 0;
-}
 
 /*header*/
 header{
     background-image: url("../images/header-background.jpg");
     background-size: cover;
+    background-attachment: fixed;
     min-height: 700px;
 }
 
+.welcome-text {
+    color: #D13232;
+    font-weight: bold;
+    font-size: 3em;
+    text-shadow: 1px 1px rgb(234, 241, 249); /* #EAF1F9 */
+    margin-top: 20%;
+    background-color: rgba(34, 39, 45, 0.5); /* #22272D */
+    line-height: 400%;
+}
+
 header h1{
-    color: #ffffff;
+    color: #D13232;
     font-weight: bold;
     font-size: 3em;
     text-shadow: 1px 1px #000;
 }
 
-.header-logo{
-
-}
-
-.header-logo img{
-    width: 500px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
 /*Horizontal menu*/
-.main-menu{
-    height: 50px;
-    background-color: #22272d;
-    padding: 0;
-    color: #ffffff;
-
+.nav-item a {
+    color: #22272D;
+    font-size: 20px;
+    margin: 0 30px;
 }
-.main-menu ul li{
-    text-decoration: none;
-    display: inline-block;
-    text-transform: uppercase;
-    word-spacing: 5px;
+
+.navbar-brand img {
+    height: 70px;
 }
 
 
@@ -48,21 +40,39 @@ header h1{
 .section-title{
     font-size: 1.2em;
     margin-top:20px;
+    color: #5A4A4A;
 }
 
 /*Email notifier*/
+
 .email-notifier{
-    min-height: 300px;
-    background-color: #ffffff;
+    display: none;
+    max-height: 200px;
+    background-color: red;
+}
+
+#about-eig {
+    margin-top: 50px;
 }
 
 /*App functions*/
 .app-functions{
-    min-height: 600px;
-    background-color: #5a4a4a;
+    min-height: 500px;
+}
+
+.app-description {
+    border: 3px solid #D13232;
+}
+
+.app-functions-img {
+
 }
 
 /*App additional info*/
+
+.app-more-description {
+    border: 4px solid crimson;
+}
 
 .app-additional-info{
     background-color: #ffffff;
@@ -79,4 +89,9 @@ header h1{
 footer{
     background-color: black;
     color: #fff;
+}
+
+/*others*/
+.bg-transparent {
+    background: transparent;
 }
