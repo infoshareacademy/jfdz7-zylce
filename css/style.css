@@ -3,7 +3,8 @@
 header{
     background: url(../images/header-background.jpg) top center no-repeat, fixed;
     background-size: cover;
-    min-height: 700px;
+    widtht: 100vw;
+    height: 100vh;
 }
 
 header h1{
@@ -17,7 +18,7 @@ header h1{
     font-weight: bold;
     font-size: 3.2em;
     text-shadow: 3px 3px rgb(43, 45, 66); /* #EAF1F9 */
-    margin-top: 30%;
+    margin-top: 10%;
     background-color: rgba(141, 153, 174, 0); /* #728798 */
 }
 
@@ -70,21 +71,29 @@ button:focus {
     height: 50px;
 }
 
+
+
 #about-eig .app-description{
-    margin-top: 300px;
+   margin-top: 5%;
+
+
+
+
 }
 
 /*Icons size*/
 #about-eig .app-description img {
     width: 250px;
     padding: 0 0;
-    border-radius: 10px;
+    
+
 }
 
 #about-eig .app-description p {
-    background-color: rgba(141, 153, 174, 0.6);
+    /*background-color: rgba(141, 153, 174, 0.6);*/
     margin: 40px 20px;
     padding: 10px 0;
+    font-size: 1.3em;
     line-height: 200%;
     border: 3px outset #D90429;
     border-radius: 10px;
