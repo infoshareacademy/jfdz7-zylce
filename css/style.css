@@ -3,8 +3,9 @@
 header{
     background: url(../images/header-background.jpg) top center no-repeat, fixed;
     background-size: cover;
-    widtht: 100vw;
+    width: 100vw;
     height: 100vh;
+    
 }
 
 header h1{
@@ -123,6 +124,7 @@ button:focus {
 .app-functions-title p{
     padding-top: 50px;
     font-size: 2em;
+    font-weight: bold;
 }
 
 .app-description {
