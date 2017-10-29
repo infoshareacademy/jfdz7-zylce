@@ -1,1 +1,57 @@
+/* MENU / MAIN MENU / SITE MENU / NAVIGATION / NAV / NAVBAR */
+
+nav {
+    font-family:  'Raleway', 'Open Sans', sans-serif;
+    background-color: rgba(43, 45, 66, 1) /* #eaf1f9 */
+}
+
+button {
+    background: rgba(141, 153, 174, 0.2);
+    align-items: center;
+    margin: 0 0;
+}
+
+button:hover {
+    background: rgba(141, 153, 174, 0.6);
+}
+
+button:focus {
+    outline: none;
+}
+
+.navbar-toggler {
+    border: 1px dotted #8D99AE;
+}
+
+.navbar-toggler-icon {
+    color: #EDF2F4;
+    font-size: 20px;
+    line-height: 150%;
+    width: inherit;
+}
+.nav-item a {
+    color: #EDF2F4;
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+.nav-item a:hover {
+    color: #8D99AE;
+}
+
+.nav-item a:active {
+    color: #EF233C;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+
+
+@media all and (max-width: 1200px) {
+    .navbar-brand {
+        display: none;
+    }
 
