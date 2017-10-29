@@ -91,12 +91,12 @@ button:focus {
 
 #about-eig .app-description p {
     /*background-color: rgba(141, 153, 174, 0.6);*/
-    margin: 40px 20px;
-    padding: 10px 0;
-    font-size: 1.3em;
-    line-height: 200%;
-    border: 3px outset #D90429;
-    border-radius: 10px;
+    /*margin: 40px 20px;*/
+    padding: 10px 10px;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    /*border: 3px outset #D90429;*/
+    /*border-radius: 10px;*/
 }
 /*Section Title*/
 .section-title{
@@ -118,6 +118,11 @@ button:focus {
 /*App functions*/
 .app-functions{
     min-height: 500px;
+}
+
+.app-functions-title p{
+    padding-top: 50px;
+    font-size: 2em;
 }
 
 .app-description {
