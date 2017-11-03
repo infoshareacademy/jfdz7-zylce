@@ -3,9 +3,10 @@
 header{
     background: url(../images/header-background.jpg) top center no-repeat, fixed;
     background-size: cover;
-    width: 100vw;
     height: 100vh;
-    
+    /*Cien pod sekcją - fajny efekt*/
+    box-shadow: 0px 1px 15px #606060;
+
 }
 
 header h1{
@@ -75,7 +76,7 @@ button:focus {
 
 
 #about-eig .app-description{
-   margin-top: 5%;
+   margin-top: 1%;
 
 
 
