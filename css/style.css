@@ -48,10 +48,22 @@ button:focus {
     height: 50px;
 }
 
+/*HEADER*/
+header{
+    background: url("../images/header-background.jpg");
+    height: 100vh;
+    background-size: cover;
+}
 
+/*EIG LOGO*/
+.eig-logo{
+    width: 700px;
+    margin-top: 15%;
+
+}
 
 @media all and (max-width: 1200px) {
     .navbar-brand {
         display: none;
     }
-
+}
