@@ -76,6 +76,22 @@ button:focus {
     text-align: center;
 }
 
+.img-thumbnail, .social-icons {
+    width: 100%;
+    max-width: 250px;
+}
+
+.team-member-photo, .team-member-social-icons {
+    padding: 12px 0;
+}
+
+.team-member-text {
+    font-family: Ubuntu, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
 @media screen and (min-width: 801px) and (max-width: 1200px) {
     .navbar-brand {
         display: none;
@@ -103,3 +119,5 @@ button:focus {
         font-size: 16px;
     }
 }
+
+/*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
