@@ -71,7 +71,7 @@ button:focus {
     text-shadow: 1px 1px #2B2D42;
 }
 
-/* OTHERS / HENERAL */
+/* OTHERS / GENERAL */
 .section-title {
     font-family: "Source Code Pro", Ubuntu, sans-serif;
     font-weight: bold;
@@ -101,7 +101,7 @@ button:focus {
 
 
 
-@media screen and (min-width: 801px) and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     .navbar-brand {
         display: none;
     }
@@ -115,18 +115,5 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 800px) {
-    .navbar-brand {
-        display: none;
-    }
-
-    .header h1 {
-        font-size: 20px;
-    }
-
-    .header p{
-        font-size: 16px;
-    }
-}
 
 /*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
