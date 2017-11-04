@@ -5,7 +5,7 @@
     <title>EiG - Events in Gdańsk</title>
 
     <!-- Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -14,19 +14,17 @@
 </head>
 <body>
 
-
-<!--header-->
+<!--HEADER-->
 <header>
 <!-- Navigation / Menu-->
         <nav class="navbar navbar-expand-md fixed-top">
             <!--Logo / Brand-->
-            <a class="navbar-brand" href="#">
-                <img src="images/logo-eig.png" alt="Events in Gdańsk - logo">
+            <a class="navbar-brand" href="#"><img src="images/logo-eig.png" alt="Events in Gdańsk - logo">
             </a>
             <!--Button RWD-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">menu</span>
+                <span class="navbar-toggler-icon text-center">menu</span>
             </button>
             <!--Menu Items-->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -43,28 +41,56 @@
                 </ul>
             </div>
         </nav>
+
     <div class="container-fluid header">
-<!--Welcome Text-->
+        <!--Welcome Text-->
         <div class="welcome-text text-center">
             <h1>Podpowiemy Ci jak spędzić weekend w&nbsp;Gdańsku!</h1>
             <p>Dzięki nam dowiesz się, co dzieje się w&nbsp;Gdańsku, wybierzesz wydarzenia, które Cię interesują, a&nbsp;my dopilnujemy, żebyś o&nbsp;nich nie zapomniał!</p>
         </div>
     </div>
+
 </header>
+
+<!--MAIN-->
 <main>
     <!--App functions / UKASZ -->
-        <section id="about-eig">
-            
-        </section>
+    <section id="about-eig">
+        <div class="container-fluid app-functions bg-transparent">
+
+            <div class="row text-center app-functions-title">
+                <div class="col-md-12">
+                    <p>Co zrobisz za pomocą naszej aplikacji</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center app-description">
+                    <img src="images/search-icon.png" class="img-fluid">
+                    <p>Przejrzysz wydarzenia z Gdańska</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center app-description ">
+                    <img src="images/list-icon.png" class="img-fluid">
+                    <p>Wybierzesz interesujące Cię wydarzenia</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center app-description">
+                    <img src="images/check-icon.png" class="img-fluid">
+                    <p>Zaplanujesz swój weekend w Gdańsku</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center app-description">
+                    <img src="images/mail-icon.png" class="img-fluid">
+                    <p>Wyślesz gotowy plan na email</p>
+                </div>
+            </div>
+        </div>
+    </section>
 <!--Email Notifier / ADAM-->
-    <section id="newsletter" class="bg-transparent text-right fixed-bottom">
-        
+    <section id="newsletter">
+
 
     </section>
 
 <!--additional app info-->
     <section id="more-about-eig">
-       
 
     </section>
 </main>
@@ -73,7 +99,7 @@
 <footer>
 <!--Info about team-->
     <section id="team">
-        
+
     </section>
 </footer>
 
