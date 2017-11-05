@@ -1,8 +1,23 @@
 /* MENU / MAIN MENU / SITE MENU / NAVIGATION / NAV / NAVBAR */
+body {
+    /*background-color: black;*/
+}
 
+header > .container {
+    max-width: 1200px;
+}
+
+.menu {
+    background-color: #D58E80; /* #eaf1f9 */
+    max-width: 1200px;
+    padding: 16px;
+}
+.navbar {
+    padding-top: 0;
+}
 nav {
     font-family:  'Raleway', 'Open Sans', sans-serif;
-    background-color: rgba(43, 45, 66, 1) /* #eaf1f9 */
+
 }
 
 button {
@@ -50,8 +65,9 @@ button:focus {
 
 .header{
     width: 100%;
+    /*max-width: 1500px;*/
     height: 100vh;
-    background: #EDF2F4 url(../images/header-background.jpg) top center no-repeat fixed;
+    background: #EDF2F4 url(../images/header-background2.jpg) top center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
