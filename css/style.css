@@ -2,7 +2,7 @@
 
 nav {
     font-family:  'Raleway', 'Open Sans', sans-serif;
-    background-color: rgba(43, 45, 66, 1) /* #eaf1f9 */
+    background-color: #595959 /* #eaf1f9 */
 }
 
 button {
@@ -56,12 +56,18 @@ header{
 }
 
 /*EIG LOGO*/
+
 .eig-logo{
-    width: 700px;
-    margin-top: 15%;
+    width: 300px;
+    margin-top: 25%;
 
 }
 
+.eig-logo-text{
+    color: #ffffff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 6em;
+}
 @media all and (max-width: 1200px) {
     .navbar-brand {
         display: none;
