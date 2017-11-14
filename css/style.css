@@ -30,13 +30,13 @@ button:focus {
     width: inherit;
 }
 .nav-item a {
-    color: #EDF2F4;
+    color: #ffffff; /* old color - #EDF2F4 */
     font-size: 20px;
     margin: 0 30px;
 }
 
 .nav-item a:hover {
-    color: #8D99AE;
+    color: #D1D1D1; /* old color - #8D99AE */
 }
 
 .nav-item a:active {
@@ -52,21 +52,19 @@ button:focus {
 
 /* HEADER / WELCOME TEXT */
 header{
-    width: 100%;
+    width: 100%; /* Nie wiem czy to tutaj jest po coś potrzebne */
     height: 100vh;
     background: #EDF2F4 url(../images/header-background.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*box-shadow: 0 1px 15px #606060;*/
 }
 
 /*EIG LOGO*/
 .eig-logo{
     width: 300px;
     margin-top: 25%;
-
 }
 
 .eig-logo-text{
@@ -81,7 +79,7 @@ header{
 }
 
 #about-eig .app-description img {
-    width: 250px;
+    width: 200px;
     padding: 0 0;
 }
 
@@ -133,13 +131,11 @@ header{
     padding-top: 15px;
 }
 
-
 /*MEDIA QUERIES*/
 @media screen and (min-width: 801px) and (max-width: 1200px) {
     .navbar-brand {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 800px) {
@@ -154,5 +150,4 @@ header{
     .eig-logo-text{
         font-size: 4em;
     }
-
 }
