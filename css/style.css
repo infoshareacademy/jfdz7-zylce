@@ -74,8 +74,12 @@ header{
 }
 
 /* ABOUT EIG / 4 ICONS*/
+#about-eig{
+    background-color: #eeeeaf;
+}
 #about-eig .app-description{
     margin-top: 1%;
+
 }
 
 #about-eig .app-description img {
@@ -95,6 +99,7 @@ header{
 
 .app-functions{
     min-height: 500px;
+
 }
 
 .app-functions-title p{
