@@ -114,6 +114,13 @@ header{
     color: #ffffff;
 }
 
+/*NEWSLETTER*/
+.newsletter{
+    min-height: 100px;
+    background-color: #2d882d;
+    color: #ffffff;
+}
+
 /*TEAM*/
 .team{
     min-height: 400px;
