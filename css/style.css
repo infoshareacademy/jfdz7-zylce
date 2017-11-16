@@ -151,6 +151,9 @@ button:focus {
 }
 .img-thumbnail, .social-icons {
     width: 100%;
+    max-width: 200px;
+}
+.team-member-photo img{
     max-width: 250px;
 }
 
