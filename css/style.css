@@ -72,13 +72,19 @@ button:focus {
 /*EIG LOGO*/
 .eig-logo{
     width: 300px;
-    margin-top: 25%;
+    margin-top: 15%;
 }
 
 .eig-logo-text{
     color: #ffffff;
     font-family: 'Great Vibes', cursive;
     font-size: 6em;
+}
+
+.eig-logo-text-bottom{
+    color: #ffffff;
+    font-family: 'Great Vibes', cursive;
+
 }
 
 /* ABOUT EIG / 4 ICONS*/
