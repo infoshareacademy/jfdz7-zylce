@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
@@ -15,13 +16,12 @@
 </head>
 <body>
 
-
-<!--header-->
-<header>
-
+<!--HEADER-->
+<header class="mx-auto">
 <!-- Navigation / Menu-->
-        <nav class="navbar navbar-expand-md fixed-top navbar-invert">
-            <div class="container menu">
+    <div class="container header-top">
+        <nav class="navbar navbar-expand-md fixed-top container">
+
             <!--Logo / Brand-->
             <a class="navbar-brand" href="#">
                 <img src="images/eig-logo-min.png" alt="Events in Gdańsk - logo">
@@ -29,41 +29,78 @@
             <!--Button RWD-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">menu</span>
+                <span class="navbar-toggler-icon text-center">menu</span>
             </button>
             <!--Menu Items-->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-md-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-eig">o EiG</a>
+                        <a class="nav-link" href="#about-eig">EiG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#more-about-eig">o Planerze EiG</a>
+                        <a class="nav-link" href="#more-about-eig">Planer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Nasz Zespół</a>
+                        <a class="nav-link" href="#team">Zespół</a>
                     </li>
                 </ul>
             </div>
-            </div>
         </nav>
-    <div class="container header">
-<!--Welcome Text-->
-        <div class="welcome-text text-center">
-            <h1>Podpowiemy Ci jak spędzić weekend w&nbsp;Gdańsku!</h1>
-            <p>Dzięki nam dowiesz się, co dzieje się w&nbsp;Gdańsku, wybierzesz wydarzenia, które Cię interesują, a&nbsp;my dopilnujemy, żebyś o&nbsp;nich nie zapomniał!</p>
+
+    <div class="container">
+        <!--Welcome Text and big logo-->
+        <div class="row">
+            <div class="text-center mx-auto d-block">
+                <figure><img src="images/eig-logo.png" class="eig-logo img-fluid"></figure>
+                <h1 class="eig-logo-text">Events in Gdańsk</h1>
+            </div>
+
         </div>
     </div>
-
+    </div>
 </header>
+
+<!--MAIN-->
 <main>
     <!--App functions / UKASZ -->
-        <section id="about-eig">
-            
-        </section>
+    <section id="about-eig">
+        <div class="container app-functions bg-transparent">
+
+            <div class="row text-center app-functions-title">
+                <div class="col-md-12">
+                    <p>Co zrobisz za pomocą naszej aplikacji</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center app-description">
+                    <img src="images/search-icon.png" class="img-fluid">
+                    <p>Zobaczysz co się dzieje w Gdańsku</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center app-description ">
+                    <img src="images/list-icon.png" class="img-fluid">
+                    <p>Przefiltrujesz ciekawe dla Ciebie wydarzenia</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center app-description">
+                    <img src="images/check-icon.png" class="img-fluid">
+                    <p>Wybierzesz w czym chcesz wziąć udział</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center app-description">
+                    <img src="images/mail-icon.png" class="img-fluid">
+                    <p>Wyślesz gotowy plan na email</p>
+                </div>
+            </div>
+        </div>
+    </section>
 <!--Email Notifier / ADAM-->
-    <section id="newsletter" class="bg-transparent text-right fixed-bottom">
-        
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2> Zapisz się na premierę!</h2>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 

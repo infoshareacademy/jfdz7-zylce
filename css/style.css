@@ -1,23 +1,8 @@
 /* MENU / MAIN MENU / SITE MENU / NAVIGATION / NAV / NAVBAR */
-body {
-    /*background-color: black;*/
-}
 
-header > .container {
-    max-width: 1200px;
-}
-
-.menu {
-    background-color: #D58E80; /* #eaf1f9 */
-    max-width: 1200px;
-    padding: 16px;
-}
-.navbar {
-    padding-top: 0;
-}
 nav {
     font-family:  'Raleway', 'Open Sans', sans-serif;
-
+    background-color: #595959 /* #eaf1f9 */
 }
 
 button {
@@ -25,6 +10,13 @@ button {
     align-items: center;
     margin: 0 0;
 }
+
+.container {
+    padding: 0 0;
+    min-width: 240px; }
+
+.row {
+    margin: 0; }
 
 button:hover {
     background: rgba(141, 153, 174, 0.6);
@@ -63,28 +55,76 @@ button:focus {
     height: 50px;
 }
 
-.header{
-    width: 100%;
-    /*max-width: 1500px;*/
+
+
+/* HEADER / WELCOME TEXT */
+.header-top {
+    width: 100%; /* Nie wiem czy to tutaj jest po coś potrzebne - jest, bo vh bierze z szerokości */
+    min-height: 300px;
     height: 100vh;
-    background: #EDF2F4 url(../images/header-background2.jpg) top center no-repeat;
+    background: #EDF2F4 url(../images/header-background.jpg) top center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
-.header h1 {
-     color: #D90429;
-     font-weight: bold;
-     font-size: 50px;
-     text-shadow: 1px 1px #EDF2F4;
- }
+/*EIG LOGO*/
+.eig-logo{
+    width: 300px;
+    margin-top: 25%;
+}
 
-.header p {
-    color: #EDF2F4;
-    font-size: 38px;
-    text-shadow: 1px 1px #2B2D42;
+.eig-logo-text{
+    color: #ffffff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 6em;
+}
+
+/* ABOUT EIG / 4 ICONS*/
+#about-eig{
+    background-color: #F6F6DA;
+}
+#about-eig .app-description{
+    margin-top: 1%;
+
+}
+
+#about-eig .app-description img {
+    width: 200px;
+    padding: 0 0;
+}
+
+#about-eig .app-description p {
+    /*background-color: rgba(141, 153, 174, 0.6);*/
+    /*margin: 40px 20px;*/
+    padding: 10px 10px;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    /*border: 3px outset #D90429;*/
+    /*border-radius: 10px;*/
+}
+
+.app-functions{
+    min-height: 500px;
+
+}
+
+.app-functions-title p{
+    padding-top: 50px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*TEAM SECTION TITLE*/
+.section-title{
+    display: flex;
+    justify-content: center;
+}
+.section-title h2{
+    font-weight: bold;
+    margin-top: 10%;
+    color: #ffffff;
 }
 
 /* OTHERS / GENERAL */
@@ -93,7 +133,17 @@ button:focus {
     font-weight: bold;
     padding: 64px 0;
 }
+/*NEWSLETTER*/
+.newsletter{
+    min-height: 100px;
+    background-color: #2d882d;
+    color: #ffffff;
+}
 
+/*TEAM*/
+.team{
+    min-height: 400px;
+    background-color: #0e5c90;
 
 /* TEAM */
 .team-members {
@@ -104,6 +154,19 @@ button:focus {
     max-width: 250px;
 }
 
+/*END OF SITE*/
+.end{
+    height: 50px;
+    background-color: #595959;
+    color: #ffffff;
+}
+
+.end p{
+    padding-top: 15px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 801px) and (max-width: 1200px) {
 .team-member-photo, .team-member-social-icons {
     padding: 12px 0;
 }
@@ -131,5 +194,17 @@ button:focus {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .navbar-brand {
+        display: none;
+    }
 
 /*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
+    .eig-logo{
+        width: 250px ;
+    }
+
+    .eig-logo-text{
+        font-size: 4em;
+    }
+}
