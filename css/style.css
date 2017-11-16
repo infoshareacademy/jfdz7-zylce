@@ -1,7 +1,7 @@
 /* MENU / MAIN MENU / SITE MENU / NAVIGATION / NAV / NAVBAR */
 
 nav {
-    font-family:  'Raleway', 'Open Sans', sans-serif;
+    font-family:  'Roboto', 'Open Sans', sans-serif;
     background-color: #595959 /* #eaf1f9 */
 }
 
@@ -47,7 +47,7 @@ button:focus {
 }
 
 .nav-item a:active {
-    color: #EF233C;
+    color: #414141;
     font-weight: bold;
 }
 
@@ -84,24 +84,33 @@ button:focus {
 .eig-logo-text-bottom{
     color: #ffffff;
     font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
 
 }
 
 /* ABOUT EIG / 4 ICONS*/
-#about-eig{
+.app-functions{
+    min-height: 500px;
     background-color: #F6F6DA;
 }
-#about-eig .app-description{
+
+.app-functions-title p{
+    padding-top: 50px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.app-description{
     margin-top: 1%;
 
 }
 
-#about-eig .app-description img {
+.app-description img {
     width: 200px;
     padding: 0 0;
 }
 
-#about-eig .app-description p {
+.app-description p {
     /*background-color: rgba(141, 153, 174, 0.6);*/
     /*margin: 40px 20px;*/
     padding: 10px 10px;
@@ -111,16 +120,6 @@ button:focus {
     /*border-radius: 10px;*/
 }
 
-.app-functions{
-    min-height: 500px;
-
-}
-
-.app-functions-title p{
-    padding-top: 50px;
-    font-size: 2em;
-    font-weight: bold;
-}
 
 /*TEAM SECTION TITLE*/
 .section-title{
