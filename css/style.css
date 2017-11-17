@@ -1,10 +1,9 @@
 /* MENU / MAIN MENU / SITE MENU / NAVIGATION / NAV / NAVBAR */
 
 nav {
-    font-family:  'Roboto', sans-serif;
-    background-color: #595959 /* #eaf1f9 */
+    font-family:  'Raleway', 'Open Sans', sans-serif;
+    background-color: rgba(43, 45, 66, 1) /* #eaf1f9 */
 }
-
 
 button {
     background: rgba(141, 153, 174, 0.2);
@@ -38,12 +37,13 @@ button:focus {
     width: inherit;
 }
 .nav-item a {
-    color: #EDF2F4;
+    color: #ffffff; /* old color - #EDF2F4 */
     font-size: 20px;
     margin: 0 30px;
 }
 
 .nav-item a:hover {
+    /*color: #D1D1D1; !* old color - #8D99AE *!*/
     color: #8D99AE;
 }
 
@@ -127,12 +127,6 @@ button:focus {
     color: #ffffff;
 }
 
-/* OTHERS / GENERAL */
-.section-title {
-    font-family: "Source Code Pro", Ubuntu, sans-serif;
-    font-weight: bold;
-    padding: 64px 0;
-}
 /*NEWSLETTER*/
 .newsletter{
     min-height: 100px;
@@ -141,46 +135,37 @@ button:focus {
 }
 
 /*TEAM*/
-.team {
+.team{
     min-height: 400px;
     background-color: #0e5c90;
 }
 
-/* TEAM */
-.team-members {
-    padding-bottom: 64px;
-}
-.img-thumbnail, .social-icons .icon{
-    width: 100%;
-    max-width: 200px;
-}
-
-.img-thumbnail {
-    background-color: #000000;
-}
-.team-member-photo img {
-    max-width: 250px;
+.team-member {
+    padding: 30px 0;
 }
 
 .team-member-text {
+    width: 100%;
+    font-size: 24px;
     font-family: Ubuntu, sans-serif;
     font-weight: bold;
-    font-size: 24px;
-    color: #ffffff;
     padding: 15px 0;
+    color: #000000;
+}
+
+.team-member-photo {
+    padding: 0 0;
+}
+
+.team-member-photo img {
+    background-color: #000000;
+    max-width: 230px;
 }
 
 .team-member-social-icons {
     padding-bottom: 80px;
 }
 
-.social-icons:first-child {
-    margin-left: 15px;
-}
-
-.social-icons:last-child {
-    margin-right: 15px;
-}
 
 /*END OF SITE*/
 .end{
@@ -195,11 +180,6 @@ button:focus {
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 801px) and (max-width: 1200px) {
-    .team-member-photo {
-        padding: 12px 0;
-    }
-
-
 
 }
 
@@ -225,11 +205,17 @@ button:focus {
         display: none;
     }
 
+    .eig-logo {
+        width: 250px;
+    }
     /*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
     .eig-logo {
         width: 250px;
     }
 
+    .eig-logo-text {
+        font-size: 4em;
+    }
     .eig-logo-text {
         font-size: 4em;
     }

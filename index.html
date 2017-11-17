@@ -1,157 +1,123 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>EiG - Events in Gdańsk</title>
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <!-- Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!--My css-->
-    <link rel="Stylesheet" type="text/css" href="css/style.css"/>
+	<meta charset="UTF-8">
+	<title>EiG - Events in Gdańsk</title>
+
+	<!-- Google Font-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+		  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!--My css-->
+	<link rel="Stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
 
 <!--HEADER-->
 <header class="mx-auto">
-<!-- Navigation / Menu-->
-    <div class="container-fluid header-top">
-        <nav class="navbar navbar-expand-md fixed-top container-fluid">
+	<!-- Navigation / Menu-->
+	<div class="container-fluid header-top">
+		<nav class="navbar navbar-expand-md fixed-top container-fluid">
 
-            <!--Logo / Brand-->
-            <a class="navbar-brand" href="#">
-                <img src="images/eig-logo-min.png" alt="Events in Gdańsk - logo">
-            </a>
+			<!--Logo / Brand-->
+			<a class="navbar-brand" href="#">
+				<img src="images/eig-logo-min.png" alt="Events in Gdańsk - logo">
+			</a>
 
-            <!--Button RWD-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-center">menu</span>
-            </button>
-            <!--Menu Items-->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-md-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-eig">EiG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#more-about-eig">Planer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Zespół</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+			<!--Button RWD-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon text-center">menu</span>
+			</button>
+			<!--Menu Items-->
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ml-md-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#about-eig">EiG</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#more-about-eig">Planer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#team">Zespół</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<!--Welcome Text and big logo-->
+			<div class="row">
+				<div class="text-center mx-auto d-block">
+					<figure><img src="images/eig-logo.png" class="eig-logo img-fluid"></figure>
+					<h1 class="eig-logo-text">Events in Gdańsk</h1>
+					<h2 class="eig-logo-text-bottom">Z nami zaplanujesz weekend</h2>
+				</div>
+
+			</div>
+		</div>
 	</div>
-    <div class="container-fluid">
-        <!--Welcome Text and big logo-->
-        <div class="row">
-            <div class="text-center mx-auto d-block">
-                <figure><img src="images/eig-logo.png" class="eig-logo img-fluid"></figure>
-                <h1 class="eig-logo-text">Events in Gdańsk</h1>
-                <h2 class="eig-logo-text-bottom">Z nami zaplanujesz weekend</h2>
-            </div>
-
-        </div>
-    </div>
-    </div>
 </header>
 
 <!--MAIN-->
 <main>
-    <!--App functions / UKASZ -->
-    <section id="about-eig" class="app-functions">
-        <div class="container">
-            <div class="row text-center app-functions-title">
-                <div class="col-md-12">
-                    <p>Co zrobisz za pomocą naszej aplikacji</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 text-center app-description">
-                    <img src="images/search-icon.png" class="img-fluid">
-                    <p>Zobaczysz co się dzieje w Gdańsku</p>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center app-description ">
-                    <img src="images/list-icon.png" class="img-fluid">
-                    <p>Przefiltrujesz ciekawe dla Ciebie wydarzenia</p>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center app-description">
-                    <img src="images/check-icon.png" class="img-fluid">
-                    <p>Wybierzesz w czym chcesz wziąć udział</p>
-                </div>
-                <div class="col-md-3 col-sm-6 text-center app-description">
-                    <img src="images/mail-icon.png" class="img-fluid">
-                    <p>Wyślesz gotowy plan na email</p>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!--App functions / UKASZ -->
+	<section id="about-eig" class="app-functions">
+		<div class="container">
+			<div class="row text-center app-functions-title">
+				<div class="col-md-12">
+					<p>Co zrobisz za pomocą naszej aplikacji</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 text-center app-description">
+					<img src="images/search-icon.png" class="img-fluid">
+					<p>Zobaczysz co się dzieje w Gdańsku</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center app-description ">
+					<img src="images/list-icon.png" class="img-fluid">
+					<p>Przefiltrujesz ciekawe dla Ciebie wydarzenia</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center app-description">
+					<img src="images/check-icon.png" class="img-fluid">
+					<p>Wybierzesz w czym chcesz wziąć udział</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center app-description">
+					<img src="images/mail-icon.png" class="img-fluid">
+					<p>Wyślesz gotowy plan na email</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Email Notifier / ADAM-->
+	<section id="newsletter" class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2> Zapisz się na premierę!</h2>
+				</div>
+			</div>
 
-<!--Email Notifier / ADAM-->
-    <section class="newsletter">
-        <div class="form-group">
-            <form action="mailto:email@address.com" method="post">
-                <h3 class="font-weight-bold text-center">Zapis na premiere</h3>
-                <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Wprowadź email">
-                <small id="emailHelp" class="form-text">Nigdy nie udostępnimy Twojego e-maila nikomu innemu.  Na twoją skrzynkę zostanie wysłana tylko jedna wiadomość o premierze.</small>
-			</form>
 		</div>
 
-        <div class="form-check">
-            <label class="form-check-label">
-                <input type="checkbox" required class="form-check-input">
-                Zgadzam się na otrzymywanie pocztą elektroniczną na podany poniżej adres e-mail Newslettera Zylce.pl zgodnie z Ustawą o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r. (Dz. U. nr 144 poz. 1204).
-            </label>
-        </div>
+	</section>
 
-        <form>
-            <input class="btn btn-primary" type="submit" value="Wyślij"/>
-        </form>
-        </form>
-    </section>
+	<!--additional app info-->
+	<section id="more-about-eig">
 
-<!--additional app info-->
-    <section id="more-about-eig">
-
-
-        <div class="container">
-            <h2 class="text-center">Dodatkowe funkcje aplikacji</h2>
-
-            <div class="row">
-                <div class="col-md-3 col-sm-6 ml-auto">
-                    <ul>
-                        <li>udostępnić infomarcje w social media</li>
-
-                        <li>zadecydujesz kiedy mamy ci przypomnieć o wydarzeniu w którym bierzesz udział</li>
-                        <li>wybrać kategorie wydarzeń które cie interesują</li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6 mr-auto">
-                    <ul>
-                        <li>oznaczyć konkretne wydarzenie w ktorym chcesz wziąć udział</li>
-                        <li>zapraszać innych na wydarzenia</li>
-                        <li>poinformujemy o podobnych wydarzeniach, jesli sobie tego życzysz</li>
-                    </ul>
-                </div>
-
-            </div>
-
-    </section>
+	</section>
 </main>
 
 <!--footer-->
 <footer>
-<!--Info about team-->
-    <section id="team" class="container-fluid team">
+	<!--Info about team-->
+		<section id="team" class="container-fluid team">
         <div class="container">
         <h1 class="section-title text-center">nasz zespół</h1>
-        <div class="row text-center team-members  justify-content-around">
-            <div class="col-lg-3 .d-sm-flex">
+        <div class="row text-center team-members justify-content-around">
+            <div class="col-lg-3 .d-sm-flex team-member">
                 <div class="col team-member-photo"><img src="images/team/moni2.jpg" class="img-fluid img-thumbnail" alt="Monika Rusajczyk photo | team member"/> </div>
                 <div class="col team-member-text">Monika Rusajczyk</div>
                 <div class="col team-member-social-icons">
@@ -175,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 .d-sm-flex">
+            <div class="col-lg-3 .d-sm-flex team-member">
                 <div class="col team-member-photo"><img src="https://qkiczw.github.io/images/me.jpg" class="img-fluid img-thumbnail" alt="Łukasz Sztormowski photo | team member"/> </div>
                 <div class="col team-member-text">Łukasz Sztormowski</div>
                 <div class="col team-member-social-icons">
@@ -199,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 .d-sm-flex">
+            <div class="col-lg-3 .d-sm-flex team-member">
                     <div class="col team-member-photo"><img src="images/team/adam.jpg" class="img-fluid img-thumbnail" alt="Adam Tomaszewski photo | team member"/> </div>
                     <div class="col team-member-text">Adam Tomaszewski</div>
                     <div class="col team-member-social-icons">
