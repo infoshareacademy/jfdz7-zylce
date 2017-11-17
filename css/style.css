@@ -141,20 +141,45 @@ button:focus {
 }
 
 /*TEAM*/
-.team{
+.team {
     min-height: 400px;
     background-color: #0e5c90;
+}
 
 /* TEAM */
 .team-members {
     padding-bottom: 64px;
 }
-.img-thumbnail, .social-icons {
+.img-thumbnail, .social-icons .icon{
     width: 100%;
     max-width: 200px;
 }
-.team-member-photo img{
+
+.img-thumbnail {
+    background-color: #000000;
+}
+.team-member-photo img {
     max-width: 250px;
+}
+
+.team-member-text {
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.team-member-social-icons {
+    padding-bottom: 80px;
+}
+
+.social-icons:first-child {
+    margin-left: 15px;
+}
+
+.social-icons:last-child {
+    margin-right: 15px;
 }
 
 /*END OF SITE*/
@@ -170,17 +195,13 @@ button:focus {
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 801px) and (max-width: 1200px) {
-.team-member-photo, .team-member-social-icons {
-    padding: 12px 0;
+    .team-member-photo {
+        padding: 12px 0;
+    }
+
+
+
 }
-
-.team-member-text {
-    font-family: Ubuntu, sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-
 
 
 @media screen and (max-width: 800px) {
@@ -195,6 +216,8 @@ button:focus {
     .header p{
         font-size: 24px;
     }
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -202,12 +225,12 @@ button:focus {
         display: none;
     }
 
-/*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
-    .eig-logo{
-        width: 250px ;
+    /*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
+    .eig-logo {
+        width: 250px;
     }
 
-    .eig-logo-text{
+    .eig-logo-text {
         font-size: 4em;
     }
 }
