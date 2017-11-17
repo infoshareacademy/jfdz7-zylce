@@ -110,13 +110,9 @@ button:focus {
 }
 
 .app-description p {
-    /*background-color: rgba(141, 153, 174, 0.6);*/
-    /*margin: 40px 20px;*/
     padding: 10px 10px;
     font-size: 1.4em;
     line-height: 1.2em;
-    /*border: 3px outset #D90429;*/
-    /*border-radius: 10px;*/
 }
 
 
