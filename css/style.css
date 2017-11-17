@@ -5,6 +5,7 @@ nav {
     background-color: #595959 /* #eaf1f9 */
 }
 
+
 button {
     background: rgba(141, 153, 174, 0.2);
     align-items: center;
@@ -54,8 +55,6 @@ button:focus {
 .navbar-brand img {
     height: 50px;
 }
-
-
 
 /* HEADER / WELCOME TEXT */
 .header-top {
