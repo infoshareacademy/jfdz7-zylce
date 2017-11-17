@@ -119,6 +119,9 @@ button:focus {
 .additional-app-function-row{
     margin-bottom: 20px;
 }
+.additional-app-function-container{
+    margin-top: 20px;
+}
 
 .additional-app-function-row i{
     color: #d13232;
