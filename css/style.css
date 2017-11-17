@@ -44,7 +44,7 @@ button:focus {
 
 .nav-item a:hover {
     /*color: #D1D1D1; !* old color - #8D99AE *!*/
-    color: #8D99AE;
+    color: #D1D1D1;
 }
 
 .nav-item a:active {
