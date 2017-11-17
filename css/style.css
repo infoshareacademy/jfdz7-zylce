@@ -1,7 +1,7 @@
 /* MENU / MAIN MENU / SITE MENU / NAVIGATION / NAV / NAVBAR */
 
 nav {
-    font-family:  'Roboto', 'Open Sans', sans-serif;
+    font-family:  'Roboto', sans-serif;
     background-color: #595959 /* #eaf1f9 */
 }
 
@@ -110,13 +110,9 @@ button:focus {
 }
 
 .app-description p {
-    /*background-color: rgba(141, 153, 174, 0.6);*/
-    /*margin: 40px 20px;*/
     padding: 10px 10px;
     font-size: 1.4em;
     line-height: 1.2em;
-    /*border: 3px outset #D90429;*/
-    /*border-radius: 10px;*/
 }
 
 
@@ -140,7 +136,7 @@ button:focus {
 /*NEWSLETTER*/
 .newsletter{
     min-height: 100px;
-    background-color: #2d882d;
+    background-color: #595959;
     color: #ffffff;
 }
 
