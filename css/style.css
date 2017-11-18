@@ -280,4 +280,12 @@ button:focus {
 
 
 
+/*test od formularza*/
+.small-form, p {
+    font-size: 10px;
+    line-height: 80%;
+}
 
+.newsletter-bg {
+    background-color: #414141;
+}
