@@ -115,6 +115,18 @@ button:focus {
     line-height: 1.2em;
 }
 
+/*APP ADDITIONAL FUNCTIONS*/
+.additional-app-function-row{
+    margin-bottom: 20px;
+}
+.additional-app-function-container{
+    margin-top: 20px;
+}
+
+.additional-app-function-row i{
+    color: #d13232;
+}
+
 
 /*TEAM SECTION TITLE*/
 .section-title{
