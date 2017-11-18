@@ -60,7 +60,7 @@ button:focus {
 /* HEADER / WELCOME TEXT */
 .header-top {
     width: 100%; /* Nie wiem czy to tutaj jest po coś potrzebne - jest, bo vh bierze z szerokości */
-    min-height: 300px;
+    min-height: 400px;
     height: 100vh;
     background: #EDF2F4 url(../images/header-background.jpg) top center no-repeat;
     background-size: cover;
@@ -71,20 +71,20 @@ button:focus {
 
 /*EIG LOGO*/
 .eig-logo{
-    width: 300px;
+    width: 150px;
     margin-top: 15%;
 }
 
 .eig-logo-text{
     color: #ffffff;
     font-family: 'Great Vibes', cursive;
-    font-size: 6em;
+    font-size: 2.5em;
 }
 
 .eig-logo-text-bottom{
     color: #ffffff;
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5em;
+    font-size: 1.5em;
 
 }
 
@@ -95,7 +95,7 @@ button:focus {
 }
 
 .app-functions-title p{
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     font-size: 2em;
     font-weight: bold;
 }
@@ -229,7 +229,17 @@ button:focus {
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
+    .eig-logo {
+        width: 150px;
+    }
 
+    .eig-logo-text {
+        font-size: 3.5em;
+    }
+
+    .eig-logo-text-bottom {
+        font-size: 2.0em;
+    }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -241,18 +251,14 @@ button:focus {
     .eig-logo {
         width: 250px;
     }
+    .eig-logo-text {
+        font-size: 4em;
+    }
+    .eig-logo-text-bottom {
+        font-size: 2.2em;
+    }
+
     /*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
-    .eig-logo {
-        width: 250px;
-    }
-
-    .eig-logo-text {
-        font-size: 4em;
-    }
-    .eig-logo-text {
-        font-size: 4em;
-    }
-
     .social-icons {
         max-width: 200px;
     }
@@ -260,14 +266,18 @@ button:focus {
 
 
 /*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) {
-
+@media (min-width: 992px) /*and (max-width: 1199px)*/ {
+    .eig-logo {
+        width: 250px;
+    }
+    .eig-logo-text {
+        font-size: 4em;
+    }
+    .eig-logo-text-bottom {
+        font-size: 2.2em;
+    }
 }
 
-/*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
-}
 
 
 
