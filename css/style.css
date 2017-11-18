@@ -133,6 +133,7 @@ button:focus {
 .section-title{
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 .section-title h2{
     font-weight: bold;
@@ -151,10 +152,14 @@ button:focus {
 .team{
     min-height: 400px;
     background-color: #0e5c90;
+    color: #ffffff;
+    padding-top: 40px;
+    font-weight: bold;
+
 }
 
 .team-member {
-    padding: 30px 0;
+    padding-top: 30px;
 }
 
 .team-member-text {
@@ -171,12 +176,24 @@ button:focus {
 }
 
 .team-member-photo img {
-    background-color: #000000;
+    width: 100%;
     max-width: 230px;
 }
 
 .team-member-social-icons {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
+
+}
+
+
+
+.team-member-text, i {
+    color: #ffffff;
+}
+
+.social-icons {
+    font-size: 10px;
+    width: 80%;
 }
 
 
@@ -191,19 +208,23 @@ button:focus {
     padding-top: 15px;
 }
 
-/*MEDIA QUERIES*/
-@media screen and (min-width: 801px) and (max-width: 1200px) {
-
-}
 
 
-@media screen and (max-width: 800px) {
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
     .navbar-brand {
         display: none;
     }
 }
 
-@media screen and (max-width: 800px) {
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
     .navbar-brand {
         display: none;
     }
@@ -222,4 +243,22 @@ button:focus {
     .eig-logo-text {
         font-size: 4em;
     }
+
+    .social-icons {
+        max-width: 200px;
+    }
 }
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+
+
