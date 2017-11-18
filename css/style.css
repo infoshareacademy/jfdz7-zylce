@@ -211,10 +211,19 @@ button:focus {
 
 
 
+
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
     .navbar-brand {
         display: none;
+    }
+    /*Eight app functions*/
+    .additional-app-function-row i{
+        font-size: 50px;
+    }
+    .additional-app-function-row p{
+        padding-left: 20px;
+        padding-right: 0;
     }
 }
 
