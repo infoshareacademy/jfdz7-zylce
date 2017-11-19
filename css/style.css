@@ -199,11 +199,20 @@ width: 80%;
 
 /*NEWSLETTER*/
 
-.newsletter-bg {
+.footer-newsletter {
 background-color: #ffffff; /*footer form background*/
 }
 
-/*test od formularza*/
+.news h2{
+    color: #000000;
+}
+
+.news p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
 .small-form, p {
     font-size: 10px;
     line-height: 80%;
@@ -252,6 +261,9 @@ padding-top: 15px;
     .eig-logo-text-bottom {
     font-size: 2.0em;
 }
+    .news-confirm {
+        max-width: 400px;
+    }
 }
 
 /*// Medium devices (tablets, 768px and up)*/

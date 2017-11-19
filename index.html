@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 		  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<!--My css-->
+	<link href="css/bootstrap/css/bootstrap.min.css"/>
 	<link rel="Stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
@@ -317,24 +318,26 @@
 			</div>
 		</form>
 
-		<form class=" d-lg-none">
-			<div class="container-fluid mx-auto px-0 form-row align-items-center justify-content-center">
-				<div class="col-12 mb-2">
+		<div class="d-lg-none section-title text-center news pb-4"><h2>Lubisz być dobrze poinformowany?</h2></div>
+		<div class="d-lg-none news text-center pb-4 px-4"><p>Zostaw swój adres e-mail, a otrzymasz od nas informację o terminie premiery Plenera!</p></div>
+		<form class="d-lg-none footer-newsletter pb-5">
+			<div class="container mx-auto px-0 form-row align-items-center justify-content-center">
+				<div class="col-12 col-sm-auto mb-2 justify-content-sm-end pl-3 pr-3 pl-sm-0 pr-sm-0">
 					<!--<label class="sr-only" for="inlineFormInputGroup"></label>-->
-					<label for="inlineFormInputGroup"><p class="mb-0">Nie udostępnimy Twojego adresu e-mail osobom trzecim!</p></label>
+					<label for="inlineFormInputGroup2"><p class="mb-0">Nie udostępnimy Twojego adresu e-mail osobom trzecim!</p></label>
 					<div class="input-group mb-2 mb-sm-0">
-						<input type="text" class="form-control" action="http://formspree.io/zylce2017@wp.pl" method="post" id="inlineFormInputGroup" placeholder="name@example.com" aria-describedby="emailHelpBlock">
+						<input type="email" required class="form-control write" action="http://formspree.io/zylce2017@wp.pl" method="post" id="inlineFormInputGroup2" placeholder="name@example.com" aria-describedby="emailHelpBlock">
 					</div>
 				</div>
-				<div class="col text-left">
-					<div class="form-check mb-2 mb-sm-0">
+				<div class="col-12 col-sm-10 col-md-8 text-left order-sm-3">
+					<div class="form-check mb-2 mb-sm-0 pl-3 pr-3">
 						<label class="form-check-label">
-							<input class="form-check-input" type="checkbox"><small class="small-form">Zgadzam się na otrzymywanie pocztą elektroniczną na podany poniżej adres e-mail Newslettera Zylce.pl zgodnie z Ustawą o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r. (Dz. U. nr 144 poz. 1204).</small>
+							<input class="form-check-input news-confirm" type="checkbox" required><small class="small-form">Zgadzam się na otrzymywanie pocztą elektroniczną na podany poniżej adres e-mail Newslettera Zylce.pl zgodnie z Ustawą o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r. (Dz. U. nr 144 poz. 1204).</small>
 						</label>
 					</div>
 				</div>
-				<div class="col-auto justify-content-end">
-					<button type="submit" class="btn btn-primary">Wtajemnicz mnie!</button>
+				<div class="col-auto col-sm-auto order-sm-2 pt-sm-3 justify-content-start pt-2">
+					<button type="submit" class="btn btn-primary">Poinformuj mnie!</button>
 				</div>
 
 
