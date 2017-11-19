@@ -213,6 +213,7 @@ background-color: #ffffff; /*footer form background*/
 .newsletter-bg{
     padding-top: 5px;
     padding-bottom: 5px;
+    box-shadow: 0px -1px 5px #595959;
 }
 
 .newsletter-bg .mb-2{
