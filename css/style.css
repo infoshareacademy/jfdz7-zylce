@@ -91,6 +91,7 @@ button:focus {
 /* ABOUT EIG / 4 ICONS*/
 .app-functions{
     min-height: 500px;
+    padding-top:40px;
     background-color: #F6F6DA;
 }
 
@@ -139,6 +140,7 @@ button:focus {
     font-weight: bold;
     margin-top: 10%;
     color: #ffffff;
+    padding-top: 20px;
 }
 
 /*NEWSLETTER*/
@@ -153,7 +155,7 @@ button:focus {
     min-height: 400px;
     background-color: #0e5c90;
     color: #ffffff;
-    padding-top: 40px;
+    padding-top: 45px;
     font-weight: bold;
 
 }
@@ -263,6 +265,7 @@ padding-top: 15px;
     padding-left: 20px;
     padding-right: 0;
 }
+
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
@@ -281,6 +284,13 @@ padding-top: 15px;
     .news-confirm {
         max-width: 400px;
     }
+    .app-functions{
+        padding-top: 60px;
+    }
+    .team{
+        padding-top: 60px;
+    }
+
 }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -301,9 +311,18 @@ padding-top: 15px;
 
     /*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
     .social-icons {
-    max-width: 200px;
+        max-width: 200px;
+    }
+    .app-functions{
+        padding-top: 70px;
+    }
+    .team{
+        padding-top: 50px;
+    }
+
+
 }
-}
+
 
 
 /*// Large devices (desktops, 992px and up)*/
@@ -317,6 +336,13 @@ padding-top: 15px;
     .eig-logo-text-bottom {
     font-size: 2.2em;
 }
+    .app-functions{
+        padding-top: 70px;
+    }
+    .team{
+        padding-top: 80px;
+    }
+
 }
 
 
