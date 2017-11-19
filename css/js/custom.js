@@ -4,11 +4,11 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 //Hide Newsletter After Click
-$('.btn-newsletter').on('click', function(){
-    if($(".form-check-input").is(':checked'))
-        $(".newsletter-bg").hide();  // checked
-    else
-        $(".newsletter-bg").show();  // unchecked
-
-    // $('.newsletter-bg').hide();
-});
+// $('.btn-newsletter').on('click', function(){
+//     if($(".form-check-input").is(':checked'))
+//         $(".newsletter-bg").hide();  // checked
+//     else
+//         $(".newsletter-bg").show();  // unchecked
+//
+//     // $('.newsletter-bg').hide();
+// });
