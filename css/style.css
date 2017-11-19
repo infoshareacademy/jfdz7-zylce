@@ -199,7 +199,7 @@ width: 80%;
 
 /*NEWSLETTER*/
 
-.footer-newsletter {
+.footer-newsletter, .fixed-bottom {
 background-color: #ffffff; /*footer form background*/
 }
 
