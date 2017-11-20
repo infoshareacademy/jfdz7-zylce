@@ -1,0 +1,211 @@
+.container {
+  padding: 0 0;
+  min-width: 240px; }
+
+.row {
+  margin: 0; }
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold; }
+
+nav {
+  font-family: "Roboto", sans-serif;
+  background-color: #595959; }
+  nav button {
+    background: rgba(141, 153, 174, 0.2);
+    align-items: center;
+    margin: 0 0; }
+  nav button:hover {
+    background: rgba(141, 153, 174, 0.6); }
+  nav button:focus {
+    outline: none; }
+  nav .navbar-toggler {
+    border: 1px dotted #D1D1D1; }
+  nav .navbar-toggler-icon {
+    color: #EDF2F4; }
+  nav .nav-item a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 30px; }
+  nav .nav-item a:hover {
+    color: #D1D1D1; }
+  nav .nav-item a:active {
+    color: #414141;
+    font-weight: bold; }
+  nav .navbar-brand img {
+    max-height: 50px; }
+
+.header-top {
+  width: 100%;
+  min-height: 400px;
+  height: 100vh;
+  background: #EDF2F4 url(../images/header-background.jpg) top center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*EIG LOGO*/ }
+  .header-top .eig-logo {
+    width: 150px;
+    margin-top: 15%; }
+  .header-top .welcome-text {
+    color: #ffffff;
+    font-family: "Great Vibes", cursive; }
+  .header-top .eig-logo-text {
+    font-size: 40px; }
+  .header-top .eig-logo-text-bottom {
+    font-size: 24px; }
+
+#about-eig {
+  /* ABOUT EIG / 4 ICONS*/ }
+  #about-eig .app-functions {
+    min-height: 500px;
+    padding-top: 40px;
+    background-color: #EDF2F4; }
+  #about-eig .app-functions-title p {
+    font-size: 32px;
+    font-weight: bold; }
+  #about-eig .app-description {
+    margin-top: 1%; }
+  #about-eig .app-description img {
+    width: 200px;
+    padding: 0 0; }
+  #about-eig .app-description p {
+    padding: 10px 10px;
+    font-size: 22px;
+    line-height: 19px; }
+
+#more-about-eig .app-functions {
+  min-height: 500px;
+  padding-top: 40px;
+  background-color: #EDF2F4; }
+#more-about-eig .additional-app-function-row {
+  margin-bottom: 20px; }
+#more-about-eig .additional-app-function-container {
+  margin-top: 20px; }
+#more-about-eig .additional-app-function-row i {
+  color: #d13232; }
+
+.team {
+  min-height: 400px;
+  background-color: #0e5c90;
+  color: #ffffff;
+  padding-top: 45px;
+  font-weight: bold; }
+  .team .section-title h2 {
+    font-weight: bold;
+    margin-top: 10%;
+    padding-top: 20px; }
+  .team .team-member {
+    padding-top: 30px; }
+  .team .team-member-text {
+    width: 100%;
+    font-size: 24px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    padding: 15px 0;
+    color: #000000; }
+  .team .team-member-photo {
+    padding: 0 0; }
+  .team .team-member-photo img {
+    width: 100%;
+    max-width: 230px; }
+  .team .team-member-social-icons {
+    padding-bottom: 50px; }
+  .team .team-member-text, .team i {
+    color: #ffffff; }
+  .team .social-icons {
+    font-size: 10px;
+    width: 80%; }
+
+/*END OF SITE*/
+.end {
+  height: 50px;
+  background-color: #595959;
+  color: #ffffff; }
+  .end p {
+    padding-top: 15px; }
+
+/*MEDIA QUERIES*/
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  .navbar-brand {
+    display: none; }
+
+  /*Eight app functions*/
+  .additional-app-function-row i {
+    font-size: 50px; }
+
+  .additional-app-function-row p {
+    padding-left: 20px;
+    padding-right: 0; } }
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .eig-logo {
+    width: 150px; }
+
+  .eig-logo-text {
+    font-size: 3.5em; }
+
+  .eig-logo-text-bottom {
+    font-size: 2.0em; }
+
+  .news-confirm {
+    max-width: 400px; }
+
+  .app-functions {
+    padding-top: 60px; }
+
+  .team {
+    padding-top: 60px; }
+
+  .additional-app-function-row p {
+    padding-left: 20px;
+    padding-right: 0; } }
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand {
+    display: none; }
+
+  .eig-logo {
+    width: 250px; }
+
+  .eig-logo-text {
+    font-size: 4em; }
+
+  .eig-logo-text-bottom {
+    font-size: 2.2em; }
+
+  /*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
+  .social-icons {
+    max-width: 200px; }
+
+  .app-functions {
+    padding-top: 70px; }
+
+  .team {
+    padding-top: 50px; }
+
+  .additional-app-function-row p {
+    padding-left: 20px;
+    padding-right: 0; } }
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .eig-logo {
+    width: 250px; }
+
+  .eig-logo-text {
+    font-size: 4em; }
+
+  .eig-logo-text-bottom {
+    font-size: 2.2em; }
+
+  .app-functions {
+    padding-top: 70px; }
+
+  .team {
+    padding-top: 80px; } }
+
+/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,320 @@
+$color-bg-grey: #595959;
+$color-bg-light: #F6F6DA;
+$color-bg-blue: #0e5c90;
+$color-button-bg: rgba(141, 153, 174, 0.2);
+$color-button-hover: rgba(141, 153, 174, 0.6);
+$color-white: #ffffff;
+$color-grey-light: #D1D1D1;
+$color-grey: #414141;
+$color-white-dirty: #EDF2F4;
+$color-accent-red: #d13232;
+$color-text-black: #000000;
+$font-primary: 'Roboto', sans-serif;
+$font-welcome-text: 'Great Vibes', cursive;
+$font-ubuntu: Ubuntu, sans-serif;
+
+
+.container {
+	padding: 0 0;
+	min-width: 240px; }
+
+.row {
+	margin: 0; }
+
+.section-title {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+}
+
+nav {
+	font-family: $font-primary;
+	background-color: $color-bg-grey;
+
+	button {
+		background: $color-button-bg;
+		align-items: center;
+		margin: 0 0;
+	}
+
+	button:hover {
+		background: $color-button-hover;
+	}
+
+	button:focus {
+		outline: none
+	}
+
+	.navbar-toggler {
+		border: 1px dotted $color-grey-light;
+	}
+
+	.navbar-toggler-icon {
+		color: $color-white-dirty;
+	}
+
+	.nav-item a {
+		color: $color-white;
+		font-size: 20px;
+		margin: 0 30px;
+	}
+
+	.nav-item a:hover {
+		color: $color-grey-light;
+	}
+
+	.nav-item a:active {
+		color: $color-grey;
+		font-weight: bold;
+	}
+
+	.navbar-brand img {
+		max-height: 50px;
+	}
+}
+
+.header-top {
+	width: 100%;
+	min-height: 400px;
+	height: 100vh;
+	background: $color-white-dirty url(../images/header-background.jpg) top center no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*EIG LOGO*/
+	.eig-logo{
+		width: 150px;
+		margin-top: 15%;
+	}
+
+	.welcome-text {
+		color: $color-white;
+		font-family: $font-welcome-text;
+	}
+
+	.eig-logo-text {
+		font-size: 40px;
+	}
+
+	.eig-logo-text-bottom {
+		font-size: 24px;
+	}
+
+}
+
+#about-eig {
+	/* ABOUT EIG / 4 ICONS*/
+	.app-functions {
+		min-height: 500px;
+		padding-top:40px;
+		background-color: $color-white-dirty;
+	}
+
+	.app-functions-title p {
+		font-size: 32px;
+		font-weight: bold;
+	}
+
+	.app-description{
+		margin-top: 1%;
+	}
+
+	.app-description img {
+		width: 200px;
+		padding: 0 0;
+	}
+
+	.app-description p {
+		padding: 10px 10px;
+		font-size: 22px;
+		line-height: 19px;
+	}
+}
+
+#more-about-eig {
+
+	.app-functions {
+		min-height: 500px;
+		padding-top: 40px;
+		background-color: $color-white-dirty;
+	}
+
+	.additional-app-function-row {
+		margin-bottom: 20px;
+	}
+
+	.additional-app-function-container {
+		margin-top: 20px;
+	}
+
+	.additional-app-function-row i {
+		color: $color-accent-red;
+	}
+}
+
+.team {
+
+	min-height: 400px;
+	background-color: $color-bg-blue;
+	color: $color-white;
+	padding-top: 45px;
+	font-weight: bold;
+
+	.section-title h2 {
+		font-weight: bold;
+		margin-top: 10%;
+		padding-top: 20px;
+	}
+
+	.team-member {
+		padding-top: 30px;
+	}
+
+	.team-member-text {
+		width: 100%;
+		font-size: 24px;
+		font-family: $font-ubuntu;
+		font-weight: bold;
+		padding: 15px 0;
+		color: $color-text-black;
+	}
+
+	.team-member-photo {
+		padding: 0 0;
+	}
+
+	.team-member-photo img {
+		width: 100%;
+		max-width: 230px;
+	}
+
+	.team-member-social-icons {
+		padding-bottom: 50px;
+
+	}
+
+	.team-member-text, i {
+		color: $color-white;
+	}
+
+	.social-icons {
+		font-size: 10px;
+		width: 80%;
+	}
+}
+
+/*END OF SITE*/
+.end {
+	height: 50px;
+	background-color: $color-bg-grey;
+	color: $color-white;
+
+	p {
+		padding-top: 15px;
+	}
+}
+
+/*MEDIA QUERIES*/
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+	.navbar-brand {
+		display: none;
+	}
+	/*Eight app functions*/
+	.additional-app-function-row i{
+		font-size: 50px;
+	}
+	.additional-app-function-row p{
+		padding-left: 20px;
+		padding-right: 0;
+
+	}
+
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+	.eig-logo {
+		width: 150px;
+	}
+
+	.eig-logo-text {
+		font-size: 3.5em;
+	}
+
+	.eig-logo-text-bottom {
+		font-size: 2.0em;
+	}
+	.news-confirm {
+		max-width: 400px;
+	}
+	.app-functions{
+		padding-top: 60px;
+	}
+	.team{
+		padding-top: 60px;
+	}
+	.additional-app-function-row p{
+		padding-left: 20px;
+		padding-right: 0;
+	}
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-brand {
+		display: none;
+	}
+
+	.eig-logo {
+		width: 250px;
+	}
+	.eig-logo-text {
+		font-size: 4em;
+	}
+	.eig-logo-text-bottom {
+		font-size: 2.2em;
+	}
+
+	/*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
+	.social-icons {
+		max-width: 200px;
+	}
+	.app-functions{
+		padding-top: 70px;
+	}
+	.team{
+		padding-top: 50px;
+	}
+	.additional-app-function-row p{
+		padding-left: 20px;
+		padding-right: 0;
+
+	}
+
+}
+
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) /*and (max-width: 1199px)*/ {
+	.eig-logo {
+		width: 250px;
+	}
+	.eig-logo-text {
+		font-size: 4em;
+	}
+	.eig-logo-text-bottom {
+		font-size: 2.2em;
+	}
+	.app-functions{
+		padding-top: 70px;
+	}
+	.team{
+		padding-top: 80px;
+	}
+
+}
