@@ -52,9 +52,10 @@ nav {
     margin-top: 15%; }
   .header-top .welcome-text {
     color: #ffffff;
-    font-family: "Great Vibes", cursive; }
+    font-family: "Roboto Condensed", sans-serif; }
   .header-top .eig-logo-text {
-    font-size: 40px; }
+    font-size: 50px;
+    font-weight: bold; }
   .header-top .eig-logo-text-bottom {
     font-size: 24px; }
 
