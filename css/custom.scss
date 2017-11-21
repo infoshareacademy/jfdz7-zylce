@@ -24,7 +24,7 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 .section-title {
 	font-family: $font-secondary;
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 nav {
@@ -99,7 +99,7 @@ nav {
 
 }
 
-#about-eig {
+#about-zaplanujto {
 	/* ABOUT EIG / 4 ICONS*/
 	.app-functions {
 		min-height: 500px;
@@ -108,7 +108,7 @@ nav {
 	}
 
 	.app-functions-title p {
-		font-size: 3em;
+		font-size: 2em;
 		font-weight: bold;
 	}
 
@@ -123,13 +123,13 @@ nav {
 
 	.app-description p {
 		padding: 10px 10px;
-		font-size: 25px;
+		font-size: 22px;
 		line-height: 1.3em;
 	}
 }
 
-//Eight Additiona functions
-#more-about-eig {
+//Eight Additional functions
+#more-about-zaplanujto {
 
 	.app-functions {
 		min-height: 500px;
@@ -143,6 +143,7 @@ nav {
 
 	.additional-app-function-container {
 		margin-top: 20px;
+		font-size: 20px;
 	}
 
 	.additional-app-function-row i {
@@ -190,6 +191,7 @@ nav {
 
 	.team-member-text, i {
 		color: $color-white;
+		line-height: 1.2em;
 	}
 
 	.social-icons {
@@ -224,6 +226,7 @@ nav {
 		padding-right: 0;
 
 	}
+
 
 }
 

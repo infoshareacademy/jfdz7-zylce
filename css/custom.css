@@ -8,7 +8,7 @@
 .section-title {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
-  font-size: 3em; }
+  font-size: 2.5em; }
 
 nav {
   font-family: "Roboto", sans-serif;
@@ -56,34 +56,35 @@ nav {
     font-weight: bold;
     font-size: 60px; }
 
-#about-eig {
+#about-zaplanujto {
   /* ABOUT EIG / 4 ICONS*/ }
-  #about-eig .app-functions {
+  #about-zaplanujto .app-functions {
     min-height: 500px;
     padding-top: 40px;
     background-color: #EDF2F4; }
-  #about-eig .app-functions-title p {
-    font-size: 3em;
+  #about-zaplanujto .app-functions-title p {
+    font-size: 2em;
     font-weight: bold; }
-  #about-eig .app-description {
+  #about-zaplanujto .app-description {
     margin-top: 1%; }
-  #about-eig .app-description img {
+  #about-zaplanujto .app-description img {
     width: 200px;
     padding: 0 0; }
-  #about-eig .app-description p {
+  #about-zaplanujto .app-description p {
     padding: 10px 10px;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 1.3em; }
 
-#more-about-eig .app-functions {
+#more-about-zaplanujto .app-functions {
   min-height: 500px;
   padding-top: 40px;
   background-color: #EDF2F4; }
-#more-about-eig .additional-app-function-row {
+#more-about-zaplanujto .additional-app-function-row {
   margin-bottom: 20px; }
-#more-about-eig .additional-app-function-container {
-  margin-top: 20px; }
-#more-about-eig .additional-app-function-row i {
+#more-about-zaplanujto .additional-app-function-container {
+  margin-top: 20px;
+  font-size: 20px; }
+#more-about-zaplanujto .additional-app-function-row i {
   color: #d13232; }
 
 .team {
@@ -109,7 +110,8 @@ nav {
   .team .team-member-social-icons {
     padding-bottom: 50px; }
   .team .team-member-text, .team i {
-    color: #ffffff; }
+    color: #ffffff;
+    line-height: 1.2em; }
   .team .social-icons {
     font-size: 10px;
     width: 80%; }
