@@ -24,10 +24,11 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 .section-title {
 	font-family: $font-secondary;
 	font-weight: bold;
+	font-size: 3em;
 }
 
 nav {
-	font-family: $font-secondary;
+	font-family: $font-primary;
 	background-color: $color-bg-grey;
 
 	button {
@@ -60,6 +61,7 @@ nav {
 
 	.nav-item a:hover {
 		color: $color-grey-light;
+
 	}
 
 	.nav-item a:active {
@@ -82,8 +84,8 @@ nav {
 	justify-content: center;
 	align-items: center;
 
-	/*EIG LOGO*/
-	.eig-logo{
+	/*zaplanuj.to LOGO*/
+	.zaplanujto-logo{
 		width: 150px;
 		margin-top: 15%;
 	}
@@ -106,7 +108,7 @@ nav {
 	}
 
 	.app-functions-title p {
-		font-size: 32px;
+		font-size: 3em;
 		font-weight: bold;
 	}
 
@@ -121,8 +123,8 @@ nav {
 
 	.app-description p {
 		padding: 10px 10px;
-		font-size: 22px;
-		line-height: 19px;
+		font-size: 25px;
+		line-height: 1.3em;
 	}
 }
 
@@ -146,6 +148,7 @@ nav {
 	.additional-app-function-row i {
 		color: $color-accent-red;
 	}
+
 }
 
 .team {
