@@ -15,7 +15,6 @@ nav {
   background-color: #595959; }
   nav button {
     background: rgba(141, 153, 174, 0.2);
-    align-items: center;
     margin: 0 0; }
   nav button:hover {
     background: rgba(141, 153, 174, 0.6); }
