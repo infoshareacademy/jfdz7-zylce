@@ -1,14 +1,14 @@
-$color-bg-grey: #595959;
-$color-bg-light: #F6F6DA;
-$color-bg-blue: #0e5c90;
-$color-button-bg: rgba(141, 153, 174, 0.2);
-$color-button-hover: rgba(141, 153, 174, 0.6);
-$color-white: #ffffff;
-$color-grey-light: #D1D1D1;
-$color-grey: #414141;
-$color-white-dirty: #EDF2F4;
-$color-accent-red: #d13232;
-$color-text-black: #000000;
+$color-bg-grey: #595959;  // nav background
+$color-button-bg: rgba(141, 153, 174, 0.2); // nav button on small screen
+$color-button-hover: rgba(141, 153, 174, 0.6); // nav button:hover on small screen
+$color-grey-light: #D1D1D1; //a:hover
+$color-grey: #414141;  // a:active
+$color-bg-light: #F6F6DA; // planer background
+$color-bg-blue: #0e5c90;  // team background
+$color-white: #ffffff; //text and nav link
+$color-text-black: #000000; // text
+$color-white-dirty: #EDF2F4; // nav button border on small screen
+$color-accent-red: #d13232; // icons in function section
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Condensed', sans-serif;
 
@@ -86,7 +86,7 @@ nav {
 
 	/*zaplanuj.to LOGO*/
 	.zaplanujto-logo{
-		width: 150px;
+		max-width: 250px;
 		margin-top: 15%;
 	}
 
@@ -103,7 +103,7 @@ nav {
 .app-functions {
 	min-height: 500px;
 	padding-top:40px;
-	background-color: $color-white-dirty;
+	background-color: $color-bg-light;
 
 
 	.app-functions-title p {

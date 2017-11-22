@@ -48,7 +48,7 @@ nav {
   align-items: center;
   /*zaplanuj.to LOGO*/ }
   .header-top .zaplanujto-logo {
-    width: 150px;
+    max-width: 250px;
     margin-top: 15%; }
   .header-top .welcome-text {
     color: #ffffff;
@@ -59,7 +59,7 @@ nav {
 .app-functions {
   min-height: 500px;
   padding-top: 40px;
-  background-color: #EDF2F4; }
+  background-color: #F6F6DA; }
   .app-functions .app-functions-title p {
     font-size: 2em;
     font-weight: bold; }
