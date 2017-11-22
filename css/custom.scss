@@ -99,13 +99,12 @@ nav {
 
 }
 
-#about-zaplanujto {
-	/* ABOUT EIG / 4 ICONS*/
-	.app-functions {
-		min-height: 500px;
-		padding-top:40px;
-		background-color: $color-white-dirty;
-	}
+//ABOUT ZAPLANUJTO / 4 ICONS / Eight Additional functions
+.app-functions {
+	min-height: 500px;
+	padding-top:40px;
+	background-color: $color-white-dirty;
+
 
 	.app-functions-title p {
 		font-size: 2em;
@@ -125,16 +124,6 @@ nav {
 		padding: 10px 10px;
 		font-size: 22px;
 		line-height: 1.3em;
-	}
-}
-
-//Eight Additional functions
-#more-about-zaplanujto {
-
-	.app-functions {
-		min-height: 500px;
-		padding-top: 40px;
-		background-color: $color-white-dirty;
 	}
 
 	.additional-app-function-row {
@@ -280,7 +269,7 @@ nav {
 		max-width: 200px;
 	}
 	.app-functions{
-		padding-top: 70px;
+		padding-top: 30px;
 	}
 	.team{
 		padding-top: 50px;

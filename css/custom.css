@@ -56,36 +56,29 @@ nav {
     font-weight: bold;
     font-size: 60px; }
 
-#about-zaplanujto {
-  /* ABOUT EIG / 4 ICONS*/ }
-  #about-zaplanujto .app-functions {
-    min-height: 500px;
-    padding-top: 40px;
-    background-color: #EDF2F4; }
-  #about-zaplanujto .app-functions-title p {
-    font-size: 2em;
-    font-weight: bold; }
-  #about-zaplanujto .app-description {
-    margin-top: 1%; }
-  #about-zaplanujto .app-description img {
-    width: 200px;
-    padding: 0 0; }
-  #about-zaplanujto .app-description p {
-    padding: 10px 10px;
-    font-size: 22px;
-    line-height: 1.3em; }
-
-#more-about-zaplanujto .app-functions {
+.app-functions {
   min-height: 500px;
   padding-top: 40px;
   background-color: #EDF2F4; }
-#more-about-zaplanujto .additional-app-function-row {
-  margin-bottom: 20px; }
-#more-about-zaplanujto .additional-app-function-container {
-  margin-top: 20px;
-  font-size: 20px; }
-#more-about-zaplanujto .additional-app-function-row i {
-  color: #d13232; }
+  .app-functions .app-functions-title p {
+    font-size: 2em;
+    font-weight: bold; }
+  .app-functions .app-description {
+    margin-top: 1%; }
+  .app-functions .app-description img {
+    width: 200px;
+    padding: 0 0; }
+  .app-functions .app-description p {
+    padding: 10px 10px;
+    font-size: 22px;
+    line-height: 1.3em; }
+  .app-functions .additional-app-function-row {
+    margin-bottom: 20px; }
+  .app-functions .additional-app-function-container {
+    margin-top: 20px;
+    font-size: 20px; }
+  .app-functions .additional-app-function-row i {
+    color: #d13232; }
 
 .team {
   min-height: 400px;
@@ -179,7 +172,7 @@ nav {
     max-width: 200px; }
 
   .app-functions {
-    padding-top: 70px; }
+    padding-top: 30px; }
 
   .team {
     padding-top: 50px; }
