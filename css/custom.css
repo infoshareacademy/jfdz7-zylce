@@ -76,6 +76,8 @@ nav {
     font-size: 20px; }
   .app-functions .additional-app-function-row i {
     color: #d13232; }
+  .app-functions .additional-app-function-row p {
+    font-size: 15px; }
 
 .team {
   min-height: 400px;
