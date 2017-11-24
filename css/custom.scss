@@ -1,22 +1,18 @@
-$color-bg-grey: #595959;  // nav background
-$color-button-bg: rgba(141, 153, 174, 0.2); // nav button on small screen
-$color-button-hover: rgba(141, 153, 174, 0.6); // nav button:hover on small screen
-$color-grey-light: #D1D1D1; //a:hover
-$color-grey: #414141;  // a:active
-$color-bg-light: #F6F6DA; // planer background
-$color-bg-blue: #0e5c90;  // team background
-$color-white: #ffffff; //text and nav link
-$color-text-black: #000000; // text
-$color-white-dirty: #EDF2F4; // nav button border on small screen
-$color-accent-red: #d13232; // icons in function section
+$color-bg-grey: #595959;
+$color-bg-light: #F6F6DA;
+$color-bg-blue: #0e5c90;
+$color-white: #ffffff;
+$color-grey-light: #D1D1D1;
+$color-white-dirty: #EDF2F4;
+$color-accent-red: #d13232;
+$color-text-black: #000000;
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Condensed', sans-serif;
 
 
 .container {
 	padding: 0 0;
-	min-width: 240px;
-}
+	min-width: 240px; }
 
 .row {
 	margin: 0; }
@@ -24,7 +20,6 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 .section-title {
 	font-family: $font-secondary;
 	font-weight: bold;
-	font-size: 2.5em;
 }
 
 nav {
@@ -32,13 +27,13 @@ nav {
 	background-color: $color-bg-grey;
 
 	button {
-		background: $color-button-bg;
-		//align-items: center;
+		background: $color-bg-grey;
+		align-items: center;
 		margin: 0 0;
 	}
 
 	button:hover {
-		background: $color-button-hover;
+		opacity: 0.5;
 	}
 
 	button:focus {
@@ -46,11 +41,12 @@ nav {
 	}
 
 	.navbar-toggler {
-		border: 1px dotted $color-grey-light;
+		border: 1px solid $color-grey-light;
 	}
 
-	.navbar-toggler-icon {
+	.navbar-toggler-icon .fa-bars {
 		color: $color-white-dirty;
+		padding: 4px;
 	}
 
 	.nav-item a {
@@ -61,12 +57,11 @@ nav {
 
 	.nav-item a:hover {
 		color: $color-grey-light;
-
 	}
 
 	.nav-item a:active {
-		color: $color-grey;
-		font-weight: bold;
+		color: $color-white-dirty;
+		text-decoration: wavy;
 	}
 
 	.navbar-brand img {
@@ -142,11 +137,18 @@ nav {
 }
 
 .team {
+
 	min-height: 400px;
 	background-color: $color-bg-blue;
 	color: $color-white;
 	padding-top: 45px;
 	font-weight: bold;
+
+	.section-title h2 {
+		font-weight: bold;
+		margin-top: 10%;
+		padding-top: 20px;
+	}
 
 	.team-member {
 		padding-top: 30px;
@@ -177,7 +179,6 @@ nav {
 
 	.team-member-text, i {
 		color: $color-white;
-		line-height: 1.2em;
 	}
 
 	.social-icons {
@@ -200,9 +201,7 @@ nav {
 /*MEDIA QUERIES*/
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-	.navbar-brand {
-		display: none;
-	}
+
 	/*Eight app functions*/
 	.additional-app-function-row i{
 		font-size: 50px;
@@ -212,7 +211,6 @@ nav {
 		padding-right: 0;
 
 	}
-
 
 }
 
@@ -247,10 +245,6 @@ nav {
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-	.navbar-brand {
-		display: none;
-	}
-
 	.eig-logo {
 		width: 250px;
 	}
