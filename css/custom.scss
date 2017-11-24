@@ -19,6 +19,7 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 .section-title {
 	font-family: $font-secondary;
 	font-weight: bold;
+	padding-top: 75px;
 }
 
 nav {
@@ -140,14 +141,7 @@ nav {
 	min-height: 400px;
 	background-color: $color-bg-blue;
 	color: $color-white;
-	padding-top: 45px;
 	font-weight: bold;
-
-	.section-title h2 {
-		font-weight: bold;
-		margin-top: 10%;
-		padding-top: 20px;
-	}
 
 	.team-member {
 		padding-top: 30px;
@@ -197,23 +191,9 @@ nav {
 	}
 }
 
-/*MEDIA QUERIES*/
-/*// Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575px) {
+/*******************************************MEDIA QUERIES************************************************************/
 
-	/*Eight app functions*/
-	.additional-app-function-row i{
-		font-size: 50px;
-	}
-	.additional-app-function-row p{
-		padding-left: 20px;
-		padding-right: 0;
-
-	}
-
-}
-
-/*// Small devices (landscape phones, 576px and up)*/
+/* Bootstrap4 - SM! Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
 	.eig-logo {
 		width: 150px;
@@ -229,20 +209,17 @@ nav {
 	.news-confirm {
 		max-width: 400px;
 	}
-	.app-functions{
+	.app-functions {
 		padding-top: 60px;
 	}
-	.team{
-		padding-top: 60px;
-	}
-	.additional-app-function-row p{
+	.additional-app-function-row p {
 		padding-left: 20px;
 		padding-right: 0;
 	}
 
 }
 
-/*// Medium devices (tablets, 768px and up)*/
+/* Bootstrap4 - MD! Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
 	.eig-logo {
 		width: 250px;
@@ -253,7 +230,6 @@ nav {
 	.eig-logo-text-bottom {
 		font-size: 2.2em;
 	}
-
 	/*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
 	.social-icons {
 		max-width: 200px;
@@ -261,20 +237,13 @@ nav {
 	.app-functions{
 		padding-top: 30px;
 	}
-	.team{
-		padding-top: 50px;
-	}
 	.additional-app-function-row p{
 		padding-left: 20px;
 		padding-right: 0;
-
 	}
-
 }
 
-
-
-/*// Large devices (desktops, 992px and up)*/
+/*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
 	.eig-logo {
 		width: 250px;
@@ -288,8 +257,4 @@ nav {
 	.app-functions{
 		padding-top: 70px;
 	}
-	.team{
-		padding-top: 80px;
-	}
-
 }
