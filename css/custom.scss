@@ -1,11 +1,8 @@
 $color-bg-grey: #595959;
 $color-bg-light: #F6F6DA;
 $color-bg-blue: #0e5c90;
-$color-button-bg: rgba(141, 153, 174, 0.2);
-$color-button-hover: rgba(141, 153, 174, 0.6);
 $color-white: #ffffff;
 $color-grey-light: #D1D1D1;
-$color-grey: #414141;
 $color-white-dirty: #EDF2F4;
 $color-accent-red: #d13232;
 $color-text-black: #000000;
@@ -32,13 +29,13 @@ nav {
 	background-color: $color-bg-grey;
 
 	button {
-		background: $color-button-bg;
+		background: $color-bg-grey;
 		align-items: center;
 		margin: 0 0;
 	}
 
 	button:hover {
-		background: $color-button-hover;
+		opacity: 0.5;
 	}
 
 	button:focus {
@@ -46,11 +43,12 @@ nav {
 	}
 
 	.navbar-toggler {
-		border: 1px dotted $color-grey-light;
+		border: 1px solid $color-grey-light;
 	}
 
-	.navbar-toggler-icon {
+	.navbar-toggler-icon .fa-bars {
 		color: $color-white-dirty;
+		padding: 4px;
 	}
 
 	.nav-item a {
@@ -64,8 +62,8 @@ nav {
 	}
 
 	.nav-item a:active {
-		color: $color-grey;
-		font-weight: bold;
+		color: $color-white-dirty;
+		text-decoration: wavy;
 	}
 
 	.navbar-brand img {
