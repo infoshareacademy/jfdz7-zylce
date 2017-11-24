@@ -47,47 +47,39 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*EIG LOGO*/ }
-  .header-top .eig-logo {
-    width: 150px;
+  /*zaplanuj.to LOGO*/ }
+  .header-top .zaplanujto-logo {
+    max-width: 250px;
     margin-top: 15%; }
   .header-top .welcome-text {
     color: #ffffff;
-    font-family: "Great Vibes", cursive; }
-  .header-top .eig-logo-text {
-    font-size: 40px; }
-  .header-top .eig-logo-text-bottom {
-    font-size: 24px; }
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 60px; }
 
-#about-eig {
-  /* ABOUT EIG / 4 ICONS*/ }
-  #about-eig .app-functions {
-    min-height: 500px;
-    padding-top: 40px;
-    background-color: #EDF2F4; }
-  #about-eig .app-functions-title p {
-    font-size: 32px;
-    font-weight: bold; }
-  #about-eig .app-description {
-    margin-top: 1%; }
-  #about-eig .app-description img {
-    width: 200px;
-    padding: 0 0; }
-  #about-eig .app-description p {
-    padding: 10px 10px;
-    font-size: 22px;
-    line-height: 19px; }
-
-#more-about-eig .app-functions {
+.app-functions {
   min-height: 500px;
   padding-top: 40px;
-  background-color: #EDF2F4; }
-#more-about-eig .additional-app-function-row {
-  margin-bottom: 20px; }
-#more-about-eig .additional-app-function-container {
-  margin-top: 20px; }
-#more-about-eig .additional-app-function-row i {
-  color: #d13232; }
+  background-color: #F6F6DA; }
+  .app-functions .app-functions-title p {
+    font-size: 2em;
+    font-weight: bold; }
+  .app-functions .app-description {
+    margin-top: 1%; }
+  .app-functions .app-description img {
+    width: 200px;
+    padding: 0 0; }
+  .app-functions .app-description p {
+    padding: 10px 10px;
+    font-size: 22px;
+    line-height: 1.3em; }
+  .app-functions .additional-app-function-row {
+    margin-bottom: 20px; }
+  .app-functions .additional-app-function-container {
+    margin-top: 20px;
+    font-size: 20px; }
+  .app-functions .additional-app-function-row i {
+    color: #d13232; }
 
 .team {
   min-height: 400px;
@@ -104,7 +96,7 @@ nav {
   .team .team-member-text {
     width: 100%;
     font-size: 24px;
-    font-family: Ubuntu, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     padding: 15px 0;
     color: #000000; }
@@ -178,7 +170,7 @@ nav {
     max-width: 200px; }
 
   .app-functions {
-    padding-top: 70px; }
+    padding-top: 30px; }
 
   .team {
     padding-top: 50px; }

@@ -7,9 +7,7 @@ $color-white-dirty: #EDF2F4;
 $color-accent-red: #d13232;
 $color-text-black: #000000;
 $font-primary: 'Roboto', sans-serif;
-$font-welcome-text: 'Great Vibes', cursive;
-$font-ubuntu: Ubuntu, sans-serif;
-
+$font-secondary: 'Roboto Condensed', sans-serif;
 
 .container {
 	padding: 0 0;
@@ -19,8 +17,7 @@ $font-ubuntu: Ubuntu, sans-serif;
 	margin: 0; }
 
 .section-title {
-	display: flex;
-	justify-content: center;
+	font-family: $font-secondary;
 	font-weight: bold;
 }
 
@@ -81,37 +78,30 @@ nav {
 	justify-content: center;
 	align-items: center;
 
-	/*EIG LOGO*/
-	.eig-logo{
-		width: 150px;
+	/*zaplanuj.to LOGO*/
+	.zaplanujto-logo{
+		max-width: 250px;
 		margin-top: 15%;
 	}
 
 	.welcome-text {
 		color: $color-white;
-		font-family: $font-welcome-text;
-	}
-
-	.eig-logo-text {
-		font-size: 40px;
-	}
-
-	.eig-logo-text-bottom {
-		font-size: 24px;
+		font-family: $font-secondary;
+		font-weight:bold;
+		font-size:60px;
 	}
 
 }
 
-#about-eig {
-	/* ABOUT EIG / 4 ICONS*/
-	.app-functions {
-		min-height: 500px;
-		padding-top:40px;
-		background-color: $color-white-dirty;
-	}
+//ABOUT ZAPLANUJTO / 4 ICONS / Eight Additional functions
+.app-functions {
+	min-height: 500px;
+	padding-top:40px;
+	background-color: $color-bg-light;
+
 
 	.app-functions-title p {
-		font-size: 32px;
+		font-size: 2em;
 		font-weight: bold;
 	}
 
@@ -127,16 +117,7 @@ nav {
 	.app-description p {
 		padding: 10px 10px;
 		font-size: 22px;
-		line-height: 19px;
-	}
-}
-
-#more-about-eig {
-
-	.app-functions {
-		min-height: 500px;
-		padding-top: 40px;
-		background-color: $color-white-dirty;
+		line-height: 1.3em;
 	}
 
 	.additional-app-function-row {
@@ -145,11 +126,13 @@ nav {
 
 	.additional-app-function-container {
 		margin-top: 20px;
+		font-size: 20px;
 	}
 
 	.additional-app-function-row i {
 		color: $color-accent-red;
 	}
+
 }
 
 .team {
@@ -173,7 +156,7 @@ nav {
 	.team-member-text {
 		width: 100%;
 		font-size: 24px;
-		font-family: $font-ubuntu;
+		font-family: $font-primary;
 		font-weight: bold;
 		padding: 15px 0;
 		color: $color-text-black;
@@ -276,7 +259,7 @@ nav {
 		max-width: 200px;
 	}
 	.app-functions{
-		padding-top: 70px;
+		padding-top: 30px;
 	}
 	.team{
 		padding-top: 50px;
