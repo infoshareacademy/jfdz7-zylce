@@ -132,9 +132,6 @@ nav {
 /*MEDIA QUERIES*/
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-  .navbar-brand {
-    display: none; }
-
   /*Eight app functions*/
   .additional-app-function-row i {
     font-size: 50px; }
@@ -167,9 +164,6 @@ nav {
     padding-right: 0; } }
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .navbar-brand {
-    display: none; }
-
   .eig-logo {
     width: 250px; }
 
