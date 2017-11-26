@@ -75,21 +75,18 @@ nav {
 	height: 100vh;
 	background: $color-white-dirty url(../images/header-background.jpg) top center no-repeat;
 	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
 
 	/*zaplanuj.to LOGO*/
 	.zaplanujto-logo{
-		max-width: 250px;
-		margin-top: 15%;
+		max-width: 150px;
 	}
 
 	.welcome-text {
 		color: $color-white;
 		font-family: $font-secondary;
 		font-weight:bold;
-		font-size:60px;
+		font-size:30px;
 	}
 
 }
@@ -132,6 +129,9 @@ nav {
 
 	.additional-app-function-row i {
 		color: $color-accent-red;
+	}
+	.additional-app-function-row p{
+		font-size: 15px;
 	}
 
 }
@@ -204,17 +204,16 @@ nav {
 
 /* Bootstrap4 - SM! Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
-	.eig-logo {
-		width: 150px;
+	//Header logo and Welcome text
+	.header-top{
+		.zaplanujto-logo{
+			max-width: 200px;
+		}
+		.welcome-text{
+			font-size: 40px;
+		}
 	}
 
-	.eig-logo-text {
-		font-size: 3.5em;
-	}
-
-	.eig-logo-text-bottom {
-		font-size: 2.0em;
-	}
 	.news-confirm {
 		max-width: 400px;
 	}
@@ -230,14 +229,14 @@ nav {
 
 /* Bootstrap4 - MD! Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-	.eig-logo {
-		width: 250px;
-	}
-	.eig-logo-text {
-		font-size: 4em;
-	}
-	.eig-logo-text-bottom {
-		font-size: 2.2em;
+	//Header logo and Welcome text
+	.header-top{
+		.zaplanujto-logo{
+			max-width: 225px;
+		}
+		.welcome-text{
+			font-size: 45px;
+		}
 	}
 	/*LinkedIn and User Icons by Piotr Adam Kwiatkowski http://ikons.piotrkwiatkowski.co.uk*/
 	.social-icons {
@@ -254,14 +253,14 @@ nav {
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
-	.eig-logo {
-		width: 250px;
-	}
-	.eig-logo-text {
-		font-size: 4em;
-	}
-	.eig-logo-text-bottom {
-		font-size: 2.2em;
+	//Header logo and Welcome text
+	.header-top {
+		.zaplanujto-logo {
+			max-width: 275px;
+		}
+		.welcome-text {
+			font-size: 55px;
+		}
 	}
 	.app-functions{
 		padding-top: 70px;
