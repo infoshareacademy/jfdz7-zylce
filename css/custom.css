@@ -106,6 +106,9 @@ nav {
     font-size: 10px;
     width: 80%; }
 
+.newsletter button {
+  max-width: 150px; }
+
 /*END OF SITE*/
 .end {
   height: 50px;
