@@ -94,27 +94,25 @@ nav {
 //ABOUT ZAPLANUJTO / 4 ICONS / Eight Additional functions
 .app-functions {
 	min-height: 500px;
-	padding-top:40px;
 	background-color: $color-bg-light;
 
 
 	.app-functions-title p {
-		font-size: 2em;
+		font-size: 25px;
 		font-weight: bold;
 	}
 
 	.app-description{
-		margin-top: 1%;
+		//margin-top: 1%;
 	}
 
 	.app-description img {
-		width: 200px;
+		width: 175px;
 		padding: 0 0;
 	}
 
 	.app-description p {
-		padding: 10px 10px;
-		font-size: 22px;
+		font-size: 20px;
 		line-height: 1.3em;
 	}
 

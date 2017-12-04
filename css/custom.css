@@ -55,19 +55,15 @@ nav {
 
 .app-functions {
   min-height: 500px;
-  padding-top: 40px;
   background-color: #F6F6DA; }
   .app-functions .app-functions-title p {
-    font-size: 2em;
+    font-size: 25px;
     font-weight: bold; }
-  .app-functions .app-description {
-    margin-top: 1%; }
   .app-functions .app-description img {
-    width: 200px;
+    width: 175px;
     padding: 0 0; }
   .app-functions .app-description p {
-    padding: 10px 10px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.3em; }
   .app-functions .additional-app-function-row {
     margin-bottom: 20px; }
@@ -107,7 +103,8 @@ nav {
     width: 80%; }
 
 .newsletter button {
-  max-width: 150px; }
+  max-width: 150px;
+  margin-left: 10px; }
 
 /*END OF SITE*/
 .end {
