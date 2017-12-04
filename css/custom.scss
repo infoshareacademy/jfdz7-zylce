@@ -216,7 +216,10 @@ nav {
 		max-width: 400px;
 	}
 	.app-functions {
-		padding-top: 60px;
+
+	}
+	.additional-app-function-row i {
+		font-size: 75px;
 	}
 	.additional-app-function-row p {
 		padding-left: 20px;
@@ -240,12 +243,16 @@ nav {
 	.social-icons {
 		max-width: 200px;
 	}
-	.app-functions{
-		padding-top: 30px;
-	}
-	.additional-app-function-row p{
-		padding-left: 20px;
-		padding-right: 0;
+	.app-functions {
+		.app-functions {
+			padding-top: 30px;
+		}
+		.additional-app-function-row i {
+			font-size: 80px;
+		}
+		.additional-app-function-row p {
+			font-size: 17px;
+		}
 	}
 }
 
@@ -260,7 +267,16 @@ nav {
 			font-size: 55px;
 		}
 	}
-	.app-functions{
-		padding-top: 70px;
+	.app-functions {
+		.app-functions {
+			padding-top: 30px;
+		}
+		.additional-app-function-row i {
+			font-size: 80px;
+		}
+		.additional-app-function-row p {
+			font-size: 17px;
+			padding-left: 20px;
+		}
 	}
 }

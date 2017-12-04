@@ -125,8 +125,8 @@ nav {
   .news-confirm {
     max-width: 400px; }
 
-  .app-functions {
-    padding-top: 60px; }
+  .additional-app-function-row i {
+    font-size: 75px; }
 
   .additional-app-function-row p {
     padding-left: 20px;
@@ -142,12 +142,12 @@ nav {
   .social-icons {
     max-width: 200px; }
 
-  .app-functions {
+  .app-functions .app-functions {
     padding-top: 30px; }
-
-  .additional-app-function-row p {
-    padding-left: 20px;
-    padding-right: 0; } }
+  .app-functions .additional-app-function-row i {
+    font-size: 80px; }
+  .app-functions .additional-app-function-row p {
+    font-size: 17px; } }
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .header-top .zaplanujto-logo {
@@ -155,7 +155,12 @@ nav {
   .header-top .welcome-text {
     font-size: 55px; }
 
-  .app-functions {
-    padding-top: 70px; } }
+  .app-functions .app-functions {
+    padding-top: 30px; }
+  .app-functions .additional-app-function-row i {
+    font-size: 80px; }
+  .app-functions .additional-app-function-row p {
+    font-size: 17px;
+    padding-left: 20px; } }
 
 /*# sourceMappingURL=custom.css.map */
