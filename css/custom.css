@@ -109,7 +109,14 @@ nav {
     width: 80%; }
 
 .newsletter button {
-  max-width: 150px; }
+  max-width: 150px;
+  margin-left: 10px;
+}
+.newsletter{
+  background-color: #595959;
+  color:#ffffff;
+  padding:5px;
+}
 
 /*END OF SITE*/
 .end {
