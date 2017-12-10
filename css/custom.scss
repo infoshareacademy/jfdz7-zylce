@@ -49,19 +49,21 @@ nav {
 		padding: 4px;
 	}
 
+	li {
+		margin: 0 20px;
+	}
 	.nav-item a {
-		color: $color-white;
+		color: $color-white-dirty;
 		font-size: 20px;
-		margin: 0 30px;
 	}
 
 	.nav-item a:hover {
 		color: $color-grey-light;
 	}
 
-	.nav-item a:active {
+	.nav-item .active {
 		color: $color-white-dirty;
-		text-decoration: wavy;
+		text-shadow: 2px 2px 2px $color-accent-red;
 	}
 
 	.navbar-brand img {
@@ -94,7 +96,6 @@ nav {
 //ABOUT ZAPLANUJTO / 4 ICONS / Eight Additional functions
 .app-functions {
 	min-height: 500px;
-	padding-top:40px;
 	background-color: $color-bg-light;
 
 
@@ -137,7 +138,6 @@ nav {
 }
 
 .team {
-
 	min-height: 400px;
 	background-color: $color-bg-blue;
 	color: $color-white;
@@ -226,9 +226,7 @@ nav {
 	.news-confirm {
 		max-width: 400px;
 	}
-	.app-functions {
-		padding-top: 60px;
-	}
+
 	.additional-app-function-row p {
 		padding-left: 20px;
 		padding-right: 0;
@@ -251,9 +249,7 @@ nav {
 	.social-icons {
 		max-width: 200px;
 	}
-	.app-functions{
-		padding-top: 30px;
-	}
+
 	.additional-app-function-row p{
 		padding-left: 20px;
 		padding-right: 0;
@@ -271,7 +267,5 @@ nav {
 			font-size: 55px;
 		}
 	}
-	.app-functions{
-		padding-top: 70px;
-	}
+
 }

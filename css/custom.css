@@ -26,15 +26,16 @@ nav {
   nav .navbar-toggler-icon .fa-bars {
     color: #EDF2F4;
     padding: 4px; }
+  nav li {
+    margin: 0 20px; }
   nav .nav-item a {
-    color: #ffffff;
-    font-size: 20px;
-    margin: 0 30px; }
+    color: #EDF2F4;
+    font-size: 20px; }
   nav .nav-item a:hover {
     color: #D1D1D1; }
-  nav .nav-item a:active {
+  nav .nav-item .active {
     color: #EDF2F4;
-    text-decoration: wavy; }
+    text-shadow: 2px 2px 2px #d13232; }
   nav .navbar-brand img {
     max-height: 50px; }
 
@@ -55,7 +56,6 @@ nav {
 
 .app-functions {
   min-height: 500px;
-  padding-top: 40px;
   background-color: #F6F6DA; }
   .app-functions .app-functions-title p {
     font-size: 2em;
@@ -118,6 +118,7 @@ nav {
   .newsletter .info {
     padding-top: 5px; }
 
+
 /*END OF SITE*/
 .end {
   height: 50px;
@@ -137,9 +138,6 @@ nav {
   .news-confirm {
     max-width: 400px; }
 
-  .app-functions {
-    padding-top: 60px; }
-
   .additional-app-function-row p {
     padding-left: 20px;
     padding-right: 0; } }
@@ -154,9 +152,6 @@ nav {
   .social-icons {
     max-width: 200px; }
 
-  .app-functions {
-    padding-top: 30px; }
-
   .additional-app-function-row p {
     padding-left: 20px;
     padding-right: 0; } }
@@ -165,9 +160,6 @@ nav {
   .header-top .zaplanujto-logo {
     max-width: 275px; }
   .header-top .welcome-text {
-    font-size: 55px; }
-
-  .app-functions {
-    padding-top: 70px; } }
+    font-size: 55px; } }
 
 /*# sourceMappingURL=custom.css.map */
