@@ -200,6 +200,22 @@ nav {
 	}
 }
 
+
+//bacck to top button
+#scroll-to-top{
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  display: none;
+}
+
 /*******************************************MEDIA QUERIES************************************************************/
 
 /* Bootstrap4 - SM! Small devices (landscape phones, 576px and up)*/

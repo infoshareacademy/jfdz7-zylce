@@ -3,12 +3,26 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-//Hide Newsletter After Click
-// $('.btn-newsletter').on('click', function(){
-//     if($(".form-check-input").is(':checked'))
-//         $(".newsletter-bg").hide();  // checked
-//     else
-//         $(".newsletter-bg").show();  // unchecked
-//
-//     // $('.newsletter-bg').hide();
-// });
+
+$(function () {
+    var $scrollToTopBtn = $('#scroll-to-top');
+    var $window = $(window);
+    var $page = $('body, html');
+    var animationTime = 600;
+    var scrollBtnThreshold = 150;
+
+    function toggleScrollBtnVisibility() {
+        if ($(this).scrollTop() > scrollBtnThreshold) {
+            $scrollToTopBtn.show();
+        } else {
+            $scrollToTopBtn.hide();
+        }
+    }
+
+    function scrollToTop() {
+        $page.animate({ scrollTop: 0 }, animationTime);
+    }
+
+    $window.on('scroll', toggleScrollBtnVisibility);
+    $scrollToTopBtn.on('click', scrollToTop);
+});
