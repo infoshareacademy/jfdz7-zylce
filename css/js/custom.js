@@ -1,14 +1,13 @@
-//Close Mobile Menu After Click
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
+$(document).ready(function() {
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    })
 
-//Hide Newsletter After Click
-// $('.btn-newsletter').on('click', function(){
-//     if($(".form-check-input").is(':checked'))
-//         $(".newsletter-bg").hide();  // checked
-//     else
-//         $(".newsletter-bg").show();  // unchecked
-//
-//     // $('.newsletter-bg').hide();
-// });
+    $('.smoothScroll').click(function() {
+        $('.nav').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000)
+    })
+});
