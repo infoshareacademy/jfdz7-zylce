@@ -113,6 +113,10 @@ nav {
   .newsletter button {
     max-width: 150px;
     margin-left: 10px; }
+  .newsletter span {
+    font-size: 22px; }
+  .newsletter .info {
+    padding-top: 5px; }
 
 /*END OF SITE*/
 .end {
