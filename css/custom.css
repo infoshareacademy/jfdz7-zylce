@@ -26,15 +26,16 @@ nav {
   nav .navbar-toggler-icon .fa-bars {
     color: #EDF2F4;
     padding: 4px; }
+  nav li {
+    margin: 0 20px; }
   nav .nav-item a {
-    color: #ffffff;
-    font-size: 20px;
-    margin: 0 30px; }
+    color: #EDF2F4;
+    font-size: 20px; }
   nav .nav-item a:hover {
     color: #D1D1D1; }
-  nav .nav-item a:active {
+  nav .nav-item .active {
     color: #EDF2F4;
-    text-decoration: wavy; }
+    text-shadow: 2px 2px 2px #d13232; }
   nav .navbar-brand img {
     max-height: 50px; }
 

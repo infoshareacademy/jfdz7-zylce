@@ -49,19 +49,24 @@ nav {
 		padding: 4px;
 	}
 
-	.nav-item a {
-		color: $color-white;
-		font-size: 20px;
-		margin: 0 30px;
+	li {
+		margin: 0 20px;
 	}
+	.nav-item a {
+		color: $color-white-dirty;
+		font-size: 20px;
+	}
+
+
 
 	.nav-item a:hover {
 		color: $color-grey-light;
 	}
 
-	.nav-item a:active {
+
+	.nav-item .active {
 		color: $color-white-dirty;
-		text-decoration: wavy;
+		text-shadow: 2px 2px 2px $color-accent-red;
 	}
 
 	.navbar-brand img {
