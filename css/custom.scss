@@ -181,14 +181,13 @@ nav {
 }
 
 .newsletter {
-  background-color: $color-bg-grey;
-  padding: 10px;
-
+	background-color: $color-bg-grey;
+	padding: 5px;
+	color:$color-white;
 	button {
 		max-width: 150px;
 		margin-left: 10px;
 	}
-
 
 }
 
