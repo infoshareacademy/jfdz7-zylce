@@ -16,4 +16,8 @@ $(document).ready(function() {
             scrollTop: 0
         }, 700)
     });
+
+
+    var $joinUsBtn = $('.join-us-btn');
+    $joinUsBtn.fadeIn('1000');
 });
