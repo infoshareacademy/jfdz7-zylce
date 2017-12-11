@@ -76,8 +76,6 @@ nav {
 	background: $color-white-dirty url(../images/header-background.jpg) top center no-repeat;
 	background-size: cover;
 
-
-	/*zaplanuj.to LOGO*/
 	.zaplanujto-logo{
 		max-width: 150px;
 	}
@@ -86,8 +84,25 @@ nav {
 		color: $color-white;
 		font-family: $font-secondary;
 		font-weight:bold;
-		font-size:30px;
+
 	}
+
+    .join-us-btn{
+      color:$color-white;
+      font-size: 20px;
+      font-weight: bold;
+      border: 2px solid $color-white;
+      border-radius: 10px;
+      padding: 5px 15px;
+      text-decoration: none;
+      transition-duration: 0.5s;
+
+    }
+
+    .join-us-btn:hover{
+      color: $color-bg-blue;
+      background-color: $color-white;
+    }
 
 }
 
@@ -205,7 +220,7 @@ nav {
 	//Header logo and Welcome text
 	.header-top{
 		.zaplanujto-logo{
-			max-width: 200px;
+			max-width: 175px;
 		}
 		.welcome-text{
 			font-size: 40px;
@@ -233,7 +248,7 @@ nav {
 	//Header logo and Welcome text
 	.header-top{
 		.zaplanujto-logo{
-			max-width: 225px;
+			max-width: 200px;
 		}
 		.welcome-text{
 			font-size: 45px;
@@ -261,7 +276,7 @@ nav {
 	//Header logo and Welcome text
 	.header-top {
 		.zaplanujto-logo {
-			max-width: 275px;
+			max-width: 210px;
 		}
 		.welcome-text {
 			font-size: 55px;
