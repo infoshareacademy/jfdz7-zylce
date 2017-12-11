@@ -16,7 +16,4 @@ $(document).ready(function() {
             scrollTop: 0
         }, 700)
     });
-
-    var $zaplnujToLogo = $('.zaplanujto-logo');
-    $zaplnujToLogo.fadeIn('1000');
 });
