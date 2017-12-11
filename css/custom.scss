@@ -59,9 +59,9 @@ nav {
 		color: $color-grey-light;
 	}
 
-	.nav-item a:active {
+	.nav-item .active {
 		color: $color-white-dirty;
-		text-decoration: wavy;
+		text-shadow: 2px 2px 2px $color-accent-red;
 	}
 
 	.navbar-brand img {
@@ -194,9 +194,18 @@ nav {
 }
 
 .newsletter {
+	background-color: $color-bg-grey;
+	padding: 5px;
+	color:$color-white;
 	button {
 		max-width: 150px;
 		margin-left: 10px;
+	}
+	span {
+		font-size: 22px;
+	}
+	.info {
+		padding-top: 5px;
 	}
 
 }

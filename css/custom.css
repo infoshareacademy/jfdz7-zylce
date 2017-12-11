@@ -32,9 +32,9 @@ nav {
     margin: 0 30px; }
   nav .nav-item a:hover {
     color: #D1D1D1; }
-  nav .nav-item a:active {
+  nav .nav-item .active {
     color: #EDF2F4;
-    text-decoration: wavy; }
+    text-shadow: 2px 2px 2px #d13232; }
   nav .navbar-brand img {
     max-height: 50px; }
 
@@ -112,9 +112,17 @@ nav {
     font-size: 10px;
     width: 80%; }
 
-.newsletter button {
-  max-width: 150px;
-  margin-left: 10px; }
+.newsletter {
+  background-color: #595959;
+  padding: 5px;
+  color: #ffffff; }
+  .newsletter button {
+    max-width: 150px;
+    margin-left: 10px; }
+  .newsletter span {
+    font-size: 22px; }
+  .newsletter .info {
+    padding-top: 5px; }
 
 /*END OF SITE*/
 .end {
