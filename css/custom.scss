@@ -77,13 +77,15 @@ nav {
 	background-size: cover;
 
 	.zaplanujto-logo{
-		max-width: 150px;
+
+      max-width: 150px;
+      display: none;
 	}
 
 	.welcome-text {
-		color: $color-white;
-		font-family: $font-secondary;
-		font-weight:bold;
+      color: $color-white;
+      font-family: $font-secondary;
+	  font-weight:bold;
 
 	}
 
@@ -96,7 +98,6 @@ nav {
       padding: 5px 15px;
       text-decoration: none;
       transition-duration: 0.5s;
-      display: none;
     }
 
     .join-us-btn:hover{

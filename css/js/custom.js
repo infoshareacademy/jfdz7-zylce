@@ -17,7 +17,6 @@ $(document).ready(function() {
         }, 700)
     });
 
-
-    var $joinUsBtn = $('.join-us-btn');
-    $joinUsBtn.fadeIn('1000');
+    var $zaplnujToLogo = $('.zaplanujto-logo');
+    $zaplnujToLogo.fadeIn('1000');
 });
