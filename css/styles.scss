@@ -49,12 +49,10 @@ nav {
 		padding: 4px;
 	}
 
-	li {
-		margin: 0 20px;
-	}
 	.nav-item a {
-		color: $color-white-dirty;
+		color: $color-white;
 		font-size: 20px;
+		margin: 0 30px;
 	}
 
 	.nav-item a:hover {
@@ -78,18 +76,33 @@ nav {
 	background: $color-white-dirty url(../images/header-background.jpg) top center no-repeat;
 	background-size: cover;
 
-
-	/*zaplanuj.to LOGO*/
 	.zaplanujto-logo{
-		max-width: 150px;
+
+      max-width: 150px;
 	}
 
 	.welcome-text {
-		color: $color-white;
-		font-family: $font-secondary;
-		font-weight:bold;
-		font-size:30px;
+      color: $color-white;
+      font-family: $font-secondary;
+	  font-weight:bold;
+
 	}
+
+    .join-us-btn{
+      color:$color-white;
+      font-size: 20px;
+      font-weight: bold;
+      border: 2px solid $color-white;
+      border-radius: 10px;
+      padding: 5px 15px;
+      text-decoration: none;
+      transition-duration: 0.5s;
+    }
+
+    .join-us-btn:hover{
+      color: $color-bg-blue;
+      background-color: $color-white;
+    }
 
 }
 
@@ -100,22 +113,21 @@ nav {
 
 
 	.app-functions-title p {
-		font-size: 2em;
+		font-size: 25px;
 		font-weight: bold;
 	}
 
 	.app-description{
-		margin-top: 1%;
+		//margin-top: 1%;
 	}
 
 	.app-description img {
-		width: 200px;
+		width: 175px;
 		padding: 0 0;
 	}
 
 	.app-description p {
-		padding: 10px 10px;
-		font-size: 22px;
+		font-size: 20px;
 		line-height: 1.3em;
 	}
 
@@ -138,6 +150,7 @@ nav {
 }
 
 .team {
+
 	min-height: 400px;
 	background-color: $color-bg-blue;
 	color: $color-white;
@@ -216,7 +229,7 @@ nav {
 	//Header logo and Welcome text
 	.header-top{
 		.zaplanujto-logo{
-			max-width: 200px;
+			max-width: 175px;
 		}
 		.welcome-text{
 			font-size: 40px;
@@ -226,7 +239,12 @@ nav {
 	.news-confirm {
 		max-width: 400px;
 	}
+	.app-functions {
 
+	}
+	.additional-app-function-row i {
+		font-size: 75px;
+	}
 	.additional-app-function-row p {
 		padding-left: 20px;
 		padding-right: 0;
@@ -239,7 +257,7 @@ nav {
 	//Header logo and Welcome text
 	.header-top{
 		.zaplanujto-logo{
-			max-width: 225px;
+			max-width: 200px;
 		}
 		.welcome-text{
 			font-size: 45px;
@@ -249,10 +267,16 @@ nav {
 	.social-icons {
 		max-width: 200px;
 	}
-
-	.additional-app-function-row p{
-		padding-left: 20px;
-		padding-right: 0;
+	.app-functions {
+		.app-functions {
+			padding-top: 30px;
+		}
+		.additional-app-function-row i {
+			font-size: 80px;
+		}
+		.additional-app-function-row p {
+			font-size: 17px;
+		}
 	}
 }
 
@@ -261,11 +285,22 @@ nav {
 	//Header logo and Welcome text
 	.header-top {
 		.zaplanujto-logo {
-			max-width: 275px;
+			max-width: 210px;
 		}
 		.welcome-text {
 			font-size: 55px;
 		}
 	}
-
+	.app-functions {
+		.app-functions {
+			padding-top: 30px;
+		}
+		.additional-app-function-row i {
+			font-size: 80px;
+		}
+		.additional-app-function-row p {
+			font-size: 17px;
+			padding-left: 20px;
+		}
+	}
 }
