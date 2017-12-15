@@ -24,3 +24,7 @@ $(document).ready(function() {
         }, 700)
     });
 });
+
+function tabText(text){
+    document.title = text;
+}
