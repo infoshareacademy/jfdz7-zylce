@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     function toggleScrollBtnVisibility() {
         if ($(this).scrollTop() > scrollBtnThreshold) {
-                $scrollToTopBtn.show();
+                $scrollToTopBtn.fadeIn(1000);
         } else {
                 $scrollToTopBtn.hide();
         }
@@ -44,5 +44,6 @@ $(document).ready(function() {
 
     $window.on('scroll', toggleScrollBtnVisibility);
     $scrollToTopBtn.on('click', scrollToTop);
+
 
 });
