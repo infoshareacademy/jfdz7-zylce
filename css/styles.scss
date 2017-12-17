@@ -225,9 +225,9 @@ nav {
 #scroll-to-top{
   position: fixed;
   bottom:15px;
-  right: 20px;
+  right: 10px;
   color: $color-accent-red;
-  font-size: 60px;
+  font-size: 40px;
   z-index: 1000;
   display: none;
   opacity: 0.5;
@@ -252,7 +252,7 @@ nav {
 			max-width: 175px;
 		}
 		.welcome-text{
-			font-size: 40px;
+			font-size: 45px;
 		}
 	}
 
@@ -269,6 +269,12 @@ nav {
 		padding-left: 20px;
 		padding-right: 0;
 	}
+  }
+  #scroll-to-top{
+    position: fixed;
+    bottom:15px;
+    right: 10px;
+    font-size: 45px;
 
 }
 
@@ -298,6 +304,12 @@ nav {
 			font-size: 17px;
 		}
 	}
+  #scroll-to-top{
+    position: fixed;
+    bottom:15px;
+    right: 10px;
+    font-size: 50px;
+  }
 }
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
@@ -323,4 +335,11 @@ nav {
 			padding-left: 20px;
 		}
 	}
+  #scroll-to-top{
+    position: fixed;
+    bottom:15px;
+    right: 15px;
+    font-size: 60px;
+
+  }
 }
