@@ -152,6 +152,8 @@ nav {
     padding-right: 0; } }
 /* Bootstrap4 - MD! Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
+  nav .nav-item .active {
+    color: #0e5c90; }
   nav .nav-item .active a:hover:after, nav .nav-item .active:after {
     display: block;
     content: " ";
@@ -189,6 +191,8 @@ nav {
     font-size: 17px; } }
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  nav .nav-item .active {
+    color: #0e5c90; }
   nav .nav-item .active a:hover:after, nav .nav-item .active:after {
     display: block;
     content: " ";

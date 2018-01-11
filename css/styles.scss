@@ -259,6 +259,10 @@ nav {
 /* Bootstrap4 - MD! Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
 	nav {
+		.nav-item .active {
+			color: $color-bg-blue;
+		}
+
 		.nav-item .active a:hover:after, .nav-item .active:after {
 			display: block;
 			content: " ";
@@ -312,6 +316,10 @@ nav {
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
 	nav {
+		.nav-item .active {
+			color: $color-bg-blue;
+		}
+
 		.nav-item .active a:hover:after, .nav-item .active:after {
 			display: block;
 			content: " ";
