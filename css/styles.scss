@@ -61,7 +61,7 @@ nav {
 		margin: 0 30px;
 	}
 
-	.nav-item a:hover .nav-item .active {
+	.nav-item a:hover, .nav-item .active {
 		color: $color-accent-red;
 	}
 

@@ -34,7 +34,7 @@ nav {
     color: #0e5c90;
     font-size: 20px;
     margin: 0 30px; }
-  nav .nav-item a:hover .nav-item .active {
+  nav .nav-item a:hover, nav .nav-item .active {
     color: #d13232; }
   nav .navbar-brand img {
     max-height: 50px; }
