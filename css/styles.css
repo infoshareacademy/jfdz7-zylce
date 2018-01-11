@@ -12,7 +12,8 @@
 
 nav {
   font-family: "Roboto", sans-serif;
-  background-color: #595959; }
+  background-color: #ffffff;
+  box-shadow: 1px 1px 18px #0e5c90; }
   nav button {
     background: #595959;
     align-items: center;
@@ -26,15 +27,15 @@ nav {
   nav .navbar-toggler-icon .fa-bars {
     color: #EDF2F4;
     padding: 4px; }
+  nav .nav-item {
+    position: relative;
+    padding: 0 8px; }
   nav .nav-item a {
-    color: #ffffff;
+    color: #0e5c90;
     font-size: 20px;
     margin: 0 30px; }
-  nav .nav-item a:hover {
-    color: #D1D1D1; }
-  nav .nav-item .active {
-    color: #EDF2F4;
-    text-shadow: 2px 2px 2px #d13232; }
+  nav .nav-item a:hover .nav-item .active {
+    color: #d13232; }
   nav .navbar-brand img {
     max-height: 50px; }
 
@@ -151,6 +152,26 @@ nav {
     padding-right: 0; } }
 /* Bootstrap4 - MD! Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
+  nav .nav-item .active a:hover:after, nav .nav-item .active:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    background-color: #0e5c90;
+    opacity: 0.1;
+    left: 0;
+    top: -16px; }
+  nav .nav-item .active a:hover:before, nav .nav-item .active:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    border-top: 3px solid #0e5c90;
+    left: 0;
+    top: -16px; }
+
   .header-top .zaplanujto-logo {
     max-width: 200px; }
   .header-top .welcome-text {
@@ -168,6 +189,26 @@ nav {
     font-size: 17px; } }
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  nav .nav-item .active a:hover:after, nav .nav-item .active:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    background-color: #0e5c90;
+    opacity: 0.1;
+    left: 0;
+    top: -16px; }
+  nav .nav-item .active a:hover:before, nav .nav-item .active:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    border-top: 3px solid #0e5c90;
+    left: 0;
+    top: -16px; }
+
   .header-top .zaplanujto-logo {
     max-width: 210px; }
   .header-top .welcome-text {
