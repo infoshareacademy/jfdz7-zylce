@@ -45,12 +45,15 @@ nav {
   background: #EDF2F4 url(../images/header-background.jpg) top center no-repeat;
   background-size: cover; }
   .header-top .zaplanujto-logo {
-    max-width: 150px; }
+    max-width: 150px;
+    display: none; }
   .header-top .welcome-text {
     color: #ffffff;
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold; }
+    font-weight: bold;
+    display: none; }
   .header-top .join-us-btn {
+    display: none;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;

@@ -45,5 +45,15 @@ $(document).ready(function() {
     $window.on('scroll', toggleScrollBtnVisibility);
     $scrollToTopBtn.on('click', scrollToTop);
 
+    // Dynamika obrazków w headerze
+
+    var $logo = $('.zaplanujto-logo');
+    var $welcomeText = $('.welcome-text');
+    var $joinUsBtn = $('.join-us-btn');
+
+    $logo.show(2000);
+    $welcomeText.slideDown(1000);
+    $joinUsBtn.show(2500);
+
 
 });
