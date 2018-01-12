@@ -23,4 +23,27 @@ $(document).ready(function() {
             scrollTop: 0
         }, 700)
     });
+
+    var $scrollToTopBtn = $('#scroll-to-top');
+    var $window = $(window);
+    var $page = $('body, html');
+    var animationTime = 600;
+    var scrollBtnThreshold = 150;
+
+    function toggleScrollBtnVisibility() {
+        if ($(this).scrollTop() > scrollBtnThreshold) {
+                $scrollToTopBtn.fadeIn(1000);
+        } else {
+                $scrollToTopBtn.hide();
+        }
+    }
+
+    function scrollToTop() {
+        $page.animate({ scrollTop: 0 }, animationTime);
+    }
+
+    $window.on('scroll', toggleScrollBtnVisibility);
+    $scrollToTopBtn.on('click', scrollToTop);
+
+
 });
