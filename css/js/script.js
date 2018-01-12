@@ -54,6 +54,8 @@ $(document).ready(function() {
     var $mainIcon2 = $('.main-icon-2');
     var $mainIcon3 = $('.main-icon-3');
     var $mainIcon4 = $('.main-icon-4');
+    var $addIconsLeftPanel = $('.add-icons-left-panel');
+    var $addIconsRightPanel = $('.add-icons-right-panel');
 
 
     $logo.show(2000);
@@ -62,7 +64,7 @@ $(document).ready(function() {
 
 
     //dynamika icon głównych
-    function mainIconVisibility() {
+    function mainIconsVisibility() {
         if ($(this).scrollTop() > 370) {
             $mainIcon1.fadeIn(700);
             $mainIcon2.fadeIn(1400);
@@ -71,9 +73,18 @@ $(document).ready(function() {
 
             console.log($window.scrollTop() + 'px');
     }}
-    $window.on('scroll', mainIconVisibility);
+
+    function addIconsVisibility() {
+        if($(this).scrollTop() > 800) {
+            $addIconsLeftPanel.animate({left: 0}, 700);
+            $addIconsRightPanel.animate({left: 0}, 500);
+        }
+    }
+
+    $window.on('scroll', mainIconsVisibility);
+    $window.on('scroll', addIconsVisibility);
 
 
-
+    // icony dodatkowe 450px
 
 });

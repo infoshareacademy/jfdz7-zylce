@@ -80,6 +80,12 @@ nav {
   .app-functions .app-description p {
     font-size: 20px;
     line-height: 1.3em; }
+  .app-functions .add-icons-left-panel {
+    position: relative;
+    left: -1000px; }
+  .app-functions .add-icons-right-panel {
+    position: relative;
+    left: 1000px; }
   .app-functions .additional-app-function-row {
     margin-bottom: 20px; }
   .app-functions .additional-app-function-container {

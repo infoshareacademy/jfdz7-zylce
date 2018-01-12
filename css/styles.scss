@@ -136,6 +136,15 @@ nav {
 		line-height: 1.3em;
 	}
 
+	.add-icons-left-panel{
+		position: relative;
+		left: -1000px;
+	}
+
+	.add-icons-right-panel {
+		position: relative;
+		left: 1000px;
+	}
 	.additional-app-function-row {
 		margin-bottom: 20px;
 	}
