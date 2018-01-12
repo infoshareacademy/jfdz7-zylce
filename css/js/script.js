@@ -56,6 +56,7 @@ $(document).ready(function() {
     var $mainIcon4 = $('.main-icon-4');
     var $addIconsLeftPanel = $('.add-icons-left-panel');
     var $addIconsRightPanel = $('.add-icons-right-panel');
+    var $teamMember = $('.team-member');
 
 
     $logo.show(2000);
@@ -63,28 +64,41 @@ $(document).ready(function() {
     $joinUsBtn.show(2500);
 
 
-    //dynamika icon głównych
+    // main icon animations
     function mainIconsVisibility() {
         if ($(this).scrollTop() > 370) {
             $mainIcon1.fadeIn(700);
             $mainIcon2.fadeIn(1400);
             $mainIcon3.fadeIn(2100);
             $mainIcon4.fadeIn(2800);
-
-            console.log($window.scrollTop() + 'px');
     }}
 
+    // add icons animations
     function addIconsVisibility() {
         if($(this).scrollTop() > 800) {
             $addIconsLeftPanel.animate({left: 0}, 700);
             $addIconsRightPanel.animate({left: 0}, 500);
         }
     }
+    // team members animation
+    function teamMemberAnimation() {
+        if($window.scrollTop() >  1000) {
+            $teamMember.animate({top: 0}, 1260 );
+        }
 
+    }
+    // test
+    function write() {
+        if($window.scrollTop() > 1) {
+            console.log('dupa dupa :)');
+            console.log($window.scrollTop() + 'px');
+        }
+
+    }
     $window.on('scroll', mainIconsVisibility);
     $window.on('scroll', addIconsVisibility);
+    $window.on('scroll', teamMemberAnimation);
+    $window.on('scroll', write);
 
-
-    // icony dodatkowe 450px
 
 });

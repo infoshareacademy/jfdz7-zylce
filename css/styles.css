@@ -102,7 +102,9 @@ nav {
   color: #ffffff;
   font-weight: bold; }
   .team .team-member {
-    padding-top: 30px; }
+    padding-top: 30px;
+    position: relative;
+    bottom: -500px; }
   .team .team-member-text {
     width: 100%;
     font-size: 24px;

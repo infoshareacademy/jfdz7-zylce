@@ -170,9 +170,12 @@ nav {
 	color: $color-white;
 	font-weight: bold;
 
-	.team-member {
+	.team-member{
 		padding-top: 30px;
+		position: relative;
+		bottom: -500px;
 	}
+
 
 	.team-member-text {
 		width: 100%;
