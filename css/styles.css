@@ -69,6 +69,8 @@ nav {
 .app-functions {
   min-height: 500px;
   background-color: #F6F6DA; }
+  .app-functions .main-icon-1, .app-functions .main-icon-2, .app-functions .main-icon-3, .app-functions .main-icon-4 {
+    display: none; }
   .app-functions .app-functions-title p {
     font-size: 25px;
     font-weight: bold; }

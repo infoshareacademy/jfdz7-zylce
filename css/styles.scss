@@ -113,6 +113,9 @@ nav {
 	min-height: 500px;
 	background-color: $color-bg-light;
 
+	.main-icon-1, .main-icon-2, .main-icon-3, .main-icon-4{
+		display: none;
+	}
 
 	.app-functions-title p {
 		font-size: 25px;

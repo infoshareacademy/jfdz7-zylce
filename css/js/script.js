@@ -50,10 +50,30 @@ $(document).ready(function() {
     var $logo = $('.zaplanujto-logo');
     var $welcomeText = $('.welcome-text');
     var $joinUsBtn = $('.join-us-btn');
+    var $mainIcon1 = $('.main-icon-1');
+    var $mainIcon2 = $('.main-icon-2');
+    var $mainIcon3 = $('.main-icon-3');
+    var $mainIcon4 = $('.main-icon-4');
+
 
     $logo.show(2000);
     $welcomeText.slideDown(1000);
     $joinUsBtn.show(2500);
+
+
+    //dynamika icon głównych
+    function mainIconVisibility() {
+        if ($(this).scrollTop() > 370) {
+            $mainIcon1.fadeIn(700);
+            $mainIcon2.fadeIn(1400);
+            $mainIcon3.fadeIn(2100);
+            $mainIcon4.fadeIn(2800);
+
+            console.log($window.scrollTop() + 'px');
+    }}
+    $window.on('scroll', mainIconVisibility);
+
+
 
 
 });
