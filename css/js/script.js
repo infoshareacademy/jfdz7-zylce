@@ -46,17 +46,18 @@ $(document).ready(function() {
     $scrollToTopBtn.on('click', scrollToTop);
 
 
-    var $logo = $('.zaplanujto-logo');
-    var $welcomeText = $('.welcome-text');
-    var $joinUsBtn = $('.join-us-btn');
-    var $mainIcon1 = $('.main-icon-1');
-    var $mainIcon2 = $('.main-icon-2');
-    var $mainIcon3 = $('.main-icon-3');
-    var $mainIcon4 = $('.main-icon-4');
-    var $addIconsLeftPanel = $('.add-icons-left-panel');
-    var $addIconsRightPanel = $('.add-icons-right-panel');
-    var $teamMember = $('.team-member');
-    
+    const $logo = $('.zaplanujto-logo');
+    const $welcomeText = $('.welcome-text');
+    const $joinUsBtn = $('.join-us-btn');
+    const $mainIcon1 = $('.main-icon-1');
+    const $mainIcon2 = $('.main-icon-2');
+    const $mainIcon3 = $('.main-icon-3');
+    const $mainIcon4 = $('.main-icon-4');
+    const $addIconsLeftPanel = $('.add-icons-left-panel');
+    const $addIconsRightPanel = $('.add-icons-right-panel');
+    const $teamMember = $('.team-member');
+    const $socialIcons = $('.team-member-social-icons');
+
     $logo.show(2000);
     $welcomeText.slideDown(1000);
     $joinUsBtn.show(2500);
@@ -81,6 +82,12 @@ $(document).ready(function() {
         }
 
     }
+
+    // function socialIconsShow() {
+    //     if($window.scrollTop() )
+    //
+    // }
+
     function write() {
         if($window.scrollTop() > 1) {
             console.log('dupa dupa :)');
