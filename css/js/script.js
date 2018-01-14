@@ -46,4 +46,50 @@ $(document).ready(function() {
     $scrollToTopBtn.on('click', scrollToTop);
 
 
+    var $logo = $('.zaplanujto-logo');
+    var $welcomeText = $('.welcome-text');
+    var $joinUsBtn = $('.join-us-btn');
+    var $mainIcon1 = $('.main-icon-1');
+    var $mainIcon2 = $('.main-icon-2');
+    var $mainIcon3 = $('.main-icon-3');
+    var $mainIcon4 = $('.main-icon-4');
+    var $addIconsLeftPanel = $('.add-icons-left-panel');
+    var $addIconsRightPanel = $('.add-icons-right-panel');
+    var $teamMember = $('.team-member');
+    
+    $logo.show(2000);
+    $welcomeText.slideDown(1000);
+    $joinUsBtn.show(2500);
+
+    function mainIconsVisibility() {
+        if ($(this).scrollTop() > 370) {
+            $mainIcon1.fadeIn(700);
+            $mainIcon2.fadeIn(1400);
+            $mainIcon3.fadeIn(2100);
+            $mainIcon4.fadeIn(2800);
+        }}
+
+    function addIconsVisibility() {
+        if($(this).scrollTop() > 800) {
+            $addIconsLeftPanel.animate({left: 0}, 700);
+            $addIconsRightPanel.animate({left: 0}, 500);
+        }
+    }
+    function teamMemberAnimation() {
+        if($window.scrollTop() >  1000) {
+            $teamMember.animate({top: 0}, 1260 );
+        }
+
+    }
+    function write() {
+        if($window.scrollTop() > 1) {
+            console.log('dupa dupa :)');
+            console.log($window.scrollTop() + 'px');
+        }
+
+    }
+    $window.on('scroll', mainIconsVisibility);
+    $window.on('scroll', addIconsVisibility);
+    $window.on('scroll', teamMemberAnimation);
+    $window.on('scroll', write);
 });
