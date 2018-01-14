@@ -24,7 +24,8 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 
 nav {
 	font-family: $font-primary;
-	background-color: $color-bg-grey;
+	background-color: $color-white;
+	box-shadow: 1px 1px 18px $color-bg-blue;
 
 	button {
 		background: $color-bg-grey;
@@ -49,19 +50,19 @@ nav {
 		padding: 4px;
 	}
 
+	.nav-item {
+		position: relative;
+		padding: 0 8px;
+	}
+
 	.nav-item a {
-		color: $color-white;
+		color: $color-bg-blue;
 		font-size: 20px;
 		margin: 0 30px;
 	}
 
-	.nav-item a:hover {
-		color: $color-grey-light;
-	}
-
-	.nav-item .active {
-		color: $color-white-dirty;
-		text-shadow: 2px 2px 2px $color-accent-red;
+	.nav-item a:hover, .nav-item .active {
+		color: $color-accent-red;
 	}
 
 	.navbar-brand img {
@@ -246,6 +247,9 @@ nav {
 
 /* Bootstrap4 - SM! Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
+
+
+
 	//Header logo and Welcome text
 	.header-top{
 		.zaplanujto-logo{
@@ -280,6 +284,35 @@ nav {
 
 /* Bootstrap4 - MD! Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
+	nav {
+		.nav-item .active {
+			color: $color-bg-blue;
+		}
+
+		.nav-item .active a:hover:after, .nav-item .active:after {
+			display: block;
+			content: " ";
+			position: absolute;
+			bottom: -16px;
+			width: 100%;
+			background-color: $color-bg-blue;
+			opacity: 0.1;
+			left: 0;
+			top: -16px;
+		}
+
+		.nav-item .active a:hover:before, .nav-item .active:before {
+			display: block;
+			content: " ";
+			position: absolute;
+			bottom: -16px;
+			width: 100%;
+			border-top: 3px solid $color-bg-blue;
+			left: 0;
+			top: -16px;
+		}
+	}
+
 	//Header logo and Welcome text
 	.header-top{
 		.zaplanujto-logo{
@@ -314,6 +347,35 @@ nav {
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
+	nav {
+		.nav-item .active {
+			color: $color-bg-blue;
+		}
+
+		.nav-item .active a:hover:after, .nav-item .active:after {
+			display: block;
+			content: " ";
+			position: absolute;
+			bottom: -16px;
+			width: 100%;
+			background-color: $color-bg-blue;
+			opacity: 0.1;
+			left: 0;
+			top: -16px;
+		}
+
+		.nav-item .active a:hover:before, .nav-item .active:before {
+			display: block;
+			content: " ";
+			position: absolute;
+			bottom: -16px;
+			width: 100%;
+			border-top: 3px solid $color-bg-blue;
+			left: 0;
+			top: -16px;
+		}
+	}
+
 	//Header logo and Welcome text
 	.header-top {
 		.zaplanujto-logo {
