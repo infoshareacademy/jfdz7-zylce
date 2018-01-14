@@ -82,7 +82,9 @@ $(document).ready(function() {
         }
 
     }
-    
+
+    //dorobic  zeby ikony pod memberami sie pozniej pojawialy (po djecich)
+
 
     function write() {
         if($window.scrollTop() > 1) {
