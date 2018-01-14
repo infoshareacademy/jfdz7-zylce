@@ -59,8 +59,8 @@ $(document).ready(function() {
     const $socialIcons = $('.team-member-social-icons');
 
     $logo.show(2000);
-    $welcomeText.slideDown(1000);
-    $joinUsBtn.show(2500);
+    $welcomeText.show(3000);
+    $joinUsBtn.show(3500);
 
     function mainIconsVisibility() {
         if ($(this).scrollTop() > 370) {
@@ -82,11 +82,7 @@ $(document).ready(function() {
         }
 
     }
-
-    // function socialIconsShow() {
-    //     if($window.scrollTop() )
-    //
-    // }
+    
 
     function write() {
         if($window.scrollTop() > 1) {
