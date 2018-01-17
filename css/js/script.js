@@ -58,9 +58,13 @@ $(document).ready(function() {
     const $teamMember = $('.team-member');
     const $socialIcons = $('.team-member-social-icons');
 
-    $logo.show(2000);
-    $welcomeText.animate({opacity: 1}, 3500);
-    $joinUsBtn.animate({opacity: 1}, 3500);
+    $logo.show(1000, function () {
+        $welcomeText.animate({opacity: 1}, 1500, function () {
+            $joinUsBtn.animate({opacity: 1}, 300);
+        });
+    });
+    // $welcomeText.animate({opacity: 1}, 3500);
+    // $joinUsBtn.animate({opacity: 1}, 3500);
 
     function mainIconsVisibility() {
         if ($(this).scrollTop() > 370) {
