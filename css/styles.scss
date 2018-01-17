@@ -85,45 +85,42 @@ nav {
 	}
 
 	.welcome-text {
-      color: $color-white;
-      font-family: $font-secondary;
-	  font-weight:bold;
-	  display: none;
+		color: $color-white;
+		font-family: $font-secondary;
+		font-weight:bold;
+		opacity: 0;
+
 
 	}
 
     .join-us-btn{
-      color:$color-white;
-      font-size: 20px;
-      font-weight: bold;
-      border: 2px solid $color-white;
-      border-radius: 10px;
-      padding: 5px 15px;
-      text-decoration: none;
-      transition-duration: 0.5s;
-	  display: none;
+      	color:$color-white;
+      	font-size: 20px;
+      	font-weight: bold;
+      	border: 2px solid $color-white;
+      	border-radius: 10px;
+      	padding: 5px 15px;
+      	text-decoration: none;
+      	transition-duration: 0.5s;
+	  	opacity: 0;
     }
 
     .join-us-btn:hover{
-      color: $color-bg-blue;
-      background-color: $color-white;
-    }
+      	color: $color-bg-blue;
+      	background-color: $color-white;
+	}
 
 }
 
 //ABOUT ZAPLANUJTO / 4 ICONS / Eight Additional functions
 .app-functions {
-	min-height: 500px;
-	background-color: $color-bg-light;
+		min-height: 500px;
+		background-color: $color-bg-light;
 
 
 	.app-functions-title p {
 		font-size: 25px;
 		font-weight: bold;
-	}
-
-	.app-description{
-		//margin-top: 1%;
 	}
 
 	.app-description img {

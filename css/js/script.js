@@ -59,15 +59,21 @@ $(document).ready(function() {
     const $socialIcons = $('.team-member-social-icons');
 
     $logo.show(2000);
-    $welcomeText.show(3000);
-    $joinUsBtn.show(3500);
+    $welcomeText.animate({opacity: 1}, 3500);
+    $joinUsBtn.animate({opacity: 1}, 3500);
 
     function mainIconsVisibility() {
         if ($(this).scrollTop() > 370) {
-            $mainIcon1.fadeIn(700);
-            $mainIcon2.fadeIn(1400);
-            $mainIcon3.fadeIn(2100);
-            $mainIcon4.fadeIn(2800);
+            $mainIcon1.fadeIn(400, function () {
+                $mainIcon2.fadeIn(400, function () {
+                    $mainIcon3.fadeIn(400, function () {
+                        $mainIcon4.fadeIn(400);
+                    });
+                });
+            });
+            // $mainIcon2.fadeIn(1400);
+            // $mainIcon3.fadeIn(2100);
+            // $mainIcon4.fadeIn(2800);
         }}
 
     function addIconsVisibility() {
