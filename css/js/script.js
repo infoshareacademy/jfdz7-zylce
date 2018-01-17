@@ -45,6 +45,14 @@ $(document).ready(function() {
     $window.on('scroll', toggleScrollBtnVisibility);
     $scrollToTopBtn.on('click', scrollToTop);
 
+    $(window).on('scroll', function() {
+        if($(document).scrollTop() > 850) {
+            $('nav').addClass('nav-effect').animate({top: 0}, 900)
+        }
+        else {
+            $('nav').removeClass('nav-effect');
+        }
+    });
 
     const $logo = $('.zaplanujto-logo');
     const $welcomeText = $('.welcome-text');

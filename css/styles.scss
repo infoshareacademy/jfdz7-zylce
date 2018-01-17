@@ -358,10 +358,31 @@ nav {
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
+
+	.nav-effect {
+		//opacity: 0.9;
+		transform: scaley(0.8);
+		transform-origin: top center;
+		transition: 1s ease;
+	}
 	nav {
+
+
 		.nav-item .active {
 			color: $color-bg-blue;
 		}
+		//
+		//.nav-item .active-effect:after {
+		//	display: block;
+		//	content: " ";
+		//	position: absolute;
+		//	bottom: -16px;
+		//	width: 100%;
+		//	background-color: $color-bg-blue;
+		//	opacity: 0.1;
+		//	left: 0;
+		//	top: -16px;
+		//}
 
 		.nav-item .active a:hover:after, .nav-item .active:after {
 			display: block;
@@ -375,16 +396,16 @@ nav {
 			top: -16px;
 		}
 
-		.nav-item .active a:hover:before, .nav-item .active:before {
-			display: block;
-			content: " ";
-			position: absolute;
-			bottom: -16px;
-			width: 100%;
-			border-top: 3px solid $color-bg-blue;
-			left: 0;
-			top: -16px;
-		}
+		//.nav-item .active a:hover:before, .nav-item .active:before {
+		//	display: block;
+		//	content: " ";
+		//	position: absolute;
+		//	bottom: -16px;
+		//	width: 100%;
+		//	border-top: 3px solid $color-bg-blue;
+		//	left: 0;
+		//	top: -16px;
+		//}
 	}
 
 	//Header logo and Welcome text
