@@ -79,38 +79,43 @@ nav {
 
 	.zaplanujto-logo{
 
-      max-width: 150px;
+      	max-width: 150px;
+	  	display: none;
+
 	}
 
 	.welcome-text {
-      color: $color-white;
-      font-family: $font-secondary;
-	  font-weight:bold;
+		color: $color-white;
+		font-family: $font-secondary;
+		font-weight:bold;
+		opacity: 0;
+
 
 	}
 
     .join-us-btn{
-      color:$color-white;
-      font-size: 20px;
-      font-weight: bold;
-      border: 2px solid $color-white;
-      border-radius: 10px;
-      padding: 5px 15px;
-      text-decoration: none;
-      transition-duration: 0.5s;
+      	color:$color-white;
+      	font-size: 20px;
+      	font-weight: bold;
+      	border: 2px solid $color-white;
+      	border-radius: 10px;
+      	padding: 5px 15px;
+      	text-decoration: none;
+      	transition-duration: 0.5s;
+	  	opacity: 0;
     }
 
     .join-us-btn:hover{
-      color: $color-bg-blue;
-      background-color: $color-white;
-    }
+      	color: $color-bg-blue;
+      	background-color: $color-white;
+	}
 
 }
 
 //ABOUT ZAPLANUJTO / 4 ICONS / Eight Additional functions
 .app-functions {
-	min-height: 500px;
-	background-color: $color-bg-light;
+		min-height: 500px;
+		background-color: $color-bg-light;
 
 
 	.app-functions-title p {
@@ -118,13 +123,10 @@ nav {
 		font-weight: bold;
 	}
 
-	.app-description{
-		//margin-top: 1%;
-	}
-
 	.app-description img {
 		width: 175px;
 		padding: 0 0;
+		display: none;
 	}
 
 	.app-description p {
@@ -140,7 +142,14 @@ nav {
 		margin-top: 20px;
 		font-size: 20px;
 	}
-
+	.add-icons-left-panel {
+		position: relative;
+		left: -1000px;
+	}
+	.add-icons-right-panel{
+		position: relative;
+		left: 1000px;
+	}
 	.additional-app-function-row i {
 		color: $color-accent-red;
 	}
@@ -159,6 +168,8 @@ nav {
 
 	.team-member {
 		padding-top: 30px;
+		position: relative;
+		bottom: -700px;
 	}
 
 	.team-member-text {
