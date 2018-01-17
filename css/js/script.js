@@ -64,28 +64,23 @@ $(document).ready(function() {
     const $addIconsLeftPanel = $('.add-icons-left-panel');
     const $addIconsRightPanel = $('.add-icons-right-panel');
     const $teamMember = $('.team-member');
-    const $socialIcons = $('.team-member-social-icons');
+    const $iconShowTime = 300;
 
     $logo.show(1000, function () {
         $welcomeText.animate({opacity: 1}, 1500, function () {
             $joinUsBtn.animate({opacity: 1}, 300);
         });
     });
-    // $welcomeText.animate({opacity: 1}, 3500);
-    // $joinUsBtn.animate({opacity: 1}, 3500);
 
     function mainIconsVisibility() {
         if ($(this).scrollTop() > 370) {
-            $mainIcon1.fadeIn(400, function () {
-                $mainIcon2.fadeIn(400, function () {
-                    $mainIcon3.fadeIn(400, function () {
-                        $mainIcon4.fadeIn(400);
+            $mainIcon1.fadeIn($iconShowTime, function () {
+                $mainIcon2.fadeIn($iconShowTime, function () {
+                    $mainIcon3.fadeIn($iconShowTime, function () {
+                        $mainIcon4.fadeIn($iconShowTime);
                     });
                 });
             });
-            // $mainIcon2.fadeIn(1400);
-            // $mainIcon3.fadeIn(2100);
-            // $mainIcon4.fadeIn(2800);
         }}
 
     function addIconsVisibility() {
@@ -98,21 +93,9 @@ $(document).ready(function() {
         if($window.scrollTop() >  1000) {
             $teamMember.animate({top: 0}, 1260 );
         }
-
     }
 
-    //dorobic  zeby ikony pod memberami sie pozniej pojawialy (po djecich)
-
-
-    function write() {
-        if($window.scrollTop() > 1) {
-            console.log('dupa dupa :)');
-            console.log($window.scrollTop() + 'px');
-        }
-
-    }
     $window.on('scroll', mainIconsVisibility);
     $window.on('scroll', addIconsVisibility);
     $window.on('scroll', teamMemberAnimation);
-    $window.on('scroll', write);
 });
