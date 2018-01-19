@@ -7,7 +7,7 @@ $('.is-human-pin').text(`${pin}`);
 
 function isPinInvalid() {
     let input = $pinInput.val();
-    return input !== pin || input.length !== pin.length;
+    return parseInt(input) !== pin;
 }
 function validateSubmitBtn() {
     // isPinInvalid ? $emailSubmit.attr('disabled', '') : $emailSubmit.removeAttr('disabled') ;
