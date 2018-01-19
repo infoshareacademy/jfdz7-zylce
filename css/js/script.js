@@ -31,13 +31,6 @@ $(document).ready(function() {
     }
     $navBrandImg.on('click', scrollToTop);
 
-    /* ANTYBOT! */
-
-
-
-
-
-    
     var $scrollToTopBtn = $('#scroll-to-top');
     var $window = $(window);
     var animationTime = 600;
