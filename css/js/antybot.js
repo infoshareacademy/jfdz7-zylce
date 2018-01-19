@@ -1,6 +1,6 @@
 const $emailSubmit = $('.email-submit');
 const $pinInput = $('.pin-input');
-const pin = Math.random().toFixed(4) * 10000;
+const pin = Math.round(Math.random() * 10000);
 
 $('<span class="is-human-pin"></span>').appendTo('.is-human');
 $('.is-human-pin').text(`${pin}`);
