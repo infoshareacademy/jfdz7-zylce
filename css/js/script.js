@@ -31,6 +31,29 @@ $(document).ready(function() {
     }
     $navBrandImg.on('click', scrollToTop);
 
+    /* ANTYBOT! */
+    const $emailSubmit = $('.email-submit');
+    const $pinInput = $('.pin-input');
+    const pin = Math.random().toFixed(4) * 10000;
+
+
+
+    $('<span class="is-human-pin"></span>').appendTo('.is-human');
+    $('.is-human-pin').text(`${pin}`);
+
+    function isPinInvalid() {
+        let input = $pinInput.val();
+        return input !== pin;
+    }
+    function validateSubmitBtn() {
+        $emailSubmit.prop('disabled', isPinInvalid);
+    }
+    $pinInput.on('keyup', validateSubmitBtn());
+
+
+
+
+    
     var $scrollToTopBtn = $('#scroll-to-top');
     var $window = $(window);
     var animationTime = 600;
