@@ -1,7 +1,7 @@
 $(document).ready(function() {
     const $navLink = $('.navbar-nav>li>a');
     const $navCollapse = $('.navbar-collapse');
-    const $bodyHtml = $('body, html');
+    const $page = $('body, html');
     const $navBrandImg = $('.navbar-brand img');
     const $navbar = $('.navbar-nav');
     const $navLinks = $navbar.find('a');
@@ -12,7 +12,7 @@ $(document).ready(function() {
     $navLink.on('click', collapseNav);
 
     function scrollToSection() {
-        const animationTime = 400;
+        const animationTime = 700;
         const anchor = $(this).attr('href');
         $(this)
             .parent()
@@ -24,16 +24,15 @@ $(document).ready(function() {
     }
     $navLinks.on('click', scrollToSection);
 
-    function  backToTop() {
-        $bodyHtml.animate({
-            scrollTop: 0
-        }, 700)
+    function scrollToTop() {
+        const animationTime = 500;
+
+        $page.animate({ scrollTop: 0}, animationTime);
     }
-    $navBrandImg.on('click', backToTop);
+    $navBrandImg.on('click', scrollToTop);
 
     var $scrollToTopBtn = $('#scroll-to-top');
     var $window = $(window);
-    var $page = $('body, html');
     var animationTime = 600;
     var scrollBtnThreshold = 150;
 
