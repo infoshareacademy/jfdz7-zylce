@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    var $navLink = $('.navbar-nav>li>a');
-    var $navCollapse = $('.navbar-collapse');
-    var $smoothScroll = $('.smoothScroll');
-    var activeNavLink = '.active';
-    var $bodyHtml = $('body, html');
-    var $navBrandImg = $('.navbar-brand img');
+    const $navLink = $('.navbar-nav>li>a');
+    const $navCollapse = $('.navbar-collapse');
+    const $smoothScroll = $('.smoothScroll');
+    const activeNavLink = '.active';
+    const $bodyHtml = $('body, html');
+    const $navBrandImg = $('.navbar-brand img');
 
     $navLink.on('click', function(){
         $navCollapse.collapse('hide');
@@ -24,11 +24,11 @@ $(document).ready(function() {
         }, 700)
     });
 
-    var $scrollToTopBtn = $('#scroll-to-top');
-    var $window = $(window);
-    var $page = $('body, html');
-    var animationTime = 600;
-    var scrollBtnThreshold = 150;
+    const $scrollToTopBtn = $('#scroll-to-top');
+    const $window = $(window);
+    const $page = $('body, html');
+    const $animationTime = 600;
+    const scrollBtnThreshold = 150;
 
     function toggleScrollBtnVisibility() {
         if ($(this).scrollTop() > scrollBtnThreshold) {
