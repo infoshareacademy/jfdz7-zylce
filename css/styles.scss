@@ -80,7 +80,7 @@ nav {
 	.zaplanujto-logo{
 
       	max-width: 150px;
-	  	display: none;
+	  	//display: none;
 
 	}
 
@@ -88,7 +88,7 @@ nav {
 		color: $color-white;
 		font-family: $font-secondary;
 		font-weight:bold;
-		opacity: 0;
+		//opacity: 0;
 
 
 	}
@@ -102,7 +102,7 @@ nav {
       	padding: 5px 15px;
       	text-decoration: none;
       	transition-duration: 0.5s;
-	  	opacity: 0;
+	  	//opacity: 0;
     }
 
     .join-us-btn:hover{
@@ -126,7 +126,7 @@ nav {
 	.app-description img {
 		width: 175px;
 		padding: 0 0;
-		display: none;
+		//display: none;
 	}
 
 	.app-description p {
@@ -144,11 +144,11 @@ nav {
 	}
 	.add-icons-left-panel {
 		position: relative;
-		left: -1000px;
+		//left: -1000px;
 	}
 	.add-icons-right-panel{
 		position: relative;
-		left: 1000px;
+		//left: 1000px;
 	}
 	.additional-app-function-row i {
 		color: $color-accent-red;
@@ -169,7 +169,7 @@ nav {
 	.team-member {
 		padding-top: 30px;
 		position: relative;
-		left: -1500px;
+		//left: -1500px;
 	}
 
 	.team-member-text {

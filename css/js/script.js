@@ -65,6 +65,17 @@ $(document).ready(function() {
     const $addIconsRightPanel = $('.add-icons-right-panel');
     const $teamMember = $('.team-member');
 
+    $logo.css('display', 'none');
+    $welcomeText.css('opacity', 0);
+    $joinUsBtn.css('opacity', 0);
+    $mainIcon1.css('display', 'none');
+    $mainIcon2.css('display', 'none');
+    $mainIcon3.css('display', 'none');
+    $mainIcon4.css('display', 'none');
+    $addIconsLeftPanel.css('left', '-1000px');
+    $addIconsRightPanel.css('left', '1000px');
+    $teamMember.css('left', '-1500px');
+
     $logo.show(1000, function () {
         $welcomeText.animate({opacity: 1}, 400, function () {
             $joinUsBtn.animate({opacity: 1}, 200);
