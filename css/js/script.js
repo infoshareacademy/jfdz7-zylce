@@ -1,32 +1,38 @@
 $(document).ready(function() {
-    var $navLink = $('.navbar-nav>li>a');
-    var $navCollapse = $('.navbar-collapse');
-    var $smoothScroll = $('.smoothScroll');
-    var activeNavLink = '.active';
-    var $bodyHtml = $('body, html');
-    var $navBrandImg = $('.navbar-brand img');
+    const $navLink = $('.navbar-nav>li>a');
+    const $navCollapse = $('.navbar-collapse');
+    const $page = $('body, html');
+    const $navBrandImg = $('.navbar-brand img');
+    const $navbar = $('.navbar-nav');
+    const $navLinks = $navbar.find('a');
 
-    $navLink.on('click', function(){
+    function collapseNav() {
         $navCollapse.collapse('hide');
-    });
+    }
+    $navLink.on('click', collapseNav);
 
-    $smoothScroll.click(function() {
-        $('.nav').find(activeNavLink).removeClass(activeNavLink);
-        $(this).parent().addClass(activeNavLink);
-        $bodyHtml.animate({
-            scrollTop: $(this.hash).offset().top -30
-        }, 900)
-    });
+    function scrollToSection() {
+        const animationTime = 700;
+        const anchor = $(this).attr('href');
+        $(this)
+            .parent()
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
 
-    $navBrandImg.click(function () {
-        $bodyHtml.animate({
-            scrollTop: 0
-        }, 700)
-    });
+        $page.animate({ scrollTop: $(anchor).offset().top }, animationTime);
+    }
+    $navLinks.on('click', scrollToSection);
+
+    function scrollToTop() {
+        const animationTime = 500;
+
+        $page.animate({ scrollTop: 0}, animationTime);
+    }
+    $navBrandImg.on('click', scrollToTop);
 
     var $scrollToTopBtn = $('#scroll-to-top');
     var $window = $(window);
-    var $page = $('body, html');
     var animationTime = 600;
     var scrollBtnThreshold = 150;
 

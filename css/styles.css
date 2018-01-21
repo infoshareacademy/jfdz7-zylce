@@ -136,6 +136,9 @@ nav {
     font-size: 22px; }
   .newsletter .info {
     padding-top: 5px; }
+  .newsletter .small-info {
+    margin: 0 auto;
+    font-size: 12px; }
 
 /*END OF SITE*/
 .end {
