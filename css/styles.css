@@ -124,7 +124,9 @@ nav {
     color: #ffffff; }
   .team .social-icons {
     font-size: 10px;
-    width: 80%; }
+    width: 80%;
+    position: relative;
+    left: -1000px; }
 
 .newsletter {
   background-color: #595959;
