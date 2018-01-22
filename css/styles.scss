@@ -141,6 +141,7 @@ nav {
 	.additional-app-function-container {
 		margin-top: 20px;
 		font-size: 20px;
+		overflow: hidden;
 	}
 	.add-icons-left-panel {
 		position: relative;
@@ -169,7 +170,7 @@ nav {
 	.team-member {
 		padding-top: 30px;
 		position: relative;
-		bottom: -700px;
+		left: -1500px;
 	}
 
 	.team-member-text {
