@@ -1,65 +1,6 @@
 $(document).ready(function() {
-    const $navLink = $('.navbar-nav>li>a');
-    const $navCollapse = $('.navbar-collapse');
+
     const $page = $('body, html');
-    const $navBrandImg = $('.navbar-brand img');
-    const $navbar = $('.navbar-nav');
-    const $navLinks = $navbar.find('a');
-
-    function collapseNav() {
-        $navCollapse.collapse('hide');
-    }
-    $navLink.on('click', collapseNav);
-
-    function scrollToSection() {
-        const animationTime = 700;
-        const anchor = $(this).attr('href');
-        $(this)
-            .parent()
-            .addClass('active')
-            .siblings()
-            .removeClass('active');
-
-        $page.animate({ scrollTop: $(anchor).offset().top }, animationTime);
-    }
-    $navLinks.on('click', scrollToSection);
-
-    function scrollToTop() {
-        const animationTime = 500;
-
-        $page.animate({ scrollTop: 0}, animationTime);
-    }
-    $navBrandImg.on('click', scrollToTop);
-
-    var $scrollToTopBtn = $('#scroll-to-top');
-    var $window = $(window);
-    var animationTime = 600;
-    var scrollBtnThreshold = 150;
-
-    function toggleScrollBtnVisibility() {
-        if ($(this).scrollTop() > scrollBtnThreshold) {
-                $scrollToTopBtn.fadeIn(1000);
-        } else {
-                $scrollToTopBtn.hide();
-        }
-    }
-
-    function scrollToTop() {
-        $page.animate({ scrollTop: 0 }, animationTime);
-    }
-
-    $window.on('scroll', toggleScrollBtnVisibility);
-    $scrollToTopBtn.on('click', scrollToTop);
-
-    $(window).on('scroll', function() {
-        if($(document).scrollTop() > 850) {
-            $('nav').addClass('nav-effect').animate({top: 0}, 900)
-        }
-        else {
-            $('nav').removeClass('nav-effect');
-        }
-    });
-
     const $logo = $('.zaplanujto-logo');
     const $welcomeText = $('.welcome-text');
     const $joinUsBtn = $('.join-us-btn');
