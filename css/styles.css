@@ -43,7 +43,7 @@ nav {
   width: 100%;
   min-height: 400px;
   height: 100vh;
-  background: #EDF2F4 url(../images/header-background.jpg) top center no-repeat;
+  background: #0e5c90 url(../images/header-background.jpg) top center no-repeat;
   background-size: cover; }
   .header-top .zaplanujto-logo {
     max-width: 150px;
@@ -78,6 +78,8 @@ nav {
     width: 175px;
     padding: 0 0;
     display: none; }
+  .app-functions .app-description img:hover {
+    width: 180px; }
   .app-functions .app-description p {
     font-size: 20px;
     line-height: 1.3em; }
@@ -95,17 +97,18 @@ nav {
     left: 1000px; }
   .app-functions .additional-app-function-row i {
     color: #d13232; }
+  .app-functions .additional-app-function-row i:hover {
+    text-shadow: 1px 2px 5px grey; }
   .app-functions .additional-app-function-row p {
     font-size: 15px; }
 
 .team {
-  min-height: 400px;
+  min-height: 450px;
   background-color: #0e5c90;
   color: #ffffff;
   font-weight: bold; }
   .team .team-member {
     padding-top: 30px;
-    position: relative;
     left: -1500px; }
   .team .team-member-text {
     width: 100%;
@@ -119,6 +122,10 @@ nav {
   .team .team-member-photo img {
     width: 100%;
     max-width: 230px; }
+  .team .team-member-photo img:hover {
+    position: relative;
+    max-width: 235px;
+    box-shadow: 4px 4px 3px #0F3156; }
   .team .team-member-social-icons {
     padding-bottom: 50px; }
   .team .team-member-text, .team i {
