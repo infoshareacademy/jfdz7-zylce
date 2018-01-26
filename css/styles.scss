@@ -1,6 +1,7 @@
 $color-bg-grey: #595959;
 $color-bg-light: #F6F6DA;
 $color-bg-blue: #0e5c90;
+$shadow: #0F3156;
 $color-white: #ffffff;
 $color-grey-light: #D1D1D1;
 $color-white-dirty: #EDF2F4;
@@ -74,11 +75,12 @@ nav {
 	width: 100%;
 	min-height: 400px;
 	height: 100vh;
-	background: $color-white-dirty url(../images/header-background.jpg) top center no-repeat;
+	background: $color-bg-blue url(../images/header-background.jpg) top center no-repeat;
 	background-size: cover;
 
-	.zaplanujto-logo{
 
+
+	.zaplanujto-logo{
       	max-width: 150px;
 	  	display: none;
 
@@ -87,6 +89,7 @@ nav {
 	.welcome-text {
 		color: $color-white;
 		font-family: $font-secondary;
+		font-size: 25px;
 		font-weight:bold;
 		opacity: 0;
 
@@ -129,6 +132,11 @@ nav {
 		display: none;
 	}
 
+	.app-description img:hover {
+		width: 180px;
+
+	}
+
 	.app-description p {
 		font-size: 20px;
 		line-height: 1.3em;
@@ -141,6 +149,7 @@ nav {
 	.additional-app-function-container {
 		margin-top: 20px;
 		font-size: 20px;
+		overflow: hidden;
 	}
 	.add-icons-left-panel {
 		position: relative;
@@ -153,6 +162,10 @@ nav {
 	.additional-app-function-row i {
 		color: $color-accent-red;
 	}
+
+	.additional-app-function-row i:hover {
+		text-shadow: 1px 2px 5px grey;
+	}
 	.additional-app-function-row p{
 		font-size: 15px;
 	}
@@ -161,15 +174,14 @@ nav {
 
 .team {
 
-	min-height: 400px;
+	min-height: 450px;
 	background-color: $color-bg-blue;
 	color: $color-white;
 	font-weight: bold;
 
 	.team-member {
 		padding-top: 30px;
-		position: relative;
-		bottom: -700px;
+		left: -1500px;
 	}
 
 	.team-member-text {
@@ -190,6 +202,12 @@ nav {
 		max-width: 230px;
 	}
 
+	.team-member-photo img:hover {
+		position: relative;
+		max-width: 235px;
+		box-shadow: 4px 4px 3px $shadow;
+	}
+
 	.team-member-social-icons {
 		padding-bottom: 50px;
 
@@ -202,6 +220,8 @@ nav {
 	.social-icons {
 		font-size: 10px;
 		width: 80%;
+		position: relative;
+		left: -1000px;
 	}
 }
 
