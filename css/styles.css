@@ -12,7 +12,8 @@
 
 nav {
   font-family: "Roboto", sans-serif;
-  background-color: #595959; }
+  background-color: #ffffff;
+  box-shadow: 1px 1px 18px #0e5c90; }
   nav button {
     background: #595959;
     align-items: center;
@@ -26,15 +27,15 @@ nav {
   nav .navbar-toggler-icon .fa-bars {
     color: #EDF2F4;
     padding: 4px; }
+  nav .nav-item {
+    position: relative;
+    padding: 0 8px; }
   nav .nav-item a {
-    color: #ffffff;
+    color: #0e5c90;
     font-size: 20px;
     margin: 0 30px; }
-  nav .nav-item a:hover {
-    color: #D1D1D1; }
-  nav .nav-item .active {
-    color: #EDF2F4;
-    text-shadow: 2px 2px 2px #d13232; }
+  nav .nav-item a:hover, nav .nav-item .active {
+    color: #d13232; }
   nav .navbar-brand img {
     max-height: 50px; }
 
@@ -42,14 +43,17 @@ nav {
   width: 100%;
   min-height: 400px;
   height: 100vh;
-  background: #EDF2F4 url(../images/header-background.jpg) top center no-repeat;
+  background: #0e5c90 url(../images/header-background.jpg) top center no-repeat;
   background-size: cover; }
   .header-top .zaplanujto-logo {
-    max-width: 150px; }
+    max-width: 150px;
+    display: none; }
   .header-top .welcome-text {
     color: #ffffff;
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold; }
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0; }
   .header-top .join-us-btn {
     color: #ffffff;
     font-size: 20px;
@@ -58,7 +62,8 @@ nav {
     border-radius: 10px;
     padding: 5px 15px;
     text-decoration: none;
-    transition-duration: 0.5s; }
+    transition-duration: 0.5s;
+    opacity: 0; }
   .header-top .join-us-btn:hover {
     color: #0e5c90;
     background-color: #ffffff; }
@@ -71,7 +76,10 @@ nav {
     font-weight: bold; }
   .app-functions .app-description img {
     width: 175px;
-    padding: 0 0; }
+    padding: 0 0;
+    display: none; }
+  .app-functions .app-description img:hover {
+    width: 180px; }
   .app-functions .app-description p {
     font-size: 20px;
     line-height: 1.3em; }
@@ -79,19 +87,29 @@ nav {
     margin-bottom: 20px; }
   .app-functions .additional-app-function-container {
     margin-top: 20px;
-    font-size: 20px; }
+    font-size: 20px;
+    overflow: hidden; }
+  .app-functions .add-icons-left-panel {
+    position: relative;
+    left: -1000px; }
+  .app-functions .add-icons-right-panel {
+    position: relative;
+    left: 1000px; }
   .app-functions .additional-app-function-row i {
     color: #d13232; }
+  .app-functions .additional-app-function-row i:hover {
+    text-shadow: 1px 2px 5px grey; }
   .app-functions .additional-app-function-row p {
     font-size: 15px; }
 
 .team {
-  min-height: 400px;
+  min-height: 450px;
   background-color: #0e5c90;
   color: #ffffff;
   font-weight: bold; }
   .team .team-member {
-    padding-top: 30px; }
+    padding-top: 30px;
+    left: -1500px; }
   .team .team-member-text {
     width: 100%;
     font-size: 24px;
@@ -104,13 +122,19 @@ nav {
   .team .team-member-photo img {
     width: 100%;
     max-width: 230px; }
+  .team .team-member-photo img:hover {
+    position: relative;
+    max-width: 235px;
+    box-shadow: 4px 4px 3px #0F3156; }
   .team .team-member-social-icons {
     padding-bottom: 50px; }
   .team .team-member-text, .team i {
     color: #ffffff; }
   .team .social-icons {
     font-size: 10px;
-    width: 80%; }
+    width: 80%;
+    position: relative;
+    left: -1000px; }
 
 .newsletter {
   background-color: #595959;
@@ -123,6 +147,9 @@ nav {
     font-size: 22px; }
   .newsletter .info {
     padding-top: 5px; }
+  .newsletter .small-info {
+    margin: 0 auto;
+    font-size: 12px; }
 
 /*END OF SITE*/
 .end {
@@ -132,13 +159,26 @@ nav {
   .end p {
     padding-top: 15px; }
 
+#scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  color: #d13232;
+  font-size: 40px;
+  z-index: 1000;
+  display: none;
+  opacity: 0.45; }
+
+#scroll-to-top:hover {
+  opacity: 1; }
+
 /*******************************************MEDIA QUERIES************************************************************/
 /* Bootstrap4 - SM! Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
   .header-top .zaplanujto-logo {
     max-width: 175px; }
   .header-top .welcome-text {
-    font-size: 40px; }
+    font-size: 45px; }
 
   .news-confirm {
     max-width: 400px; }
@@ -149,8 +189,36 @@ nav {
   .additional-app-function-row p {
     padding-left: 20px;
     padding-right: 0; } }
+#scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  font-size: 45px; }
+
 /* Bootstrap4 - MD! Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
+  nav .nav-item .active {
+    color: #0e5c90; }
+  nav .nav-item .active a:hover:after, nav .nav-item .active:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    background-color: #0e5c90;
+    opacity: 0.1;
+    left: 0;
+    top: -16px; }
+  nav .nav-item .active a:hover:before, nav .nav-item .active:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    border-top: 3px solid #0e5c90;
+    left: 0;
+    top: -16px; }
+
   .header-top .zaplanujto-logo {
     max-width: 200px; }
   .header-top .welcome-text {
@@ -165,9 +233,32 @@ nav {
   .app-functions .additional-app-function-row i {
     font-size: 80px; }
   .app-functions .additional-app-function-row p {
-    font-size: 17px; } }
+    font-size: 17px; }
+
+  #scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 10px; } }
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  .nav-effect {
+    transform: scaley(0.8);
+    transform-origin: top center;
+    transition: 1s ease; }
+
+  nav .nav-item .active {
+    color: #0e5c90; }
+  nav .nav-item .active a:hover:after, nav .nav-item .active:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    background-color: #0e5c90;
+    opacity: 0.1;
+    left: 0;
+    top: -16px; }
+
   .header-top .zaplanujto-logo {
     max-width: 210px; }
   .header-top .welcome-text {
@@ -179,6 +270,12 @@ nav {
     font-size: 80px; }
   .app-functions .additional-app-function-row p {
     font-size: 17px;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+
+  #scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 60px; } }
 
 /*# sourceMappingURL=styles.css.map */

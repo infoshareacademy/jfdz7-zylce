@@ -1,6 +1,7 @@
 $color-bg-grey: #595959;
 $color-bg-light: #F6F6DA;
 $color-bg-blue: #0e5c90;
+$shadow: #0F3156;
 $color-white: #ffffff;
 $color-grey-light: #D1D1D1;
 $color-white-dirty: #EDF2F4;
@@ -24,7 +25,8 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 
 nav {
 	font-family: $font-primary;
-	background-color: $color-bg-grey;
+	background-color: $color-white;
+	box-shadow: 1px 1px 18px $color-bg-blue;
 
 	button {
 		background: $color-bg-grey;
@@ -49,19 +51,19 @@ nav {
 		padding: 4px;
 	}
 
+	.nav-item {
+		position: relative;
+		padding: 0 8px;
+	}
+
 	.nav-item a {
-		color: $color-white;
+		color: $color-bg-blue;
 		font-size: 20px;
 		margin: 0 30px;
 	}
 
-	.nav-item a:hover {
-		color: $color-grey-light;
-	}
-
-	.nav-item .active {
-		color: $color-white-dirty;
-		text-shadow: 2px 2px 2px $color-accent-red;
+	.nav-item a:hover, .nav-item .active {
+		color: $color-accent-red;
 	}
 
 	.navbar-brand img {
@@ -73,43 +75,50 @@ nav {
 	width: 100%;
 	min-height: 400px;
 	height: 100vh;
-	background: $color-white-dirty url(../images/header-background.jpg) top center no-repeat;
+	background: $color-bg-blue url(../images/header-background.jpg) top center no-repeat;
 	background-size: cover;
 
-	.zaplanujto-logo{
 
-      max-width: 150px;
+
+	.zaplanujto-logo{
+      	max-width: 150px;
+	  	display: none;
+
 	}
 
 	.welcome-text {
-      color: $color-white;
-      font-family: $font-secondary;
-	  font-weight:bold;
+		color: $color-white;
+		font-family: $font-secondary;
+		font-size: 25px;
+		font-weight:bold;
+		opacity: 0;
+
 
 	}
 
     .join-us-btn{
-      color:$color-white;
-      font-size: 20px;
-      font-weight: bold;
-      border: 2px solid $color-white;
-      border-radius: 10px;
-      padding: 5px 15px;
-      text-decoration: none;
-      transition-duration: 0.5s;
+      	color:$color-white;
+      	font-size: 20px;
+      	font-weight: bold;
+      	border: 2px solid $color-white;
+      	border-radius: 10px;
+      	padding: 5px 15px;
+      	text-decoration: none;
+      	transition-duration: 0.5s;
+	  	opacity: 0;
     }
 
     .join-us-btn:hover{
-      color: $color-bg-blue;
-      background-color: $color-white;
-    }
+      	color: $color-bg-blue;
+      	background-color: $color-white;
+	}
 
 }
 
 //ABOUT ZAPLANUJTO / 4 ICONS / Eight Additional functions
 .app-functions {
-	min-height: 500px;
-	background-color: $color-bg-light;
+		min-height: 500px;
+		background-color: $color-bg-light;
 
 
 	.app-functions-title p {
@@ -117,13 +126,15 @@ nav {
 		font-weight: bold;
 	}
 
-	.app-description{
-		//margin-top: 1%;
-	}
-
 	.app-description img {
 		width: 175px;
 		padding: 0 0;
+		display: none;
+	}
+
+	.app-description img:hover {
+		width: 180px;
+
 	}
 
 	.app-description p {
@@ -138,10 +149,22 @@ nav {
 	.additional-app-function-container {
 		margin-top: 20px;
 		font-size: 20px;
+		overflow: hidden;
 	}
-
+	.add-icons-left-panel {
+		position: relative;
+		left: -1000px;
+	}
+	.add-icons-right-panel{
+		position: relative;
+		left: 1000px;
+	}
 	.additional-app-function-row i {
 		color: $color-accent-red;
+	}
+
+	.additional-app-function-row i:hover {
+		text-shadow: 1px 2px 5px grey;
 	}
 	.additional-app-function-row p{
 		font-size: 15px;
@@ -151,13 +174,14 @@ nav {
 
 .team {
 
-	min-height: 400px;
+	min-height: 450px;
 	background-color: $color-bg-blue;
 	color: $color-white;
 	font-weight: bold;
 
 	.team-member {
 		padding-top: 30px;
+		left: -1500px;
 	}
 
 	.team-member-text {
@@ -178,6 +202,12 @@ nav {
 		max-width: 230px;
 	}
 
+	.team-member-photo img:hover {
+		position: relative;
+		max-width: 235px;
+		box-shadow: 4px 4px 3px $shadow;
+	}
+
 	.team-member-social-icons {
 		padding-bottom: 50px;
 
@@ -190,6 +220,8 @@ nav {
 	.social-icons {
 		font-size: 10px;
 		width: 80%;
+		position: relative;
+		left: -1000px;
 	}
 }
 
@@ -207,6 +239,10 @@ nav {
 	.info {
 		padding-top: 5px;
 	}
+	.small-info {
+		margin: 0 auto;
+		font-size: 12px;
+	}
 
 }
 
@@ -222,17 +258,40 @@ nav {
 	}
 }
 
+#scroll-to-top{
+  position: fixed;
+  bottom:15px;
+  right: 10px;
+  color: $color-accent-red;
+  font-size: 40px;
+  z-index: 1000;
+  display: none;
+  opacity: 0.45;
+
+
+}
+
+#scroll-to-top:hover{
+  opacity: 1;
+}
+
+
+
+
 /*******************************************MEDIA QUERIES************************************************************/
 
 /* Bootstrap4 - SM! Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
+
+
+
 	//Header logo and Welcome text
 	.header-top{
 		.zaplanujto-logo{
 			max-width: 175px;
 		}
 		.welcome-text{
-			font-size: 40px;
+			font-size: 45px;
 		}
 	}
 
@@ -249,11 +308,46 @@ nav {
 		padding-left: 20px;
 		padding-right: 0;
 	}
+  }
+  #scroll-to-top{
+    position: fixed;
+    bottom:15px;
+    right: 10px;
+    font-size: 45px;
 
 }
 
 /* Bootstrap4 - MD! Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
+	nav {
+		.nav-item .active {
+			color: $color-bg-blue;
+		}
+
+		.nav-item .active a:hover:after, .nav-item .active:after {
+			display: block;
+			content: " ";
+			position: absolute;
+			bottom: -16px;
+			width: 100%;
+			background-color: $color-bg-blue;
+			opacity: 0.1;
+			left: 0;
+			top: -16px;
+		}
+
+		.nav-item .active a:hover:before, .nav-item .active:before {
+			display: block;
+			content: " ";
+			position: absolute;
+			bottom: -16px;
+			width: 100%;
+			border-top: 3px solid $color-bg-blue;
+			left: 0;
+			top: -16px;
+		}
+	}
+
 	//Header logo and Welcome text
 	.header-top{
 		.zaplanujto-logo{
@@ -278,10 +372,66 @@ nav {
 			font-size: 17px;
 		}
 	}
+  #scroll-to-top{
+    position: fixed;
+    bottom:15px;
+    right: 10px;
+
+  }
 }
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
+
+	.nav-effect {
+		//opacity: 0.9;
+		transform: scaley(0.8);
+		transform-origin: top center;
+		transition: 1s ease;
+	}
+	nav {
+
+
+		.nav-item .active {
+			color: $color-bg-blue;
+		}
+		//
+		//.nav-item .active-effect:after {
+		//	display: block;
+		//	content: " ";
+		//	position: absolute;
+		//	bottom: -16px;
+		//	width: 100%;
+		//	background-color: $color-bg-blue;
+		//	opacity: 0.1;
+		//	left: 0;
+		//	top: -16px;
+		//}
+
+		.nav-item .active a:hover:after, .nav-item .active:after {
+			display: block;
+			content: " ";
+			position: absolute;
+			bottom: -16px;
+			width: 100%;
+			background-color: $color-bg-blue;
+			opacity: 0.1;
+			left: 0;
+			top: -16px;
+		}
+
+		//.nav-item .active a:hover:before, .nav-item .active:before {
+		//	display: block;
+		//	content: " ";
+		//	position: absolute;
+		//	bottom: -16px;
+		//	width: 100%;
+		//	border-top: 3px solid $color-bg-blue;
+		//	left: 0;
+		//	top: -16px;
+		//}
+	}
+
 	//Header logo and Welcome text
 	.header-top {
 		.zaplanujto-logo {
@@ -303,4 +453,11 @@ nav {
 			padding-left: 20px;
 		}
 	}
+  #scroll-to-top{
+    position: fixed;
+    bottom:15px;
+    right: 15px;
+    font-size: 60px;
+
+  }
 }
