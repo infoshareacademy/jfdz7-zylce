@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+	<meta charset="UTF-8">
     <title>Zaplanuj.to - Game</title>
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
     <link rel="Stylesheet" type="text/css" href="game.css"/>
+
 </head>
 <body>
-    <section id="startScreen">
+    <section id="startScreen" class="startScreen">
+		<div class="topBar">
+			<div class="timerArea">
+				<div class="topBarSubtitle">CZAS</div>
+				<div class="topBarInfo">40</div>
+			</div>
+			<div class="liveScoreArea">
+				<span class="topBarSubtitle">WYNIK</span>
+				<span class="topBarInfo">XXX</span>
+			</div>
+			<div class="taskArea">
+				<span class="topBarSubtitle">ZADANIE</span>
+				<span class="topBarInfo"><small>Odszukaj i kliknij ikonę:</small></span>
+			</div>
+			<div class="taskIcon">
+				<img src="gfx/task_cinema.jpg"/></span>
+			</div>
+		</div>
+		<div class="gameRules">
+			<ol>Zasady gry:
+				<li>Odszukaj i kliknij ikonę identyczną, jak ta wyświetlona w polu "zadanie".</li>
+				<li>Za prawidłowe wykonanie zadania otrzymasz 1 punkt, a czas gry wydłuży się o 5 sekund.</li>
+				<li>Z każdą wygraną rundą zadanie zmieni się, a na planszy będzie pojawiać się coraz więcej ikon.</li>
+				<li>Kliknięcie nieprawidłowej ikony, skróci czas o 3 sekundy i zmieni zadanie.</li>
+				<li>Koniec gry nastąpi, gdy skończy się czas.</li>
+				<li></li>
+			</ol>
+		</div>
+		<div class="playerName">
+			<input class="playerNameInput" required type="text" placeholder="wpisz swoje imię">
+		</div>
+		<div class="startButton">
+			<button class="startGameBtn" type="button"><i class="fa fa-play-circle fa-5x fa-align-left"></i></button>
+		</div>
+
 
     </section>
-    <section id="gameScreen">
-        <div class="topBar">
-        <span class="timer">30</span>
-        <span class="taskLegend"><img src="gfx/task_cinema.jpg"><img src="gfx/task_theatr.jpg"><img src="gfx/task_concert.jpg"><img src="gfx/task_sport.jpg"></span>
-        </div>
+    <section id="gameScreen" class="gameScreen">
+		<div class="topBar">
+			<div class="timerArea">
+				<div class="topBarSubtitle">CZAS</div>
+				<div class="topBarInfo">40</div>
+			</div>
+			<div class="liveScoreArea">
+				<span class="topBarSubtitle">WYNIK</span>
+				<span class="topBarInfo">XXX</span>
+			</div>
+			<div class="taskArea">
+				<span class="topBarSubtitle">ZADANIE</span>
+				<span class="topBarInfo"><small>Odszukaj i kliknij ikonę:</small></span>
+			</div>
+			<div class="taskIcon">
+				<img src="gfx/task_cinema.jpg"/></span>
+			</div>
+		</div>
     </section>
     <section id="scoreScreen">
 

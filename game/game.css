@@ -1,22 +1,57 @@
 section {
   width: 800px;
-  height: 600px;
+  height: 650px;
   margin: 0 auto;
-  margin-top: 50px;
-  border: 10px solid magenta; }
+  border: 2px solid magenta;
+  color: #D1D1D1; }
 
-#gameScreen {
-  background-color: blue;
+.startScreen {
+  background-color: #0e5c90; }
+  .startScreen .startButton {
+    margin: 0 auto;
+    text-align: center; }
+    .startScreen .startButton .startGameBtn {
+      width: 70px;
+      height: 70px;
+      background: none;
+      border: 3px solid #000000;
+      border-radius: 50%;
+      padding: 0; }
+  .startScreen .fa {
+    color: black; }
+
+.gameScreen {
   background-image: url("gfx/game_bg.jpg"); }
-  #gameScreen .topBar {
-    width: 100%;
-    height: 75px;
-    background-color: #0e5c90;
-    border-bottom: 1px solid white; }
-    #gameScreen .topBar .timer {
-      width: 100px;
-      font-size: 30px;
-      color: white;
-      padding: 10px; }
+
+.topBar {
+  width: 100%;
+  height: 60px;
+  background-color: #000000;
+  border-bottom: 1px solid white; }
+  .topBar .timerArea, .topBar .liveScoreArea, .topBar .taskArea, .topBar .taskIcon {
+    display: inline-flex;
+    position: relative;
+    padding-top: 8px; }
+  .topBar .timerArea, .topBar .liveScoreArea {
+    width: 24%; }
+  .topBar .taskArea {
+    width: 45%; }
+  .topBar .taskIcon {
+    width: 5%;
+    position: absolute;
+    margin-left: -35px; }
+    .topBar .taskIcon img {
+      height: 40px;
+      width: 40px; }
+  .topBar .topBarSubtitle {
+    padding-left: 8px;
+    font-size: 14px;
+    position: absolute; }
+  .topBar .topBarInfo {
+    font-size: 26px;
+    margin: 0 auto;
+    padding-top: 12px; }
+    .topBar .topBarInfo small {
+      font-size: 18px; }
 
 /*# sourceMappingURL=game.css.map */

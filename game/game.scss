@@ -1,28 +1,102 @@
+$color-bg-blue: #0e5c90;
+$color-black: #000000;
+$color-grey-light: #D1D1D1;
+
 section {
-  width: 800px;
-  height: 600px;
-  margin: 0 auto;
-  margin-top: 50px;
-  border: 10px solid rgb(255, 0, 255);
+  	width: 800px;
+  	height: 650px;
+  	margin: 0 auto;
+  	border: 2px solid rgb(255, 0, 255);
+	color: $color-grey-light;
 }
 
 
-#gameScreen{
-  background-color: blue;
+.startScreen {
+	background-color: $color-bg-blue;
+
+
+	.gameRules {
+
+	}
+
+	.playerName {
+
+	}
+
+	.startButton {
+		margin: 0 auto;
+		text-align: center;
+		.startGameBtn {
+			width: 70px;
+			height: 70px;
+			background: none;
+			border: 3px solid $color-black;
+			border-radius: 50%;
+			padding: 0;
+
+		}
+	}
+
+	.fa {
+		color: black;
+	}
+}
+
+
+.gameScreen{
   background-image: url("gfx/game_bg.jpg");
 
-  .topBar{
-    width: 100%;
-    height: 75px;
-    background-color: #0e5c90;
-    border-bottom: 1px solid white;
 
-    .timer{
-      width: 100px;
-      font-size: 30px;
-      color: white;
-      padding: 10px;
-    }
-  ;
-  }
+
+
+}
+
+.topBar {
+	width: 100%;
+	height: 60px;
+	background-color: $color-black;
+	border-bottom: 1px solid white;
+
+	.timerArea, .liveScoreArea, .taskArea, .taskIcon {
+		display: inline-flex;
+		position: relative;
+		padding-top: 8px;
+	}
+	.timerArea, .liveScoreArea {
+		width: 24%;
+	}
+
+	.taskArea {
+		width: 45%;
+	}
+
+	.taskIcon {
+		width: 5%;
+		position: absolute;
+		margin-left: -35px;
+
+		img {
+			height: 40px;
+			width: 40px;
+
+		}
+	}
+
+	.topBarSubtitle {
+		padding-left: 8px;
+		font-size: 14px;
+		position: absolute;
+	}
+
+	.topBarInfo {
+		font-size: 26px;
+		margin: 0 auto;
+		padding-top: 12px;
+
+		small {
+			font-size: 18px;
+		}
+	}
+
+
 }
