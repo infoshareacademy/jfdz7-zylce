@@ -12,7 +12,8 @@ $(document).ready(function() {
     const $addIconsLeftPanel = $('.add-icons-left-panel');
     const $addIconsRightPanel = $('.add-icons-right-panel');
     const $teamMember = $('.team-member');
-    const $socialIcons = $('.social-icons')
+    const $socialIcons = $('.social-icons');
+    const $memberName = $('.team-member-text');
 
     $logo.show(500, function () {
         $welcomeText.animate({opacity: 1}, 150, function () {
@@ -40,6 +41,7 @@ $(document).ready(function() {
     function teamMemberAnimation() {
         if($window.scrollTop() >  1100) {
             $teamMember.animate({left: 0}, 1500 );
+            $memberName.animate({left: 0}, 1750);
             $socialIcons.animate({left: 0}, 2000);
         }
 
