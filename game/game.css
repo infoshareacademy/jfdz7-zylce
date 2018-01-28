@@ -1,3 +1,8 @@
-
+section {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 10px solid magenta; }
 
 /*# sourceMappingURL=game.css.map */
