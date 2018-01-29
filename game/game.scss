@@ -3,7 +3,8 @@ $color-blue: #0F3156;
 $color-black: #000000;
 $color-grey-light: #D1D1D1;
 $color-red-alert: #CC1100;
-$color-yellow: #FFC125	;
+$color-yellow: #FFC125;
+$color-grey: #757575;
 
 body{
 	background: url("gfx/background.jpg") no-repeat fixed top;
@@ -80,7 +81,6 @@ img.icon {
 			border: 3px solid $color-black;
 			border-radius: 50%;
 			padding: 0;
-
 		}
 	}
 
@@ -92,10 +92,6 @@ img.icon {
 
 .gameScreen{
     background-image: url("gfx/game_bg.jpg");
-
-
-
-
 }
 
 .topBar {
@@ -114,6 +110,7 @@ img.icon {
 	.timerArea, .liveScoreArea {
 		width: 24%;
 		padding-left: 10px;
+		color: $color-yellow
 	}
 
 	.taskArea {
@@ -129,11 +126,10 @@ img.icon {
 		margin-left: -35px;
 		padding-top: 10px;
 
-
 		img {
 			height: 40px;
 			width: 40px;
-
+			border-color: $color-yellow;
 		}
 		
 	}
@@ -141,14 +137,12 @@ img.icon {
 	.topBarSubtitle {
 		padding-left: 8px;
 		position: absolute;
-
-
+		color: $color-grey-light;
 	}
 
 	.topBarInfo {
 		font-size: 35px;
 		margin: 0 auto;
-
 
 		small {
 			font-size: 18px;

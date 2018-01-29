@@ -68,7 +68,8 @@ img.icon {
     padding-top: 8px; }
   .topBar .timerArea, .topBar .liveScoreArea {
     width: 24%;
-    padding-left: 10px; }
+    padding-left: 10px;
+    color: #FFC125; }
   .topBar .taskArea {
     width: 45%; }
   .topBar .liveScoreArea .topBarInfo {
@@ -80,10 +81,12 @@ img.icon {
     padding-top: 10px; }
     .topBar .taskIcon img {
       height: 40px;
-      width: 40px; }
+      width: 40px;
+      border-color: #FFC125; }
   .topBar .topBarSubtitle {
     padding-left: 8px;
-    position: absolute; }
+    position: absolute;
+    color: #D1D1D1; }
   .topBar .topBarInfo {
     font-size: 35px;
     margin: 0 auto; }
