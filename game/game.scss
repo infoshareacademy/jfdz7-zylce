@@ -40,8 +40,15 @@ img.icon {
 		}
 
 		.rulesTitle {
-			font-size: 24px;
+			font-size: 26px;
+			margin-bottom: 8px;
 			text-align: center;
+			color: $color-red-alert;
+			text-shadow:
+				$color-yellow 1px 1px 0px,
+				$color-yellow -1px 1px 0px,
+				$color-yellow -1px -1px 0px,
+				$color-yellow 1px -1px 0px,
 		}
 
 		.caseRule {
@@ -148,6 +155,4 @@ img.icon {
 			font-size: 18px;
 		}
 	}
-
-
 }

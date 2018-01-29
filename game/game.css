@@ -25,8 +25,11 @@ img.icon {
     .startScreen .gameRules .fa {
       color: #CC1100; }
     .startScreen .gameRules .rulesTitle {
-      font-size: 24px;
-      text-align: center; }
+      font-size: 26px;
+      margin-bottom: 8px;
+      text-align: center;
+      color: #CC1100;
+      text-shadow: #FFC125 1px 1px 0px, #FFC125 -1px 1px 0px, #FFC125 -1px -1px 0px, #FFC125 1px -1px 0px; }
     .startScreen .gameRules .actionRule {
       padding-left: 40px; }
       .startScreen .gameRules .actionRule .fa {
