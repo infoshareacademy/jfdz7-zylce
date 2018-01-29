@@ -55,6 +55,14 @@ img.icon {
 
 .gameScreen {
   background-image: url("gfx/game_bg.jpg"); }
+  .gameScreen .currentTask {
+    border: 3px solid #ffffff;
+    border-radius: 5px; }
+  .gameScreen .currentTask:hover {
+    border-color: #FFC125;
+    box-shadow: 3px 3px 5px black;
+    width: 42px;
+    height: 42px; }
 
 .topBar {
   width: 100%;
