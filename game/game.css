@@ -1,9 +1,15 @@
+body {
+  background: url("gfx/background.jpg") no-repeat fixed top; }
+
 section {
+  box-sizing: border-box;
   width: 800px;
   height: 650px;
   margin: 0 auto;
   border: 2px solid magenta;
-  color: #D1D1D1; }
+  color: #D1D1D1;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px; }
 
 .startScreen {
   background-color: #0e5c90; }
@@ -27,7 +33,8 @@ section {
   width: 100%;
   height: 60px;
   background-color: #000000;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+  box-shadow: 0 3px 10px black; }
   .topBar .timerArea, .topBar .liveScoreArea, .topBar .taskArea, .topBar .taskIcon {
     display: inline-flex;
     position: relative;
@@ -39,18 +46,19 @@ section {
   .topBar .taskIcon {
     width: 5%;
     position: absolute;
-    margin-left: -35px; }
+    margin-left: -35px;
+    padding-top: 10px; }
     .topBar .taskIcon img {
       height: 40px;
       width: 40px; }
   .topBar .topBarSubtitle {
     padding-left: 8px;
-    font-size: 14px;
+    font-size: 15px;
     position: absolute; }
   .topBar .topBarInfo {
-    font-size: 26px;
+    font-size: 45px;
     margin: 0 auto;
-    padding-top: 12px; }
+    padding-left: 15px; }
     .topBar .topBarInfo small {
       font-size: 18px; }
 

@@ -2,12 +2,20 @@ $color-bg-blue: #0e5c90;
 $color-black: #000000;
 $color-grey-light: #D1D1D1;
 
+body{
+	background: url("gfx/background.jpg") no-repeat fixed top;
+
+}
+
 section {
+	box-sizing: border-box;
   	width: 800px;
   	height: 650px;
   	margin: 0 auto;
   	border: 2px solid rgb(255, 0, 255);
 	color: $color-grey-light;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 2px;
 }
 
 
@@ -44,7 +52,7 @@ section {
 
 
 .gameScreen{
-  background-image: url("gfx/game_bg.jpg");
+    background-image: url("gfx/game_bg.jpg");
 
 
 
@@ -56,6 +64,8 @@ section {
 	height: 60px;
 	background-color: $color-black;
 	border-bottom: 1px solid white;
+	box-shadow: 0 3px 10px black;
+
 
 	.timerArea, .liveScoreArea, .taskArea, .taskIcon {
 		display: inline-flex;
@@ -74,6 +84,8 @@ section {
 		width: 5%;
 		position: absolute;
 		margin-left: -35px;
+		padding-top: 10px;
+
 
 		img {
 			height: 40px;
@@ -84,14 +96,16 @@ section {
 
 	.topBarSubtitle {
 		padding-left: 8px;
-		font-size: 14px;
+		font-size: 15px;
 		position: absolute;
+		//font-weight: bold;
+
 	}
 
 	.topBarInfo {
-		font-size: 26px;
+		font-size: 45px;
 		margin: 0 auto;
-		padding-top: 12px;
+		padding-left: 15px;
 
 		small {
 			font-size: 18px;
