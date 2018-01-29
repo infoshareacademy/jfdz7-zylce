@@ -28,24 +28,27 @@
 		</div>
 		<div class="gameRules">
 			<p class="rulesTitle">ZASADY GRY</p>
-			<ol>
-				<li>Odszukaj i kliknij wszystkie ikony identyczne, <br>jak ta wyświetlona w polu "zadanie".</li>
-				<li>Po prawidłowym wykonaniu zadania:
-					<ul>
-						<li>otrzymasz 1 punkt,</li>
-						<li>czas wydłuży się o 5 sekund,</li>
-						<li>w polu <em>ZADANIE</em> pojawi się nowa ikona,</li>
-						<li>liczba ikon na mapie zwiększy się.</li>
-					</ul>
-				</li>
-				<li>Kliknięcie nieprawidłowej ikony:
-					<ul>
-						<li>skróci czas o 3 sekundy,</li>
-						<li>spowoduje zmianę zadania.</li>
-					</ul>
-				</li>
-				<li>Koniec gry nastąpi, gdy skończy się czas.</li>
-			</ol>
+			<i class="fa fa-hand-o-right" aria-hidden="true"></i>
+				<span class="caseRule">Odszukaj na mapie wszystkie ikony identyczne, jak ta wyświetlona w polu <em>ZADANIE</em>.</span>
+			<br />
+			<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+				<span class="masterRule">Po prawidłowym wykonaniu zadania:</span>
+			<br />
+				<span class="actionRule"><i class="fa fa-star-o" aria-hidden="true"></i> otrzymasz 1 punkt,</span>
+			<br />
+				<span class="actionRule"><i class="fa fa-clock-o" aria-hidden="true"></i> czas wydłuży się o 5 sekund,</span>
+			<br />
+				<span class="actionRule"><i class="fa fa-refresh" aria-hidden="true"></i> <em>ZADANIE</em> zmieni się,</span>
+			<br />
+				<span class="actionRule"><i class="fa fa-plus" aria-hidden="true"></i> liczba ikon na mapie zwiększy się.</span>
+			<br /><i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+				<span class="caseRule">Kliknięcie nieprawidłowej ikony:</span>
+			<br />
+				<span class="actionRule"><i class="fa fa-clock-o" aria-hidden="true"></i> skróci czas o 3 sekundy,</span>
+			<br />
+				<span class="actionRule"><i class="fa fa-refresh" aria-hidden="true"></i> spowoduje zmianę zadania.</span>
+			<br /><i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+				<span class="caseRule"> Koniec gry nastąpi, gdy skończy się czas.</span>
 		</div>
 		<div class="playerName">
 			<input class="playerNameInput" required type="text" placeholder="imię">

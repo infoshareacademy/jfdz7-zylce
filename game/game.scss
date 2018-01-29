@@ -2,6 +2,8 @@ $color-bg-blue: #0e5c90;
 $color-blue: #0F3156;
 $color-black: #000000;
 $color-grey-light: #D1D1D1;
+$color-red-alert: #CC1100;
+$color-yellow: #FFC125	;
 
 section {
   	width: 800px;
@@ -20,14 +22,31 @@ img.icon {
 
 
 	.gameRules {
-		width: 50%;
+		width: 75%;
 		margin: 0 auto;
 		line-height: 145%;
 
+		.fa {
+			color: $color-red-alert;
+		}
+
 		.rulesTitle {
-			font-size: 26px;
+			font-size: 24px;
 			text-align: center;
 		}
+
+		.caseRule {
+
+		}
+
+		.actionRule {
+			padding-left: 40px;
+			.fa {
+				color: $color-yellow;
+			}
+		}
+
+
 	}
 
 	.playerName {

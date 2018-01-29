@@ -12,12 +12,18 @@ img.icon {
 .startScreen {
   background-color: #0e5c90; }
   .startScreen .gameRules {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     line-height: 145%; }
+    .startScreen .gameRules .fa {
+      color: #CC1100; }
     .startScreen .gameRules .rulesTitle {
-      font-size: 26px;
+      font-size: 24px;
       text-align: center; }
+    .startScreen .gameRules .actionRule {
+      padding-left: 40px; }
+      .startScreen .gameRules .actionRule .fa {
+        color: #FFC125; }
   .startScreen .playerName {
     text-align: center; }
     .startScreen .playerName input {
