@@ -7,7 +7,6 @@ $color-yellow: #FFC125	;
 
 body{
 	background: url("gfx/background.jpg") no-repeat fixed top;
-
 }
 
 section {
@@ -18,7 +17,7 @@ section {
   	border: 2px solid rgb(255, 0, 255);
 	color: $color-grey-light;
 	font-family: 'Coiny', cursive;
-	font-size: 17px;
+	font-size: 14px;
 	letter-spacing: 1px;
 }
 
@@ -142,14 +141,14 @@ img.icon {
 	.topBarSubtitle {
 		padding-left: 8px;
 		position: absolute;
-		//font-weight: bold;
+
 
 	}
 
 	.topBarInfo {
-		font-size: 40px;
+		font-size: 35px;
 		margin: 0 auto;
-		//padding-left: 80px;
+
 
 		small {
 			font-size: 18px;

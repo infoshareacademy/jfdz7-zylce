@@ -9,7 +9,7 @@ section {
   border: 2px solid magenta;
   color: #D1D1D1;
   font-family: 'Coiny', cursive;
-  font-size: 17px;
+  font-size: 14px;
   letter-spacing: 1px; }
 
 img.icon {
@@ -85,7 +85,7 @@ img.icon {
     padding-left: 8px;
     position: absolute; }
   .topBar .topBarInfo {
-    font-size: 40px;
+    font-size: 35px;
     margin: 0 auto; }
     .topBar .topBarInfo small {
       font-size: 18px; }
