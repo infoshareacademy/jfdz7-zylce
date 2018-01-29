@@ -1,6 +1,7 @@
 $color-bg-blue: #0e5c90;
 $color-blue: #0F3156;
 $color-black: #000000;
+$color-white: #ffffff;
 $color-grey-light: #D1D1D1;
 $color-red-alert: #CC1100;
 $color-yellow: #FFC125;
@@ -124,12 +125,11 @@ img.icon {
 		width: 5%;
 		position: absolute;
 		margin-left: -35px;
-		padding-top: 10px;
+		padding-top: 7px;
 
 		img {
-			height: 40px;
-			width: 40px;
-			border-color: $color-yellow;
+			border: 3px solid $color-white ;
+			border-radius: 5px;
 		}
 		
 	}
@@ -141,7 +141,7 @@ img.icon {
 	}
 
 	.topBarInfo {
-		font-size: 35px;
+		font-size: 38px;
 		margin: 0 auto;
 
 		small {

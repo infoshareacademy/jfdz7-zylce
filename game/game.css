@@ -78,17 +78,16 @@ img.icon {
     width: 5%;
     position: absolute;
     margin-left: -35px;
-    padding-top: 10px; }
+    padding-top: 7px; }
     .topBar .taskIcon img {
-      height: 40px;
-      width: 40px;
-      border-color: #FFC125; }
+      border: 3px solid #ffffff;
+      border-radius: 5px; }
   .topBar .topBarSubtitle {
     padding-left: 8px;
     position: absolute;
     color: #D1D1D1; }
   .topBar .topBarInfo {
-    font-size: 35px;
+    font-size: 38px;
     margin: 0 auto; }
     .topBar .topBarInfo small {
       font-size: 18px; }
