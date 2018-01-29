@@ -19,7 +19,7 @@ img.icon {
 .startScreen {
   background-color: #0e5c90; }
   .startScreen .gameRules {
-    width: 75%;
+    width: 50%;
     margin: 0 auto;
     line-height: 145%; }
     .startScreen .gameRules .fa {
