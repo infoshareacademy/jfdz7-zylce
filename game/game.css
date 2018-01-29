@@ -14,7 +14,7 @@ section {
 
 img.icon {
   border-radius: 4px;
-  border: 2px solid #0e5c90; }
+  border: 4px solid #0e5c90; }
 
 .startScreen {
   background-color: #0e5c90; }
@@ -35,26 +35,38 @@ img.icon {
       .startScreen .gameRules .actionRule .fa {
         color: #FFC125; }
   .startScreen .playerName {
-    text-align: center; }
+    text-align: center;
+    padding: 35px 0 10px 0; }
     .startScreen .playerName input {
+      font-family: 'Coiny', cursive;
       width: 30%;
       height: 34px;
-      border: 3px solid #0F3156;
+      background-color: #D1D1D1;
+      color: #CC1100;
+      border: 4px solid #0F3156;
       border-radius: 4px;
       font-size: 22px;
-      text-align: center; }
+      text-align: center;
+      outline-color: #D1D1D1; }
+    .startScreen .playerName input::placeholder {
+      color: #0F3156;
+      opacity: 0.5; }
   .startScreen .startButton {
     margin: 0 auto;
     text-align: center; }
     .startScreen .startButton .startGameBtn {
       width: 70px;
       height: 70px;
-      background: none;
-      border: 3px solid #000000;
+      background: #FFC125;
+      border: 0px solid #0F3156;
       border-radius: 50%;
+      padding: 0;
+      outline: none; }
+    .startScreen .startButton .fa {
+      color: #000000;
       padding: 0; }
-  .startScreen .fa {
-    color: black; }
+  .startScreen .startButton:focus {
+    outline: none; }
 
 .gameScreen {
   background-image: url("gfx/game_bg.jpg"); }
