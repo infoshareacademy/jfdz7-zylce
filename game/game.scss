@@ -14,8 +14,9 @@ section {
   	margin: 0 auto;
   	border: 2px solid rgb(255, 0, 255);
 	color: $color-grey-light;
-	font-family: 'Bangers', cursive;
-	letter-spacing: 2px;
+	font-family: 'Coiny', cursive;
+	font-size: 17px;
+	letter-spacing: 1px;
 }
 
 
@@ -74,10 +75,14 @@ section {
 	}
 	.timerArea, .liveScoreArea {
 		width: 24%;
+		padding-left: 10px;
 	}
 
 	.taskArea {
 		width: 45%;
+	}
+	.liveScoreArea .topBarInfo{
+		padding-left: 60px;
 	}
 
 	.taskIcon {
@@ -92,20 +97,20 @@ section {
 			width: 40px;
 
 		}
+		
 	}
 
 	.topBarSubtitle {
 		padding-left: 8px;
-		font-size: 15px;
 		position: absolute;
 		//font-weight: bold;
 
 	}
 
 	.topBarInfo {
-		font-size: 45px;
+		font-size: 40px;
 		margin: 0 auto;
-		padding-left: 15px;
+		//padding-left: 80px;
 
 		small {
 			font-size: 18px;

@@ -8,8 +8,9 @@ section {
   margin: 0 auto;
   border: 2px solid magenta;
   color: #D1D1D1;
-  font-family: 'Bangers', cursive;
-  letter-spacing: 2px; }
+  font-family: 'Coiny', cursive;
+  font-size: 17px;
+  letter-spacing: 1px; }
 
 .startScreen {
   background-color: #0e5c90; }
@@ -40,9 +41,12 @@ section {
     position: relative;
     padding-top: 8px; }
   .topBar .timerArea, .topBar .liveScoreArea {
-    width: 24%; }
+    width: 24%;
+    padding-left: 10px; }
   .topBar .taskArea {
     width: 45%; }
+  .topBar .liveScoreArea .topBarInfo {
+    padding-left: 60px; }
   .topBar .taskIcon {
     width: 5%;
     position: absolute;
@@ -53,12 +57,10 @@ section {
       width: 40px; }
   .topBar .topBarSubtitle {
     padding-left: 8px;
-    font-size: 15px;
     position: absolute; }
   .topBar .topBarInfo {
-    font-size: 45px;
-    margin: 0 auto;
-    padding-left: 15px; }
+    font-size: 40px;
+    margin: 0 auto; }
     .topBar .topBarInfo small {
       font-size: 18px; }
 
