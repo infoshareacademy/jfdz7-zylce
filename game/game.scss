@@ -1,4 +1,5 @@
 $color-bg-blue: #0e5c90;
+$color-blue: #0F3156;
 $color-black: #000000;
 $color-grey-light: #D1D1D1;
 
@@ -10,17 +11,36 @@ section {
 	color: $color-grey-light;
 }
 
-
+img.icon {
+	border-radius: 4px;
+	border: 2px solid $color-bg-blue
+}
 .startScreen {
 	background-color: $color-bg-blue;
 
 
 	.gameRules {
+		width: 50%;
+		margin: 0 auto;
+		line-height: 145%;
 
+		.rulesTitle {
+			font-size: 26px;
+			text-align: center;
+		}
 	}
 
 	.playerName {
+		text-align: center;
 
+		input {
+			width: 30%;
+			height: 34px;
+			border: 3px solid $color-blue;
+			border-radius: 4px;
+			font-size: 22px;
+			text-align: center;
+		}
 	}
 
 	.startButton {

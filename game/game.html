@@ -23,21 +23,32 @@
 				<span class="topBarInfo"><small>Odszukaj i kliknij ikonę:</small></span>
 			</div>
 			<div class="taskIcon">
-				<img src="gfx/task_cinema.jpg"/></span>
+				<img class="icon" src="gfx/task_cinema.jpg"/></span>
 			</div>
 		</div>
 		<div class="gameRules">
-			<ol>Zasady gry:
-				<li>Odszukaj i kliknij ikonę identyczną, jak ta wyświetlona w polu "zadanie".</li>
-				<li>Za prawidłowe wykonanie zadania otrzymasz 1 punkt, a czas gry wydłuży się o 5 sekund.</li>
-				<li>Z każdą wygraną rundą zadanie zmieni się, a na planszy będzie pojawiać się coraz więcej ikon.</li>
-				<li>Kliknięcie nieprawidłowej ikony, skróci czas o 3 sekundy i zmieni zadanie.</li>
+			<p class="rulesTitle">ZASADY GRY</p>
+			<ol>
+				<li>Odszukaj i kliknij wszystkie ikony identyczne, <br>jak ta wyświetlona w polu "zadanie".</li>
+				<li>Po prawidłowym wykonaniu zadania:
+					<ul>
+						<li>otrzymasz 1 punkt,</li>
+						<li>czas wydłuży się o 5 sekund,</li>
+						<li>w polu <em>ZADANIE</em> pojawi się nowa ikona,</li>
+						<li>liczba ikon na mapie zwiększy się.</li>
+					</ul>
+				</li>
+				<li>Kliknięcie nieprawidłowej ikony:
+					<ul>
+						<li>skróci czas o 3 sekundy,</li>
+						<li>spowoduje zmianę zadania.</li>
+					</ul>
+				</li>
 				<li>Koniec gry nastąpi, gdy skończy się czas.</li>
-				<li></li>
 			</ol>
 		</div>
 		<div class="playerName">
-			<input class="playerNameInput" required type="text" placeholder="wpisz swoje imię">
+			<input class="playerNameInput" required type="text" placeholder="imię">
 		</div>
 		<div class="startButton">
 			<button class="startGameBtn" type="button"><i class="fa fa-play-circle fa-5x fa-align-left"></i></button>

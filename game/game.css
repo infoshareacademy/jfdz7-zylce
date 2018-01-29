@@ -5,8 +5,28 @@ section {
   border: 2px solid magenta;
   color: #D1D1D1; }
 
+img.icon {
+  border-radius: 4px;
+  border: 2px solid #0e5c90; }
+
 .startScreen {
   background-color: #0e5c90; }
+  .startScreen .gameRules {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 145%; }
+    .startScreen .gameRules .rulesTitle {
+      font-size: 26px;
+      text-align: center; }
+  .startScreen .playerName {
+    text-align: center; }
+    .startScreen .playerName input {
+      width: 30%;
+      height: 34px;
+      border: 3px solid #0F3156;
+      border-radius: 4px;
+      font-size: 22px;
+      text-align: center; }
   .startScreen .startButton {
     margin: 0 auto;
     text-align: center; }
