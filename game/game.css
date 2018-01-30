@@ -6,7 +6,7 @@ section {
   width: 800px;
   height: 650px;
   margin: 0 auto;
-  border: 2px solid magenta;
+  border: 2px solid #000000;
   color: #D1D1D1;
   font-family: 'Coiny', cursive;
   font-size: 14px;
@@ -111,8 +111,5 @@ section {
     .startScreen .startButton .fa {
       color: #CC1100;
       padding: 0; }
-
-.gameScreen {
-  background-image: url("gfx/game_bg.jpg"); }
 
 /*# sourceMappingURL=game.css.map */

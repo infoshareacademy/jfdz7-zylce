@@ -15,7 +15,7 @@ section {
   	width: 800px;
   	height: 650px;
   	margin: 0 auto;
-  	border: 2px solid rgb(255, 0, 255);
+  	border: 2px solid $color-black;
 	color: $color-grey-light;
 	font-family: 'Coiny', cursive;
 	font-size: 14px;
@@ -175,6 +175,6 @@ section {
 }
 
 .gameScreen{
-    background-image: url("gfx/game_bg.jpg");
+    //background-image: url("gfx/game_bg.jpg");
 }
 
