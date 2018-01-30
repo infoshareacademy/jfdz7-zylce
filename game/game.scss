@@ -74,19 +74,22 @@ img.icon {
 			font-family: 'Coiny', cursive;
 			width: 30%;
 			height: 34px;
-			background-color: $color-grey-light;
-			color: $color-red-alert;
+			color: $color-grey;
 			border: 4px solid $color-blue;
 			border-radius: 4px;
 			font-size: 22px;
 			text-align: center;
-			outline-color: $color-grey-light;
+			outline: none;
+		}
+
+		.valid {
+			color: $color-red-alert;
+			border-color: $color-yellow;
 		}
 
 		input::placeholder {
 			color: $color-blue;
 			opacity: 0.5;
-
 		}
 	}
 
@@ -97,24 +100,28 @@ img.icon {
 			width: 70px;
 			height: 70px;
 			background: $color-yellow;
-			border: 0px solid $color-blue;
+			border: none;
 			border-radius: 50%;
 			padding: 0;
 			outline: none;
 		}
 
+		.startGameBtn:disabled {
+			border: none;
+			background-color: $color-grey-light;
+			opacity: 0.6;
+			.fa {
+				color: $color-black;
+			}
+		}
 
 		.fa {
-			color: $color-black;
-			//margin-top: -5px;
-			//margin-left: -0.5px;
+			color: $color-red-alert;
 			padding: 0;
 		}
 	}
 
-	.startButton:focus {
-		outline: none;
-	}
+
 
 
 }
