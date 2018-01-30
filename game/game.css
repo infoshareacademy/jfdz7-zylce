@@ -1,8 +1,8 @@
 body {
   background: url("gfx/background.jpg") no-repeat fixed top; }
 
-.opacity {
-  opacity: 0.8;
+.inactive {
+  opacity: 0.4;
   filter: grayscale(100%); }
 
 section {

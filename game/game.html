@@ -10,17 +10,17 @@
 </head>
 <body>
     <section id="startScreen" class="startScreen">
-		<div class="topBar opacity">
-			<div class="timerArea">
-				<div class="topBarSubtitle">CZAS</div>
-				<div class="topBarInfo">40</div>
+		<div class="topBar">
+			<div class="timerArea inactive">
+				<div class="topBarSubtitle ">CZAS</div>
+				<div id="timeAnimated" class="topBarInfo">40</div>
 			</div>
-			<div class="liveScoreArea">
-				<span class="topBarSubtitle">WYNIK</span>
-				<span class="topBarInfo">XXX</span>
+			<div class="liveScoreArea inactive">
+				<span class="topBarSubtitle ">WYNIK</span>
+				<span class="topBarInfo">???</span>
 			</div>
-			<div class="taskArea">
-				<span class="topBarSubtitle">ZADANIE</span>
+			<div class="taskArea inactive">
+				<span class="topBarSubtitle" >ZADANIE</span>
 				<span class="topBarInfo"><small>Odszukaj i kliknij ikonę:</small></span>
 			</div>
 			<div class="taskIcon">
@@ -88,5 +88,6 @@
 <script src="js/createUserOnStartScreen.js"></script>
 <script src="js/startButtonDisability.js"></script>
 <script src="js/exampleIconChanger.js"></script>
+<script src="js/animateTimeCounter.js"></script>
 </body>
 </html>
