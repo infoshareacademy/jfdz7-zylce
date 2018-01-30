@@ -1,10 +1,6 @@
 body {
   background: url("gfx/background.jpg") no-repeat fixed top; }
 
-.inactive {
-  opacity: 0.4;
-  filter: grayscale(100%); }
-
 section {
   box-sizing: border-box;
   width: 800px;
@@ -15,6 +11,48 @@ section {
   font-family: 'Coiny', cursive;
   font-size: 14px;
   letter-spacing: 1px; }
+
+.inactive {
+  opacity: 0.4;
+  filter: grayscale(100%); }
+
+.topBar {
+  width: 100%;
+  height: 60px;
+  background-color: #000000;
+  border-bottom: 1px solid white;
+  box-shadow: 0 3px 10px black; }
+  .topBar .timerArea, .topBar .liveScoreArea, .topBar .taskArea, .topBar .taskIcon {
+    display: inline-flex;
+    position: relative;
+    padding-top: 8px; }
+  .topBar .timerArea, .topBar .liveScoreArea {
+    width: 24%;
+    padding-left: 10px;
+    color: #FFC125; }
+  .topBar .taskArea {
+    width: 45%; }
+  .topBar .liveScoreArea .topBarInfo {
+    padding-left: 60px; }
+  .topBar .taskIcon {
+    width: 5%;
+    position: absolute;
+    margin-left: -35px;
+    margin-top: -3.5px; }
+    .topBar .taskIcon img {
+      height: 45px;
+      width: 45px;
+      border: 4px solid #FFC125;
+      border-radius: 50%; }
+  .topBar .topBarSubtitle {
+    padding-left: 8px;
+    position: absolute;
+    color: #D1D1D1; }
+  .topBar .topBarInfo {
+    font-size: 40px;
+    margin: 0 auto; }
+    .topBar .topBarInfo small {
+      font-size: 18px; }
 
 .startScreen {
   background-color: #0e5c90; }
@@ -76,43 +114,5 @@ section {
 
 .gameScreen {
   background-image: url("gfx/game_bg.jpg"); }
-
-.topBar {
-  width: 100%;
-  height: 60px;
-  background-color: #000000;
-  border-bottom: 1px solid white;
-  box-shadow: 0 3px 10px black; }
-  .topBar .timerArea, .topBar .liveScoreArea, .topBar .taskArea, .topBar .taskIcon {
-    display: inline-flex;
-    position: relative;
-    padding-top: 8px; }
-  .topBar .timerArea, .topBar .liveScoreArea {
-    width: 24%;
-    padding-left: 10px;
-    color: #FFC125; }
-  .topBar .taskArea {
-    width: 45%; }
-  .topBar .liveScoreArea .topBarInfo {
-    padding-left: 60px; }
-  .topBar .taskIcon {
-    width: 5%;
-    position: absolute;
-    margin-left: -35px;
-    margin-top: -3.5px; }
-    .topBar .taskIcon img {
-      height: 45px;
-      width: 45px;
-      border: 4px solid #FFC125;
-      border-radius: 50%; }
-  .topBar .topBarSubtitle {
-    padding-left: 8px;
-    position: absolute;
-    color: #D1D1D1; }
-  .topBar .topBarInfo {
-    font-size: 35px;
-    margin: 0 auto; }
-    .topBar .topBarInfo small {
-      font-size: 18px; }
 
 /*# sourceMappingURL=game.css.map */

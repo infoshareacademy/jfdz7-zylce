@@ -10,11 +10,6 @@ body{
 	background: url("gfx/background.jpg") no-repeat fixed top;
 }
 
-.inactive {
-	opacity: 0.4;
-	filter: grayscale(100%);
-}
-
 section {
 	box-sizing: border-box;
   	width: 800px;
@@ -25,6 +20,66 @@ section {
 	font-family: 'Coiny', cursive;
 	font-size: 14px;
 	letter-spacing: 1px;
+}
+
+.inactive {
+	opacity: 0.4;
+	filter: grayscale(100%);
+}
+
+.topBar {
+	width: 100%;
+	height: 60px;
+	background-color: $color-black;
+	border-bottom: 1px solid white;
+	box-shadow: 0 3px 10px black;
+
+	.timerArea, .liveScoreArea, .taskArea, .taskIcon {
+		display: inline-flex;
+		position: relative;
+		padding-top: 8px;
+	}
+	.timerArea, .liveScoreArea {
+		width: 24%;
+		padding-left: 10px;
+		color: $color-yellow
+	}
+
+	.taskArea {
+		width: 45%;
+	}
+	.liveScoreArea .topBarInfo{
+		padding-left: 60px;
+	}
+
+	.taskIcon {
+		width: 5%;
+		position: absolute;
+		margin-left: -35px;
+		margin-top: -3.5px;
+
+		img {
+			height: 45px;
+			width: 45px;
+			border: 4px solid $color-yellow;
+			border-radius: 50%;
+		}
+	}
+
+	.topBarSubtitle {
+		padding-left: 8px;
+		position: absolute;
+		color: $color-grey-light;
+	}
+
+	.topBarInfo {
+		font-size: 40px;
+		margin: 0 auto;
+
+		small {
+			font-size: 18px;
+		}
+	}
 }
 
 .startScreen {
@@ -61,14 +116,11 @@ section {
 				color: $color-yellow;
 			}
 		}
-
-
 	}
 
 	.playerName {
 		text-align: center;
 		padding: 35px 0 10px 0;
-
 
 		input {
 			font-family: 'Coiny', cursive;
@@ -126,59 +178,3 @@ section {
     background-image: url("gfx/game_bg.jpg");
 }
 
-.topBar {
-	width: 100%;
-	height: 60px;
-	background-color: $color-black;
-	border-bottom: 1px solid white;
-	box-shadow: 0 3px 10px black;
-
-
-	.timerArea, .liveScoreArea, .taskArea, .taskIcon {
-		display: inline-flex;
-		position: relative;
-		padding-top: 8px;
-	}
-	.timerArea, .liveScoreArea {
-		width: 24%;
-		padding-left: 10px;
-		color: $color-yellow
-	}
-
-	.taskArea {
-		width: 45%;
-	}
-	.liveScoreArea .topBarInfo{
-		padding-left: 60px;
-	}
-
-	.taskIcon {
-		width: 5%;
-		position: absolute;
-		margin-left: -35px;
-		margin-top: -3.5px;
-
-		img {
-			height: 45px;
-			width: 45px;
-			border: 4px solid $color-yellow;
-			border-radius: 50%;
-		}
-		
-	}
-
-	.topBarSubtitle {
-		padding-left: 8px;
-		position: absolute;
-		color: $color-grey-light;
-	}
-
-	.topBarInfo {
-		font-size: 35px;
-		margin: 0 auto;
-
-		small {
-			font-size: 18px;
-		}
-	}
-}
