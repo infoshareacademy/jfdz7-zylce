@@ -5,13 +5,19 @@ const $startButton = document.getElementById('startGameBtn');
 const players = [];
 
 const getPlayerName = () => $playerNameInput.value;
-const addPlayer = () => { return {name: getPlayerName(), score: 0} };
+const addPlayer = () => ( {name: getPlayerName(), score: 0} );
 
 $startButton.addEventListener('click', function() {
     let newPlayer = addPlayer();
-    // console.log(newPlayer);
+    console.log(newPlayer);
     players.push(newPlayer);
-    // console.log(players);
+    console.log(players);
 });
+
+
+
+
+
+
 
 
