@@ -5,7 +5,7 @@ const icons = ['gfx/task_cinema.jpg', 'gfx/task_concert.jpg', 'gfx/task_sport.jp
 function srcChanger() {
     for (let i = 0; i < icons.length; i++) {
         ((i) => {
-            setTimeout(() => $exampeIcon.src = icons[i], 1000 * i);
+            setTimeout(() => $exampeIcon.src = icons[i], 500 * i);
         })(i);
     }
 }
@@ -15,9 +15,9 @@ function exampleIconChanger() {
     setInterval(() => {
         this.counter++;
         srcChanger()}
-        , 4000
+        , 2000
     )
-};
+}
 
 const changeExampeIcon = new exampleIconChanger();
 
