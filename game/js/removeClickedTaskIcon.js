@@ -1,12 +1,8 @@
 const tasksOnMap = document.getElementsByClassName('task-on-map');
-// const taskToClick = document.getElementById('game-task');
 
-
-
-const compare = () => {
+const compareIconOnMapWithTask = () => {
     for (let i = 0; i < tasksOnMap.length; i++) {
         tasksOnMap[i].addEventListener('click', function () {
-            let id = this.id;
             let imgSrc = this.src;
             let taskSrc = document.getElementById('game-task').src;
 
@@ -17,10 +13,9 @@ const compare = () => {
                 console.log('nie trafiłes');
             }
         })
-
     }
 };
 
 setTask();
 generateTasksOnMap(5);
-compare();
+compareIconOnMapWithTask();
