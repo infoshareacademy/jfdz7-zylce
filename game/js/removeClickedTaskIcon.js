@@ -1,8 +1,5 @@
 const tasksOnMap = document.getElementsByClassName('task-on-map');
-const taskToClick = document.getElementById('task-to-click');
-
-const taskIcons = ['gfx/task_cinema.jpg', 'gfx/task_concert.jpg', 'gfx/task_sport.jpg', 'gfx/task_theatre.jpg'];
-
+const taskToClick = document.getElementById('example-icon');
 
 
 generateTasksOnMap(5)
