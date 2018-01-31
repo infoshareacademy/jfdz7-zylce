@@ -5,4 +5,5 @@ const setTask = () => {
     gameTask.appendChild(img);
     img.src = getRandomIcon();
     img.setAttribute('id', 'game-task');
+    document.getElementById('game-task').removeAttribute('class');
 };
