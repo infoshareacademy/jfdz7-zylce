@@ -69,8 +69,11 @@ img.icon {
     outline: none; }
 
 .gameScreen {
-  background-image: url("gfx/game_bg.jpg"); }
+  background-image: url("gfx/game_bg.jpg");
+  box-sizing: border-box; }
   .gameScreen .gameBoard {
+    position: relative;
+    top: 0;
     width: 100%;
     height: 100%; }
   .gameScreen .currentTask {
@@ -115,7 +118,7 @@ img.icon {
     position: absolute;
     color: #D1D1D1; }
   .topBar .topBarInfo {
-    font-size: 38px;
+    font-size: 40px;
     margin: 0 auto; }
     .topBar .topBarInfo small {
       font-size: 18px; }

@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    const randomX = Math.floor(Math.random() * 770);
-    const randomY = Math.floor(Math.random() * 620);
+    const randomX = Math.floor(Math.random() * 750);
+    const randomY = Math.floor(Math.random() * 550);
     const $gameBoard = $('.gameBoard');
-    const $createNewIcon =  $('<img class="currentTask" src="gfx/task_sport.jpg">');
-
+    // const $createNewIcon =  $('<img class="currentTask" src="gfx/task_sport.jpg">');
+    const $taskToClick = $('.taskToClick');
     const $taskArray = [
         'gfx/task_sport.jpg',
         'gfx/task_cinema.jpg',
@@ -16,17 +16,33 @@ $(document).ready(function () {
     console.log(randomX);
     console.log(randomY);
 
-    const $createNewTask = function () {
-        const $createNewIcon =  $('<img class="currentTask" src="' + $taskArray[$getRadnomTaksFromArray] + '">');
+    // const $createNewIcon =  $('<img class="currentTask" src="' + $taskArray[$getRadnomTaksFromArray] + '">');
 
-        $createNewIcon.appendTo('.gameBoard');
+
+    const $createNewTask = function () {
+        let $createNewIcon =  $('<img class="currentTask" src="' + $taskArray[$getRadnomTaksFromArray] + '">');
+
+        $('.gameScreen').append($createNewIcon);
+        // $createNewIcon.appendTo('.gameBoard');
         $createNewIcon.css({
            top: randomY,
            left: randomX
-       })
+       });
+
+    };
+
+    const $createTaskToClick = function () {
+        let $newTaskToClick = $('<img src="' + $taskArray[$getRadnomTaksFromArray] + '">');
+        $newTaskToClick.appendTo('.taskToClick');
     }
 
-$createNewTask();
+
+
+
+
+    $createTaskToClick();
+    $createNewTask();
+
     console.log($taskArray);
     console.log('losowy task to: ' + $getRadnomTaksFromArray);
 
