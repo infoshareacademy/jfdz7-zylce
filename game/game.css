@@ -15,8 +15,9 @@ section {
 
 .task-on-map {
   position: absolute;
-  border: 1px solid #FFC125;
-  border-radius: 50%; }
+  border-radius: 50%;
+  width: 25px;
+  height: 25px; }
 
 .inactive {
   opacity: 0.4;
