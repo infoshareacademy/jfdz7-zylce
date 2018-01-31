@@ -1,8 +1,6 @@
 $(document).ready(function () {
     const randomX = Math.floor(Math.random() * 750);
     const randomY = Math.floor(Math.random() * 550);
-    const $gameBoard = $('.gameBoard');
-    // const $createNewIcon =  $('<img class="currentTask" src="gfx/task_sport.jpg">');
     const $taskToClick = $('.taskToClick');
     const $taskArray = [
         'gfx/task_sport.jpg',
@@ -23,7 +21,6 @@ $(document).ready(function () {
         let $createNewIcon =  $('<img class="currentTask" src="' + $taskArray[$getRadnomTaksFromArray] + '">');
 
         $('.gameScreen').append($createNewIcon);
-        // $createNewIcon.appendTo('.gameBoard');
         $createNewIcon.css({
            top: randomY,
            left: randomX
@@ -35,9 +32,6 @@ $(document).ready(function () {
         let $newTaskToClick = $('<img src="' + $taskArray[$getRadnomTaksFromArray] + '">');
         $newTaskToClick.appendTo('.taskToClick');
     }
-
-
-
 
 
     $createTaskToClick();

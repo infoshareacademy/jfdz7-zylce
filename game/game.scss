@@ -121,27 +121,23 @@ img.icon {
 
 
 .gameScreen{
+	position: relative;
     background-image: url("gfx/game_bg.jpg");
 	box-sizing: border-box;
 
-	.gameBoard{
-		position: relative;
-		top: 0;
-		width: 100%;
-		height: 100%;
-	}
 
 	.currentTask{
 		position: relative;
-		border: 3px solid $color-white ;
-		border-radius: 5px;
+		border: 3px solid $color-white;
+		border-radius: 50%;
 		transition-duration: 0.3s;
 	}
 	.currentTask:hover{
 		border-color: $color-yellow;
-		box-shadow: 3px 3px 5px black;
+		box-shadow: 3px 3px 15px black;
 		width: 42px;
 		height: 42px;
+		cursor: pointer;
 	}
 }
 
@@ -179,7 +175,7 @@ img.icon {
 
 		img {
 			border: 3px solid $color-white ;
-			border-radius: 5px;
+			border-radius: 50%;
 		}
 		
 	}
