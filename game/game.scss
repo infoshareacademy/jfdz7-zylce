@@ -20,6 +20,15 @@ section {
 	font-family: 'Coiny', cursive;
 	font-size: 14px;
 	letter-spacing: 1px;
+	position: relative;
+}
+
+.task-on-map {
+	position: absolute;
+	//border: 2px solid $color-grey-light;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
 }
 
 .inactive {
@@ -27,32 +36,32 @@ section {
 	filter: grayscale(100%);
 }
 
-.topBar {
+.top-bar {
 	width: 100%;
 	height: 60px;
 	background-color: $color-black;
 	border-bottom: 1px solid white;
 	box-shadow: 0 3px 10px black;
 
-	.timerArea, .liveScoreArea, .taskArea, .taskIcon {
+	.timer-area, .live-score-area, .task-area, .task-icon {
 		display: inline-flex;
 		position: relative;
 		padding-top: 8px;
 	}
-	.timerArea, .liveScoreArea {
+	.timer-area, .live-score-area {
 		width: 24%;
 		padding-left: 10px;
 		color: $color-yellow
 	}
 
-	.taskArea {
+	.task-area {
 		width: 45%;
 	}
-	.liveScoreArea .topBarInfo{
+	.live-score-area .top-bar-info{
 		padding-left: 60px;
 	}
 
-	.taskIcon {
+	.task-icon {
 		width: 5%;
 		position: absolute;
 		margin-left: -35px;
@@ -66,13 +75,13 @@ section {
 		}
 	}
 
-	.topBarSubtitle {
+	.top-bar-subtitle {
 		padding-left: 8px;
 		position: absolute;
 		color: $color-grey-light;
 	}
 
-	.topBarInfo {
+	.top-bar-info {
 		font-size: 40px;
 		margin: 0 auto;
 
@@ -82,10 +91,10 @@ section {
 	}
 }
 
-.startScreen {
+.start-screen {
 	background-color: $color-bg-blue;
 
-	.gameRules {
+	.game-rules {
 		width: 50%;
 		margin: 0 auto;
 		line-height: 145%;
@@ -94,7 +103,7 @@ section {
 			color: $color-blue;
 		}
 
-		.rulesTitle {
+		.rules-title {
 			font-size: 26px;
 			margin-bottom: 8px;
 			text-align: center;
@@ -106,11 +115,11 @@ section {
 				$color-yellow 1px -1px 0px,
 		}
 
-		.caseRule {
+		.case-rule {
 
 		}
 
-		.actionRule {
+		.action-rule {
 			padding-left: 40px;
 			.fa {
 				color: $color-yellow;
@@ -118,7 +127,7 @@ section {
 		}
 	}
 
-	.playerName {
+	.player-name {
 		text-align: center;
 		padding: 35px 0 10px 0;
 
@@ -145,10 +154,10 @@ section {
 		}
 	}
 
-	.startButton {
+	.start-button {
 		margin: 0 auto;
 		text-align: center;
-		.startGameBtn {
+		.start-game-btn {
 			width: 70px;
 			height: 70px;
 			background: $color-yellow;
@@ -158,7 +167,7 @@ section {
 			outline: none;
 		}
 
-		.startGameBtn:disabled {
+		.start-game-btn:disabled {
 			border: none;
 			background-color: $color-grey-light;
 			opacity: 0.6;
@@ -174,7 +183,7 @@ section {
 	}
 }
 
-.gameScreen{
-    //background-image: url("gfx/game_bg.jpg");
+.game-screen{
+    background-image: url("gfx/game_bg.jpg");
 }
 

@@ -1,11 +1,11 @@
-$exampleTimeAnimation = document.getElementById('timeAnimated');
+exampleTimeAnimation = document.getElementById('time-animated');
 const INITIAL_TIME_LIMIT = 40;
 
 function timeCounter(initialTime) {
     let timeLeft = initialTime;
     setInterval(() => {
         if (timeLeft >= 0) {
-            $exampleTimeAnimation.textContent = timeLeft;
+            exampleTimeAnimation.textContent = timeLeft;
             timeLeft--;
         }
     }, 1000)
