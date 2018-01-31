@@ -1,11 +1,11 @@
-$exampeIcon = document.getElementById('exampleIcon');
+exampeIcon = document.getElementById('example-icon');
 
-const icons = ['gfx/task_cinema.jpg', 'gfx/task_concert.jpg', 'gfx/task_sport.jpg', 'gfx/task_theatr.jpg'];
+const taskIcons = ['gfx/task_cinema.jpg', 'gfx/task_concert.jpg', 'gfx/task_sport.jpg', 'gfx/task_theatre.jpg'];
 
 function srcChanger() {
-    for (let i = 0; i < icons.length; i++) {
+    for (let i = 0; i < taskIcons.length; i++) {
         ((i) => {
-            setTimeout(() => $exampeIcon.src = icons[i], 500 * i);
+            setTimeout(() => exampeIcon.src = taskIcons[i], 500 * i);
         })(i);
     }
 }

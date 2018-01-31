@@ -10,72 +10,78 @@ section {
   color: #D1D1D1;
   font-family: 'Coiny', cursive;
   font-size: 14px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  position: relative; }
+
+.task-on-map {
+  position: absolute;
+  border: 1px solid #FFC125;
+  border-radius: 50%; }
 
 .inactive {
   opacity: 0.4;
   filter: grayscale(100%); }
 
-.topBar {
+.top-bar {
   width: 100%;
   height: 60px;
   background-color: #000000;
   border-bottom: 1px solid white;
   box-shadow: 0 3px 10px black; }
-  .topBar .timerArea, .topBar .liveScoreArea, .topBar .taskArea, .topBar .taskIcon {
+  .top-bar .timer-area, .top-bar .live-score-area, .top-bar .task-area, .top-bar .task-icon {
     display: inline-flex;
     position: relative;
     padding-top: 8px; }
-  .topBar .timerArea, .topBar .liveScoreArea {
+  .top-bar .timer-area, .top-bar .live-score-area {
     width: 24%;
     padding-left: 10px;
     color: #FFC125; }
-  .topBar .taskArea {
+  .top-bar .task-area {
     width: 45%; }
-  .topBar .liveScoreArea .topBarInfo {
+  .top-bar .live-score-area .top-bar-info {
     padding-left: 60px; }
-  .topBar .taskIcon {
+  .top-bar .task-icon {
     width: 5%;
     position: absolute;
     margin-left: -35px;
     margin-top: -3.5px; }
-    .topBar .taskIcon img {
+    .top-bar .task-icon img {
       height: 45px;
       width: 45px;
       border: 4px solid #FFC125;
       border-radius: 50%; }
-  .topBar .topBarSubtitle {
+  .top-bar .top-bar-subtitle {
     padding-left: 8px;
     position: absolute;
     color: #D1D1D1; }
-  .topBar .topBarInfo {
+  .top-bar .top-bar-info {
     font-size: 40px;
     margin: 0 auto; }
-    .topBar .topBarInfo small {
+    .top-bar .top-bar-info small {
       font-size: 18px; }
 
-.startScreen {
+.start-screen {
   background-color: #0e5c90; }
-  .startScreen .gameRules {
+  .start-screen .game-rules {
     width: 50%;
     margin: 0 auto;
     line-height: 145%; }
-    .startScreen .gameRules .fa {
+    .start-screen .game-rules .fa {
       color: #0F3156; }
-    .startScreen .gameRules .rulesTitle {
+    .start-screen .game-rules .rules-title {
       font-size: 26px;
       margin-bottom: 8px;
       text-align: center;
       color: #0F3156;
       text-shadow: #FFC125 1px 1px 0px, #FFC125 -1px 1px 0px, #FFC125 -1px -1px 0px, #FFC125 1px -1px 0px; }
-    .startScreen .gameRules .actionRule {
+    .start-screen .game-rules .action-rule {
       padding-left: 40px; }
-      .startScreen .gameRules .actionRule .fa {
+      .start-screen .game-rules .action-rule .fa {
         color: #FFC125; }
-  .startScreen .playerName {
+  .start-screen .player-name {
     text-align: center;
     padding: 35px 0 10px 0; }
-    .startScreen .playerName input {
+    .start-screen .player-name input {
       font-family: 'Coiny', cursive;
       width: 30%;
       height: 34px;
@@ -85,16 +91,16 @@ section {
       font-size: 22px;
       text-align: center;
       outline: none; }
-    .startScreen .playerName .valid {
+    .start-screen .player-name .valid {
       color: #CC1100;
       border-color: #FFC125; }
-    .startScreen .playerName input::placeholder {
+    .start-screen .player-name input::placeholder {
       color: #0F3156;
       opacity: 0.5; }
-  .startScreen .startButton {
+  .start-screen .start-button {
     margin: 0 auto;
     text-align: center; }
-    .startScreen .startButton .startGameBtn {
+    .start-screen .start-button .start-game-btn {
       width: 70px;
       height: 70px;
       background: #FFC125;
@@ -102,14 +108,17 @@ section {
       border-radius: 50%;
       padding: 0;
       outline: none; }
-    .startScreen .startButton .startGameBtn:disabled {
+    .start-screen .start-button .start-game-btn:disabled {
       border: none;
       background-color: #D1D1D1;
       opacity: 0.6; }
-      .startScreen .startButton .startGameBtn:disabled .fa {
+      .start-screen .start-button .start-game-btn:disabled .fa {
         color: #000000; }
-    .startScreen .startButton .fa {
+    .start-screen .start-button .fa {
       color: #CC1100;
       padding: 0; }
+
+.game-screen {
+  background-image: url("gfx/game_bg.jpg"); }
 
 /*# sourceMappingURL=game.css.map */

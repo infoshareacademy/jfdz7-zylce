@@ -9,61 +9,81 @@
 
 </head>
 <body>
-    <section id="startScreen" class="startScreen">
-		<div class="topBar">
-			<div class="timerArea inactive">
-				<div class="topBarSubtitle ">CZAS</div>
-				<div id="timeAnimated" class="topBarInfo"></div>
+    <section id="start-screen" class="start-screen">
+		<div class="top-bar">
+			<div class="timer-area inactive">
+				<div class="top-bar-subtitle ">CZAS</div>
+				<div id="time-animated" class="top-bar-info">&nbsp</div>
 			</div>
-			<div class="liveScoreArea inactive">
-				<span class="topBarSubtitle ">WYNIK</span>
-				<span class="topBarInfo">???</span>
+			<div class="live-score-area inactive">
+				<span class="top-bar-subtitle">WYNIK</span>
+				<span class="top-bar-info">???</span>
 			</div>
-			<div class="taskArea inactive">
-				<span class="topBarSubtitle" >ZADANIE</span>
-				<span class="topBarInfo"><small>Odszukaj i kliknij ikonę:</small></span>
+			<div class="task-area inactive">
+				<span class="top-bar-subtitle" >ZADANIE</span>
+				<span class="top-bar-info"><small>Odszukaj i kliknij ikonę:</small></span>
 			</div>
-			<div class="taskIcon">
-				<img id="exampleIcon" class="icon" src="gfx/task_cinema.jpg"/></span>
+			<div class="task-icon">
+				<img id="example-icon" class="icon" src="gfx/task_cinema.jpg"/></span>
 			</div>
 		</div>
-		<div class="gameRules">
-			<p class="rulesTitle">ZASADY GRY</p>
+		<div class="game-rules">
+			<p class="rules-title">ZASADY GRY</p>
 			<i class="fa fa-hand-o-right fa-2x" aria-hidden="true"></i>
-				<span class="caseRule">Odszukaj na mapie wszystkie ikony identyczne, jak ta wyświetlona w polu <em>ZADANIE</em>.</span>
+				<span class="case-rule">Odszukaj na mapie wszystkie ikony identyczne, jak ta wyświetlona w polu <em>ZADANIE</em>.</span>
 			<br />
 			<i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
-				<span class="masterRule">Po prawidłowym wykonaniu zadania:</span>
+				<span class="master-rule">Po prawidłowym wykonaniu zadania:</span>
 			<br />
-				<span class="actionRule"><i class="fa fa-star-o" aria-hidden="true"></i> otrzymasz 1 punkt,</span>
+				<span class="action-rule"><i class="fa fa-star-o" aria-hidden="true"></i> otrzymasz 1 punkt,</span>
 			<br />
-				<span class="actionRule"><i class="fa fa-clock-o" aria-hidden="true"></i> czas wydłuży się o 5 sekund,</span>
+				<span class="action-rule"><i class="fa fa-clock-o" aria-hidden="true"></i> czas wydłuży się o 5 sekund,</span>
 			<br />
-				<span class="actionRule"><i class="fa fa-refresh" aria-hidden="true"></i> <em>ZADANIE</em> zmieni się,</span>
+				<span class="action-rule"><i class="fa fa-refresh" aria-hidden="true"></i> <em>ZADANIE</em> zmieni się,</span>
 			<br />
-				<span class="actionRule"><i class="fa fa-plus" aria-hidden="true"></i> liczba ikon na mapie zwiększy się.</span>
+				<span class="action-rule"><i class="fa fa-plus" aria-hidden="true"></i> liczba ikon na mapie zwiększy się.</span>
 			<br /><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i>
-				<span class="caseRule">Kliknięcie nieprawidłowej ikony:</span>
+				<span class="case-rule">Kliknięcie nieprawidłowej ikony:</span>
 			<br />
-				<span class="actionRule"><i class="fa fa-clock-o" aria-hidden="true"></i> skróci czas o 3 sekundy,</span>
+				<span class="action-rule"><i class="fa fa-clock-o" aria-hidden="true"></i> skróci czas o 3 sekundy,</span>
 			<br />
-				<span class="actionRule"><i class="fa fa-refresh" aria-hidden="true"></i> spowoduje zmianę zadania.</span>
+				<span class="action-rule"><i class="fa fa-refresh" aria-hidden="true"></i> spowoduje zmianę zadania.</span>
 			<br /><i class="fa fa-hand-paper-o fa-2x" aria-hidden="true"></i>
-				<span class="caseRule"> Koniec gry nastąpi, gdy skończy się czas.</span>
+				<span class="case-rule"> Koniec gry nastąpi, gdy skończy się czas.</span>
 		</div>
-		<div class="playerName">
-			<input class="playerNameInput" id="playerNameInput" type="text" placeholder="imię">
+		<div class="player-name">
+			<input class="player-name-input" id="player-name-input" type="text" placeholder="imię">
 		</div>
-		<div class="startButton">
-			<button class="startGameBtn" id="startGameBtn" type="button" disabled><i class="fa fa-play-circle fa-5x fa-align-left"></i></button>
+		<div class="start-button">
+			<button class="start-game-btn" id="start-game-btn" type="button" disabled><i class="fa fa-play-circle fa-5x fa-align-left"></i></button>
 		</div>
-
-
     </section>
-    <section id="gameScreen" class="gameScreen">
 
+    <section id="game-screen" class="game-screen">
+		<div class="top-bar">
+			<div class="timer-area">
+				<div class="top-bar-subtitle ">CZAS</div>
+				<div id="" class="top-bar-info">&nbsp</div>
+			</div>
+			<div class="live-score-area">
+				<span class="top-bar-subtitle">WYNIK</span>
+				<span class="top-bar-info">???</span>
+			</div>
+			<div class="task-area">
+				<span class="top-bar-subtitle" >ZADANIE</span>
+				<span class="top-bar-info"><small>Odszukaj i kliknij ikonę:</small></span>
+			</div>
+			<div class="task-icon">
+				<img id="game-task-icon" class="icon" src="gfx/task_cinema.jpg"/></span>
+			</div>
+		</div>
+		<div id="game-map">
+
+		</div>
     </section>
-    <section id="scoreScreen">
+
+
+    <section id="score-screen">
 
 
     </section>
@@ -73,5 +93,8 @@
 <script src="js/startButtonDisability.js"></script>
 <script src="js/exampleIconChanger.js"></script>
 <script src="js/animateTimeCounter.js"></script>
+<script src="js/randomCoordinates.js"></script>
+<script src="js/randomTaskIcon.js"></script>
+<script src="js/setRandomTasksOnMap.js"></script>
 </body>
 </html>
