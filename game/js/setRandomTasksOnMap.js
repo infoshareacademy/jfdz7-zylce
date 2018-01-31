@@ -16,6 +16,9 @@ const setIconsPosition = (index) => {
     document.getElementById('game-map')
         .getElementsByClassName('task-on-map')[index]
         .style.top = coordinates[index].y + 'px';
+};
+
+const setIdToTaskOnMap = (index) => {
     document.getElementById('game-map')
         .getElementsByClassName('task-on-map')[index].setAttribute('id', index);
 };
@@ -26,6 +29,6 @@ const generateTasksOnMap = (tasksNumber) => {
     for(let i=0; i < tasksNumber; i++) {
         addTaskIconOnMap(i);
         setIconsPosition(i);
-
+        setIdToTaskOnMap(i);
     }
 };
