@@ -185,5 +185,10 @@ section {
 
 .game-screen{
     background-image: url("gfx/game_bg.jpg");
+	.test{
+		position: relative;
+		top: 200;
+		font-size: 50px;
+	}
 }
 

@@ -121,5 +121,9 @@ section {
 
 .game-screen {
   background-image: url("gfx/game_bg.jpg"); }
+  .game-screen .test {
+    position: relative;
+    top: 200;
+    font-size: 50px; }
 
 /*# sourceMappingURL=game.css.map */
