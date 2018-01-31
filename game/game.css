@@ -72,17 +72,6 @@ img.icon {
   position: relative;
   background-image: url("gfx/game_bg.jpg");
   box-sizing: border-box; }
-  .gameScreen .currentTask {
-    position: relative;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-    transition-duration: 0.3s; }
-  .gameScreen .currentTask:hover {
-    border-color: #FFC125;
-    box-shadow: 3px 3px 15px black;
-    width: 42px;
-    height: 42px;
-    cursor: pointer; }
 
 .topBar {
   width: 100%;

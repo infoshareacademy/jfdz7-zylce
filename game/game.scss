@@ -126,19 +126,19 @@ img.icon {
 	box-sizing: border-box;
 
 
-	.currentTask{
-		position: relative;
-		border: 3px solid $color-white;
-		border-radius: 50%;
-		transition-duration: 0.3s;
-	}
-	.currentTask:hover{
-		border-color: $color-yellow;
-		box-shadow: 3px 3px 15px black;
-		width: 42px;
-		height: 42px;
-		cursor: pointer;
-	}
+	//.currentTask{
+	//	position: relative;
+	//	border: 3px solid $color-white;
+	//	border-radius: 50%;
+	//	transition-duration: 0.3s;
+	//}
+	//.currentTask:hover{
+	//	border-color: $color-yellow;
+	//	box-shadow: 3px 3px 15px black;
+	//	width: 42px;
+	//	height: 42px;
+	//	cursor: pointer;
+	//}
 }
 
 .topBar {
