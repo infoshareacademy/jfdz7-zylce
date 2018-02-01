@@ -1,4 +1,5 @@
 exampleTimeAnimation = document.getElementById('time-animated');
+
 const INITIAL_TIME_LIMIT = 40;
 
 function timeCounter(initialTime, destination) {

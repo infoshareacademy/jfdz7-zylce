@@ -30,5 +30,6 @@ const generateTasksOnMap = (tasksNumber) => {
         addTaskIconOnMap(i);
         setIconsPosition(i);
         setIdToTaskOnMap(i);
+        document.getElementById('game-task').removeAttribute('class');
     }
 };
