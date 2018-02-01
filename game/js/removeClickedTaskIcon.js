@@ -5,7 +5,6 @@ const compareIconOnMapWithTask = () => {
         tasksOnMap[i].addEventListener('click', function () {
             let imgSrc = this.src;
             let taskSrc = document.getElementById('game-task').src;
-
             if (imgSrc === taskSrc) {
                 console.log('trafiłeś');
                 this.remove();
@@ -16,6 +15,6 @@ const compareIconOnMapWithTask = () => {
     }
 };
 
-setTask();
+setTask()
 generateTasksOnMap(5);
 compareIconOnMapWithTask();
