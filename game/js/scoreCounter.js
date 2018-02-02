@@ -10,9 +10,9 @@ let refreshScoreOnTobBar = setInterval( ()=> {
 }, 100);
 
 let countScore = () => {
-   if (seconds > 0) {
+    if (seconds > 0) {
         addOnePoint();
-   } else {
+    } else {
         clearInterval(refreshScoreOnTobBar);
-   }
+    }
 };
