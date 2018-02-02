@@ -21,6 +21,7 @@ section {
 	font-size: 14px;
 	letter-spacing: 1px;
 	position: relative;
+	background-color: $color-bg-blue;
 }
 
 .task-on-map {
@@ -92,7 +93,7 @@ section {
 }
 
 .start-screen {
-	background-color: $color-bg-blue;
+
 
 	.game-rules {
 		width: 50%;
@@ -187,3 +188,15 @@ section {
     background-image: url("gfx/game_bg.jpg");
 }
 
+.hidden {
+	display: none;
+}
+
+.fade-in {
+	opacity: 0;
+	animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.is-paused {
+	animation-play-state: paused;
+}

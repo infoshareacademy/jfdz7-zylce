@@ -3,4 +3,3 @@ function setGame() {
     generateTasksOnMap(8);
 }
 
-setGame();
