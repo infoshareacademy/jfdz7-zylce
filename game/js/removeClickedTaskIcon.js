@@ -7,6 +7,7 @@ const compareIconOnMapWithTask = () => {
             let taskSrc = document.getElementById('game-task').src;
             if (imgSrc === taskSrc) {
                 console.log('trafiłeś');
+                addOnePoint();
                 this.remove();
             } else {
                 console.log('nie trafiłes');
