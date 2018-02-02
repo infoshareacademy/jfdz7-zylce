@@ -13,7 +13,7 @@ let refreshScoreOnTobBar = setInterval( ()=> {
 let countScore = () => {
    if (seconds > 0) {
         addOnePoint();
-        changeTime(3);
+        changeTime(2);
    } else {
         console.log('Koniec gry');
         clearInterval(refreshScoreOnTobBar);
