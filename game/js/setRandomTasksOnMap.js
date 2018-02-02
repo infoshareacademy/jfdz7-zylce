@@ -31,6 +31,21 @@ const generateTasksOnMap = (tasksNumber) => {
         setIconsPosition(i);
         setIdToTaskOnMap(i);
         document.getElementById('game-task').removeAttribute('class');
-        compareIconOnMapWithTask();
+        taskOnMapClass[i].addEventListener('click', function () {
+            if (isThereAnyGameTaskIconOnMap()) {
+                if (this.src === document.getElementById('game-task').src) {
+                    countScore();
+                    this.remove();
+                    if (!isThereAnyGameTaskIconOnMap()) {
+                        changeTime(3);
+                        addNewTasksOnMap(6);
+                    }
+                } else {
+                    changeTime(-2);
+                }
+            } else {
+                setTask();
+            }
+        });
     }
 };
