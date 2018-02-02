@@ -1,11 +1,20 @@
 let scoreOnTopBar = document.getElementById('current-score');
-let currentScore = parseInt(document.getElementById('current-score').innerHTML); // dodane id w game.html
+let currentScore = parseInt(document.getElementById('current-score').innerHTML);
 
-const addOnePoint = function () { //funkja wywolana w removeClick... na addeventlistenerze
+const addOnePoint = function () {
     currentScore += 1;
-    console.log(currentScore);
+    console.log('Twoje punkty: ', currentScore);
 }
 
-setInterval(function () {
+let refreshScoreOnTobBar = setInterval(function () {
     scoreOnTopBar.innerHTML = currentScore;
 }, 100);
+
+let countScore = () => {
+   if (seconds > 0) {
+        addOnePoint();
+   } else {
+        console.log('Koniec gry');
+        clearInterval(refreshScoreOnTobBar);
+   }
+}
