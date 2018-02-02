@@ -4,7 +4,7 @@ let currentScore = parseInt(document.getElementById('current-score').innerHTML);
 const addOnePoint = () => {
     currentScore += 1;
     console.log('Twoje punkty: ', currentScore);
-}
+};
 
 let refreshScoreOnTobBar = setInterval( ()=> {
     scoreOnTopBar.innerHTML = currentScore;
@@ -13,8 +13,9 @@ let refreshScoreOnTobBar = setInterval( ()=> {
 let countScore = () => {
    if (seconds > 0) {
         addOnePoint();
+        changeTime(3);
    } else {
         console.log('Koniec gry');
         clearInterval(refreshScoreOnTobBar);
    }
-}
+};
