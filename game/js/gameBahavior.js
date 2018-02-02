@@ -13,14 +13,14 @@ const compareIconOnMapWithTask = () => {
                         changeTime(3);
                         addNewTasksOnMap(6);
                     }
+                } else {
+                    console.log('time--');
                 }
             } else {
                 setTask();
             }
         })
     }
-
-
 };
 
 
