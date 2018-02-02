@@ -9,11 +9,14 @@ const compareIconOnMapWithTask = () => {
                 if (imgSrc === taskSrc) {
                     countScore();
                     this.remove();
-                    (!isThereAnyGameTaskIconOnMap()) ? addNewTasksOnMap(4) && changeTime(2) : null;
+                    if (!isThereAnyGameTaskIconOnMap()) {
+                        changeTime(4);
+                        addNewTasksOnMap(4);
                     }
-                } else if (imgSrc !== taskSrc) {
+                } else if (this.src !== taskSrc) {
                 changeTime(-2)
-            }
+            }}
+
         })
     }
 };
