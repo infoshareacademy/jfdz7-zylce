@@ -1,12 +1,12 @@
 let scoreOnTopBar = document.getElementById('current-score');
 let currentScore = parseInt(document.getElementById('current-score').innerHTML);
 
-const addOnePoint = function () {
+const addOnePoint = () => {
     currentScore += 1;
     console.log('Twoje punkty: ', currentScore);
 }
 
-let refreshScoreOnTobBar = setInterval(function () {
+let refreshScoreOnTobBar = setInterval( ()=> {
     scoreOnTopBar.innerHTML = currentScore;
 }, 100);
 
