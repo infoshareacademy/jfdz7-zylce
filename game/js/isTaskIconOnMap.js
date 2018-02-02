@@ -1,6 +1,5 @@
 let iconsOnMapSrc = [];
 
-
 function getIconsOnMapSrc() {
    for (let i=0; i<taskOnMapClass.length; i++) {
        iconsOnMapSrc.push(document.getElementsByClassName('task-on-map')[i].getAttribute('src'))

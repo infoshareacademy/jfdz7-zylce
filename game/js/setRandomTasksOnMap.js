@@ -11,10 +11,10 @@ const addTaskIconOnMap = () => {
 
 const setIconsPosition = (index) => {
     document.getElementById('game-map')
-        .getElementsByClassName('task-on-map')[index]
+        .getElementsByClassName('task-on-map')[taskOnMapClass.length-1]
         .style.left = coordinates[index].x + 'px';
     document.getElementById('game-map')
-        .getElementsByClassName('task-on-map')[index]
+        .getElementsByClassName('task-on-map')[taskOnMapClass.length-1]
         .style.top = coordinates[index].y + 'px';
 };
 
@@ -31,5 +31,6 @@ const generateTasksOnMap = (tasksNumber) => {
         setIconsPosition(i);
         setIdToTaskOnMap(i);
         document.getElementById('game-task').removeAttribute('class');
+        compareIconOnMapWithTask();
     }
 };

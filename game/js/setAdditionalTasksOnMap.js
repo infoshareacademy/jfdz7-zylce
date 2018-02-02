@@ -6,7 +6,7 @@ const addNewTasksOnMap = (tasksNumber) => {
         let tasksOnMapNum = taskOnMapClass.length;
         addTaskIconOnMap();
         taskOnMapClass[tasksOnMapNum].setAttribute('id', i);
-        setIconsPosition(tasksOnMapNum);
+        setIconsPosition(i);
         document.getElementById('game-task').removeAttribute('class');
         compareIconOnMapWithTask();
     }
