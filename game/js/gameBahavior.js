@@ -10,15 +10,17 @@ const compareIconOnMapWithTask = () => {
                     countScore();
                     this.remove();
                     if (!isThereAnyGameTaskIconOnMap()) {
-                        changeTime(4);
-                        addNewTasksOnMap(4);
+                        changeTime(3);
+                        addNewTasksOnMap(6);
                     }
-                } else if (this.src !== taskSrc) {
-                changeTime(-2)
-            }}
-
+                }
+            } else {
+                setTask();
+            }
         })
     }
+
+
 };
 
 
