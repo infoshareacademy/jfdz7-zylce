@@ -33,22 +33,20 @@
 				<span class="case-rule">Odszukaj na mapie wszystkie ikony identyczne, jak ta wyświetlona w polu <em>ZADANIE</em>.</span>
 			<br />
 			<i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i>
-				<span class="master-rule">Po prawidłowym wykonaniu zadania:</span>
+				<span class="master-rule">Jeśli wykonasz zadanie prawidłowo:</span>
 			<br />
-				<span class="action-rule"><i class="fa fa-star-o" aria-hidden="true"></i> otrzymasz 1 punkt,</span>
-			<br />
-				<span class="action-rule"><i class="fa fa-clock-o" aria-hidden="true"></i> czas wydłuży się o 5 sekund,</span>
+				<span class="action-rule"><i class="fa fa-clock-o" aria-hidden="true"></i> czas wydłuży się o 3 sekundy,</span>
 			<br />
 				<span class="action-rule"><i class="fa fa-refresh" aria-hidden="true"></i> <em>ZADANIE</em> zmieni się,</span>
 			<br />
 				<span class="action-rule"><i class="fa fa-plus" aria-hidden="true"></i> liczba ikon na mapie zwiększy się.</span>
+			<br />
+			<span class="action-rule"><i class="fa fa-star-o" aria-hidden="true"></i> po każdym kliknięciu prawidłowej ikony otrzymasz 1 punkt,</span>
 			<br /><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i>
 				<span class="case-rule">Kliknięcie nieprawidłowej ikony:</span>
 			<br />
-				<span class="action-rule"><i class="fa fa-clock-o" aria-hidden="true"></i> skróci czas o 3 sekundy,</span>
+				<span class="action-rule"><i class="fa fa-clock-o" aria-hidden="true"></i> skróci czas o 2 sekundy,</span>
 			<br />
-				<span class="action-rule"><i class="fa fa-refresh" aria-hidden="true"></i> spowoduje zmianę zadania.</span>
-			<br /><i class="fa fa-hand-paper-o fa-2x" aria-hidden="true"></i>
 				<span class="case-rule"> Koniec gry nastąpi, gdy skończy się czas.</span>
 		</div>
 		<div class="player-name">
@@ -59,7 +57,7 @@
 		</div>
     </section>
 
-    <section id="game-screen" class="game-screen">
+    <section id="game-screen" class="game-screen hidden">
 		<div class="top-bar">
 			<div class="timer-area">
 				<div class="top-bar-subtitle ">CZAS</div>
@@ -82,10 +80,11 @@
     </section>
 
 
-    <section id="score-screen">
+    <section id="score-screen" class="score-screen hidden ">
 
-
+SCORE SCREEN
     </section>
+<script src="js/fadeInAndHideScreens.js"></script>
 <script src="js/createUserOnStartScreen.js"></script>
 <script src="js/startButtonDisability.js"></script>
 <script src="js/exampleIconChanger.js"></script>

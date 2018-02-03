@@ -11,7 +11,8 @@ section {
   font-family: 'Coiny', cursive;
   font-size: 14px;
   letter-spacing: 1px;
-  position: relative; }
+  position: relative;
+  background-color: #0e5c90; }
 
 .task-on-map {
   position: absolute;
@@ -61,65 +62,66 @@ section {
     .top-bar .top-bar-info small {
       font-size: 18px; }
 
-.start-screen {
-  background-color: #0e5c90; }
-  .start-screen .game-rules {
-    width: 50%;
-    margin: 0 auto;
-    line-height: 145%; }
-    .start-screen .game-rules .fa {
-      color: #0F3156; }
-    .start-screen .game-rules .rules-title {
-      font-size: 26px;
-      margin-bottom: 8px;
-      text-align: center;
-      color: #0F3156;
-      text-shadow: #FFC125 1px 1px 0px, #FFC125 -1px 1px 0px, #FFC125 -1px -1px 0px, #FFC125 1px -1px 0px; }
-    .start-screen .game-rules .action-rule {
-      padding-left: 40px; }
-      .start-screen .game-rules .action-rule .fa {
-        color: #FFC125; }
-  .start-screen .player-name {
+.start-screen .game-rules {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 145%; }
+  .start-screen .game-rules .fa {
+    color: #0F3156; }
+  .start-screen .game-rules .rules-title {
+    font-size: 26px;
+    margin-bottom: 8px;
     text-align: center;
-    padding: 35px 0 10px 0; }
-    .start-screen .player-name input {
-      font-family: 'Coiny', cursive;
-      width: 30%;
-      height: 34px;
-      color: #757575;
-      border: 4px solid #0F3156;
-      border-radius: 4px;
-      font-size: 22px;
-      text-align: center;
-      outline: none; }
-    .start-screen .player-name .valid {
-      color: #CC1100;
-      border-color: #FFC125; }
-    .start-screen .player-name input::placeholder {
-      color: #0F3156;
-      opacity: 0.5; }
-  .start-screen .start-button {
-    margin: 0 auto;
-    text-align: center; }
-    .start-screen .start-button .start-game-btn {
-      width: 70px;
-      height: 70px;
-      background: #FFC125;
-      border: none;
-      border-radius: 50%;
-      padding: 0;
-      outline: none; }
-    .start-screen .start-button .start-game-btn:disabled {
-      border: none;
-      background-color: #D1D1D1;
-      opacity: 0.6; }
-      .start-screen .start-button .start-game-btn:disabled .fa {
-        color: #000000; }
-    .start-screen .start-button .fa {
-      color: #CC1100;
-      padding: 0; }
+    color: #0F3156;
+    text-shadow: #FFC125 1px 1px 0px, #FFC125 -1px 1px 0px, #FFC125 -1px -1px 0px, #FFC125 1px -1px 0px; }
+  .start-screen .game-rules .action-rule {
+    padding-left: 40px; }
+    .start-screen .game-rules .action-rule .fa {
+      color: #FFC125; }
+.start-screen .player-name {
+  text-align: center;
+  padding: 35px 0 10px 0; }
+  .start-screen .player-name input {
+    font-family: 'Coiny', cursive;
+    width: 30%;
+    height: 34px;
+    color: #757575;
+    border: 4px solid #0F3156;
+    border-radius: 4px;
+    font-size: 22px;
+    text-align: center;
+    outline: none; }
+  .start-screen .player-name .valid {
+    color: #CC1100;
+    border-color: #FFC125; }
+  .start-screen .player-name input::placeholder {
+    color: #0F3156;
+    opacity: 0.5; }
+.start-screen .start-button {
+  margin: 0 auto;
+  text-align: center; }
+  .start-screen .start-button .start-game-btn {
+    width: 70px;
+    height: 70px;
+    background: #FFC125;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    outline: none; }
+  .start-screen .start-button .start-game-btn:disabled {
+    border: none;
+    background-color: #D1D1D1;
+    opacity: 0.6; }
+    .start-screen .start-button .start-game-btn:disabled .fa {
+      color: #000000; }
+  .start-screen .start-button .fa {
+    color: #CC1100;
+    padding: 0; }
 
 .game-screen {
   background-image: url("gfx/game_bg.jpg"); }
+
+.hidden {
+  display: none; }
 
 /*# sourceMappingURL=game.css.map */

@@ -1,5 +1,6 @@
 let scoreOnTopBar = document.getElementById('current-score');
 let currentScore = parseInt(document.getElementById('current-score').innerHTML);
+let secondsTimer = parseInt(document.getElementById('game-time').innerText);
 
 const addOnePoint = () => {
     currentScore += 1;
@@ -10,7 +11,7 @@ let refreshScoreOnTobBar = setInterval( ()=> {
 }, 100);
 
 let countScore = () => {
-    if (seconds > 0) {
+    if (secondsTimer > 0) {
         addOnePoint();
     } else {
         clearInterval(refreshScoreOnTobBar);

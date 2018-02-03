@@ -9,7 +9,13 @@ const getNewPlayer = () => ( {name: getPlayerName(), score: 0} );
 
 startButton.addEventListener('click', function() {
     players.push(getNewPlayer());
-    console.log(players);
+    hide(startScreen);
+    fadeIn(gameScreen);
+    clearInterval(cancel);
+    gameTime.textContent = 30;
+    cancel = setInterval(decrementSeconds, 1000);
+    setTimeout(setGame(), 6000);
+
 });
 
 
