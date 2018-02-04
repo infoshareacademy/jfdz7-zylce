@@ -95,8 +95,6 @@ section {
 }
 
 .start-screen {
-
-
 	.game-rules {
 		width: 50%;
 		margin: 0 auto;
@@ -132,7 +130,7 @@ section {
 
 	.player-name {
 		text-align: center;
-		padding: 35px 0 10px 0;
+		padding: 60px 0 10px 0;
 
 		input {
 			font-family: 'Coiny', cursive;
@@ -194,7 +192,7 @@ section {
 	position: relative;
 	text-align: center;
 	.player-score {
-		padding: 30px 0;
+		padding-top: 50px;
 		text-align: center;
 		font-size: 25px;
 		color: $color-yellow;
@@ -210,7 +208,7 @@ section {
 
 
 	.score-table {
-		padding: 15px 0;
+		padding-top: 65px;
 		text-align: center;
 		i {
 			color: $color-yellow;

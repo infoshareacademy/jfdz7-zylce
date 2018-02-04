@@ -80,7 +80,7 @@ section {
       color: #FFC125; }
 .start-screen .player-name {
   text-align: center;
-  padding: 35px 0 10px 0; }
+  padding: 60px 0 10px 0; }
   .start-screen .player-name input {
     font-family: 'Coiny', cursive;
     width: 30%;
@@ -125,7 +125,7 @@ section {
   position: relative;
   text-align: center; }
   .score-screen .player-score {
-    padding: 30px 0;
+    padding-top: 50px;
     text-align: center;
     font-size: 25px;
     color: #FFC125;
@@ -133,7 +133,7 @@ section {
   .score-screen .player-data {
     font-size: 30px; }
   .score-screen .score-table {
-    padding: 15px 0;
+    padding-top: 65px;
     text-align: center; }
     .score-screen .score-table i {
       color: #FFC125; }
