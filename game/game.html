@@ -80,10 +80,16 @@
     </section>
 
 
-    <section id="score-screen" class="score-screen hidden ">
-
-SCORE SCREEN
+    <section id="score-screen" class="score-screen ">
+		<div id="player-score"></div>
+		<div id="score-table"></div>
+		<div id="play-again">
+			<button class="play-again-btn" id="play-again-btn" type="button"><i class="fa fa-play-circle fa-5x fa-align-left"> Zagraj ponownie!</i></button>
+		</div>
     </section>
+
+
+
 <script src="js/fadeInAndHideScreens.js"></script>
 <script src="js/createUserOnStartScreen.js"></script>
 <script src="js/startButtonDisability.js"></script>
@@ -101,5 +107,8 @@ SCORE SCREEN
 <script src="js/isTaskIconOnMap.js"></script>
 <script src="js/setGame.js"></script>
 <script src="js/setNewTaskAfterInactivity.js"></script>
+<script src="js/showLastPlayerScore.js"></script>
+<script src="js/playAgainActions.js"></script>
+<script src="js/createPlayersScoreTable.js"></script>
 </body>
 </html>

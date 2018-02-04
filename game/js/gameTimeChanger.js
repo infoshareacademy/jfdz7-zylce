@@ -7,6 +7,5 @@ function changeTime(timeToAdd) {
     } else {
         gameTime.innerText = 0;
         clearInterval(cancel);
-        isGameOver();
     }
 }
