@@ -24,6 +24,7 @@ const isGameOver = () => {
         players[players.length-1].score = totalScore;
         setTimeout(hide(gameScreen), 3000);
         fadeIn(scoreScreen);
+        showLastPlayerScore();
     }
 };
 
