@@ -25,6 +25,8 @@ const isGameOver = () => {
         setTimeout(hide(gameScreen), 3000);
         fadeIn(scoreScreen);
         showLastPlayerScore();
+        sortPlayersByHighestScore();
+        createPlayersScoreTable();
     }
 };
 

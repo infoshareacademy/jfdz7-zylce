@@ -17,3 +17,7 @@ let countScore = () => {
         clearInterval(refreshScoreOnTobBar);
     }
 };
+
+const clearCurrentScore = () => {
+    currentScore = 0;
+};

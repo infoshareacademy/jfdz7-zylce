@@ -18,11 +18,7 @@ startButton.addEventListener('click', function() {
 
 });
 
-players.push({name: 'Player1', score: 5});
-players.push({name: 'Player2', score: 6});
-players.push({name: 'Player3', score: 7});
-players.push({name: 'Player4', score: 8});
-players.push({name: 'Player5', score: 9});
+
 
 
 

@@ -9,6 +9,8 @@ function playAgainActions() {
     hide(scoreScreen);
     fadeIn(startScreen);
     playerNameInput.addEventListener('click', clearInput);
+    deleteTable();
+    clearCurrentScore();
 }
 
 playAgainBtn.addEventListener('click', playAgainActions);
