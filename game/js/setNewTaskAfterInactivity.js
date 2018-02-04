@@ -3,7 +3,6 @@ let isPlayerInactive ;
 
 const stopIntervalAfterGameEnds = () => {
     let finalTime = parseInt(gameTime.innerText);
-
     if( finalTime === 0){
         clearInterval(isPlayerInactive);
     }
@@ -16,7 +15,7 @@ const checkPlayerActivity = () => {
     }, INACTIVITY_MAX_TIME);
 };
 
-const click = () => {
+const clickOnIcon = () => {
     clearInterval(isPlayerInactive);
     setTimeout(checkPlayerActivity, 0);
 };
