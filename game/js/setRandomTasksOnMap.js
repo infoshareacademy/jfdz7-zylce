@@ -32,6 +32,7 @@ const generateTasksOnMap = (tasksNumber) => {
         setIdToTaskOnMap(i);
         document.getElementById('game-task').removeAttribute('class');
         taskOnMapClass[i].addEventListener('click', function () {
+            click()
             if (isThereAnyGameTaskIconOnMap()) {
                 if (this.src === document.getElementById('game-task').src) {
                     countScore();
