@@ -1,19 +1,22 @@
 const INACTIVITY_MAX_TIME = 10000;
+let isPlayerInactive ;
 
+const stopIntervalAfterGameEnds = () => {
+    let finalTime = parseInt(gameTime.innerText);
 
+    if( finalTime === 0){
+        clearInterval(isPlayerInactive);
+    }
+};
 
 const checkPlayerActivity = () => {
     isPlayerInactive =  setInterval( () => {
-        console.log('nic nie kliknales');
-        setTask()
+        setTask();
+        stopIntervalAfterGameEnds();
     }, INACTIVITY_MAX_TIME);
-
 };
 
-const click = () => { //funckje dodać do addeventlistenera w setRandomTask...
+const click = () => {
     clearInterval(isPlayerInactive);
-    console.log(gameTime.innerText);
-    console.log('iterval stop and start');
     setTimeout(checkPlayerActivity, 0);
 };
-
