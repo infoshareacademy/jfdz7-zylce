@@ -20,10 +20,7 @@ const declensionOfPointsWord = () => {
 
 
 const showLastPlayerScore = () => {
-    if (players.length > 0) {
     document.getElementById('player-score').innerHTML =
         (`${players[players.length - 1].name}, Twój wynik to ${players[players.length - 1].score} ${declensionOfPointsWord()}!`);
-    }
 };
 
-showLastPlayerScore();

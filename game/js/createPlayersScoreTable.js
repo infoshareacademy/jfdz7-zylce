@@ -14,14 +14,18 @@ const setClassesToPlayerNameAndScoreField = () => {
     }
 };
 
-function deleteTable() {
+const deleteScoreTable = () => {
     let myTable = document.getElementById('players-score-table');
     while (myTable.firstChild) {
         myTable.removeChild(myTable.firstChild);
     }
-}
+    let scoreTableArea = document.getElementById('score-table');
+    while (scoreTableArea.firstChild) {
+        scoreTableArea.removeChild(scoreTableArea.firstChild);
+    }
+};
 
-function createPlayersScoreTable() {
+const createPlayersScoreTable = () => {
     scoreTable.appendChild(table);
     scoreTable.firstChild.setAttribute('id', 'players-score-table');
     for (let i=0; i<players.length+1; i++) {
@@ -38,7 +42,7 @@ function createPlayersScoreTable() {
     setClassesToPlayerNameAndScoreField();
     addPlacesToPlayers();
     fillTableHeader();
-}
+};
 
 const fillPlayersScoreTable = () => {
     for (let i=1; i<players.length+1; i++) {
