@@ -25,6 +25,7 @@ const deleteScoreTable = () => {
 };
 
 const createPlayersScoreTable = () => {
+    players = players.splice(0, 10);
     scoreTable.appendChild(table);
     scoreTable.firstChild.setAttribute('id', 'players-score-table');
     scoreTable.firstChild.setAttribute('class', 'players-score-table');
