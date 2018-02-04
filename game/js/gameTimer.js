@@ -11,6 +11,7 @@ const decrementSeconds = () => {
 };
 
 let cancel = setInterval(decrementSeconds, 1000);
+clearInterval(cancel);
 
 
 

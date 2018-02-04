@@ -21,6 +21,7 @@ const declensionOfPointsWord = () => {
 
 const showLastPlayerScore = () => {
     document.getElementById('player-score').innerHTML =
-        (`${players[players.length - 1].name}, Twój wynik to ${players[players.length - 1].score} ${declensionOfPointsWord()}!`);
+        (`<span class="player-data">${players[players.length - 1].name}</span>, Twój wynik to <span class="player-data">${players[players.length - 1].score} ${declensionOfPointsWord()}</span>!`);
+
 };
 

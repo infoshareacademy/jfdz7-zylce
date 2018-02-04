@@ -1,12 +1,12 @@
 body {
-  background: url("gfx/background.jpg") no-repeat fixed top; }
+  background-color: #0e5c90; }
 
 section {
   box-sizing: border-box;
   width: 800px;
   height: 650px;
   margin: 0 auto;
-  border: 2px solid #000000;
+  box-shadow: #D1D1D1 2px 2px 3px, #D1D1D1 -2px 2px 3px;
   color: #D1D1D1;
   font-family: 'Coiny', cursive;
   font-size: 14px;
@@ -120,6 +120,63 @@ section {
 
 .game-screen {
   background-image: url("gfx/game_bg.jpg"); }
+
+.score-screen {
+  position: relative;
+  text-align: center; }
+  .score-screen .player-score {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 25px;
+    color: #FFC125;
+    text-shadow: #CC1100 1px 1px 0px, #CC1100 -1px 1px 0px, #CC1100 -1px -1px 0px, #CC1100 1px -1px 0px; }
+  .score-screen .player-data {
+    font-size: 30px; }
+  .score-screen .score-table {
+    padding: 15px 0;
+    text-align: center; }
+    .score-screen .score-table i {
+      color: #FFC125; }
+    .score-screen .score-table .title-before-score-table {
+      color: #FFC125;
+      font-family: 'Coiny', cursive;
+      font-size: 22px; }
+    .score-screen .score-table .players-score-table {
+      padding-top: 20px;
+      width: 35%;
+      margin: 0 auto;
+      border-collapse: collapse; }
+      .score-screen .score-table .players-score-table td {
+        padding: 0 8px; }
+      .score-screen .score-table .players-score-table .players-place {
+        width: 15%;
+        text-align: right; }
+      .score-screen .score-table .players-score-table .row-with-player {
+        border-top: 2px solid #FFC125; }
+      .score-screen .score-table .players-score-table .player-name-on-table, .score-screen .score-table .players-score-table .player-score-on-table {
+        border-left: 2px solid #FFC125; }
+      .score-screen .score-table .players-score-table .player-score-on-table {
+        width: 25%;
+        text-align: center; }
+  .score-screen .play-again {
+    width: 100%;
+    position: absolute;
+    bottom: 80px; }
+    .score-screen .play-again .play-again-btn {
+      font-family: 'Coiny', cursive;
+      color: #0F3156;
+      font-size: 30px;
+      width: 50%;
+      height: 60px;
+      background: #FFC125;
+      border: 2px solid #0F3156;
+      border-radius: 5px;
+      padding: 0;
+      outline: none; }
+    .score-screen .play-again .play-again-btn:hover {
+      color: #CC1100;
+      border: none;
+      box-shadow: #CC1100 2px 2px 3px, #CC1100 -2px 2px 3px, #CC1100 2px -2px 3px, #CC1100 -2px -2px 3px; }
 
 .hidden {
   display: none; }

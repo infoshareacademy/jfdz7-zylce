@@ -7,7 +7,7 @@ $color-yellow: #FFC125;
 $color-grey: #757575;
 
 body{
-	background: url("gfx/background.jpg") no-repeat fixed top;
+	background-color: $color-bg-blue;
 }
 
 section {
@@ -15,7 +15,9 @@ section {
   	width: 800px;
   	height: 650px;
   	margin: 0 auto;
-  	border: 2px solid $color-black;
+	box-shadow: $color-grey-light 2px 2px 3px,
+				$color-grey-light -2px 2px 3px;
+  	//border: 2px solid $color-black;
 	color: $color-grey-light;
 	font-family: 'Coiny', cursive;
 	font-size: 14px;
@@ -187,6 +189,95 @@ section {
 .game-screen{
     background-image: url("gfx/game_bg.jpg");
 }
+
+.score-screen {
+	position: relative;
+	text-align: center;
+	.player-score {
+		padding: 30px 0;
+		text-align: center;
+		font-size: 25px;
+		color: $color-yellow;
+		text-shadow:
+				$color-red-alert 1px 1px 0px,
+				$color-red-alert -1px 1px 0px,
+				$color-red-alert -1px -1px 0px,
+				$color-red-alert 1px -1px 0px;
+	}
+		.player-data {
+			font-size: 30px;
+		}
+
+
+	.score-table {
+		padding: 15px 0;
+		text-align: center;
+		i {
+			color: $color-yellow;
+		}
+
+		.title-before-score-table {
+			color: $color-yellow;
+			font-family: 'Coiny', cursive;
+			font-size: 22px;
+		}
+
+		.players-score-table {
+			padding-top: 20px;
+			width: 35%;
+			margin: 0 auto;
+			border-collapse: collapse;
+
+			td {
+				padding: 0 8px;
+			}
+			.players-place {
+				width: 15%;
+				text-align: right;
+			}
+			.row-with-player {
+				border-top: 2px solid $color-yellow;
+			}
+
+			.player-name-on-table, .player-score-on-table{
+					border-left: 2px solid $color-yellow;
+			}
+			.player-score-on-table {
+				width: 25%;
+				text-align: center;
+			}
+		}
+	}
+
+	.play-again {
+		width: 100%;
+		position: absolute;
+		bottom: 80px;
+
+		.play-again-btn {
+			font-family: 'Coiny', cursive;
+			color: $color-blue;
+			font-size: 30px;
+			width: 50%;
+			height: 60px;
+			background: $color-yellow;
+			border: 2px solid $color-blue;
+			border-radius: 5px;
+			padding: 0;
+			outline: none;
+		}
+
+		.play-again-btn:hover {
+			color: $color-red-alert;
+			border: none;
+			box-shadow: $color-red-alert 2px 2px 3px,
+						$color-red-alert -2px 2px 3px,
+						$color-red-alert 2px -2px 3px,
+						$color-red-alert -2px -2px 3px;
+		}
+	}
+}
+
 
 .hidden {
 	display: none;

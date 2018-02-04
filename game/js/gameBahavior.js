@@ -1,4 +1,3 @@
-
 function iconsOnMapEvents() {
     if (isThereAnyGameTaskIconOnMap()) {
         if (this.src === document.getElementById('game-task').src) {
@@ -17,7 +16,6 @@ function iconsOnMapEvents() {
     }
 }
 
-
 const isGameOver = () => {
     if (parseInt(document.getElementById('game-time').innerText) === 0) {
         let totalScore = parseInt(document.getElementById('current-score').innerText);
@@ -27,6 +25,7 @@ const isGameOver = () => {
         showLastPlayerScore();
         sortPlayersByHighestScore();
         createPlayersScoreTable();
+        addTitleBeforeScoreTable();
     }
 };
 
