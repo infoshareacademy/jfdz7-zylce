@@ -11,6 +11,7 @@ function startGameActions() {
     hide(startScreen);
     fadeIn(gameScreen);
     gameTime.textContent = 30;
+    clearInterval(cancel);
     cancel = setInterval(decrementSeconds, 1000);
     setTimeout(setGame(), 6000);
 }
