@@ -244,6 +244,7 @@ nav {
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .nav-effect {
+    opacity: 0.9;
     min-height: 35px;
     font-size: 14px; }
     .nav-effect img {

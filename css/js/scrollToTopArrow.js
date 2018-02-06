@@ -21,7 +21,7 @@ $(document).ready(function() {
     $window.on('scroll', toggleScrollBtnVisibility);
     $scrollToTopBtn.on('click', scrollToTop);
 
-    let next = screen.height - 76;
+    let next = screen.height - 120;
     $(window).on('scroll', function() {
         if ($(document).scrollTop() > next) {
             $('nav').addClass('nav-effect');
