@@ -1,5 +1,5 @@
 const INACTIVITY_MAX_TIME = 10000;
-let isPlayerInactive ;
+let isPlayerInactive;
 
 const stopIntervalAfterGameEnds = () => {
     let finalTime = parseInt(gameTime.innerText);
@@ -9,7 +9,7 @@ const stopIntervalAfterGameEnds = () => {
 };
 
 const checkPlayerActivity = () => {
-    isPlayerInactive =  setInterval( () => {
+    isPlayerInactive = setInterval( () => {
         setTask();
         stopIntervalAfterGameEnds();
     }, INACTIVITY_MAX_TIME);
