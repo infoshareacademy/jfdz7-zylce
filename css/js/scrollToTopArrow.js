@@ -17,14 +17,15 @@ $(document).ready(function() {
         $page.animate({scrollTop: 0}, animationTime);
     }
 
+
     $window.on('scroll', toggleScrollBtnVisibility);
     $scrollToTopBtn.on('click', scrollToTop);
 
-    $(window).on('scroll', function () {
-        if ($(document).scrollTop() > 850) {
-            $('nav').addClass('nav-effect').animate({top: 0}, 900)
-        }
-        else {
+    let next = screen.height - 76;
+    $(window).on('scroll', function() {
+        if ($(document).scrollTop() > next) {
+            $('nav').addClass('nav-effect');
+        } else {
             $('nav').removeClass('nav-effect');
         }
     });

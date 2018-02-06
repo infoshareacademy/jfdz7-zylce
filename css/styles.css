@@ -13,7 +13,8 @@
 nav {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
-  box-shadow: 1px 1px 18px #0e5c90; }
+  box-shadow: 1px 1px 18px #0e5c90;
+  font-size: 20px; }
   nav button {
     background: #595959;
     align-items: center;
@@ -32,12 +33,13 @@ nav {
     padding: 0 8px; }
   nav .nav-item a {
     color: #0e5c90;
-    font-size: 20px;
     margin: 0 30px; }
   nav .nav-item a:hover, nav .nav-item .active {
     color: #d13232; }
   nav .navbar-brand img {
-    max-height: 50px; }
+    display: flex;
+    min-height: 20px;
+    height: 50px; }
 
 .header-top {
   width: 100%;
@@ -242,9 +244,10 @@ nav {
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .nav-effect {
-    transform: scaley(0.8);
-    transform-origin: top center;
-    transition: 1s ease; }
+    min-height: 35px;
+    font-size: 14px; }
+    .nav-effect img {
+      max-height: 30px; }
 
   nav .nav-item .active {
     color: #0e5c90; }

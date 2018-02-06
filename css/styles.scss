@@ -27,6 +27,7 @@ nav {
 	font-family: $font-primary;
 	background-color: $color-white;
 	box-shadow: 1px 1px 18px $color-bg-blue;
+	font-size: 20px;
 
 	button {
 		background: $color-bg-grey;
@@ -58,7 +59,6 @@ nav {
 
 	.nav-item a {
 		color: $color-bg-blue;
-		font-size: 20px;
 		margin: 0 30px;
 	}
 
@@ -67,7 +67,9 @@ nav {
 	}
 
 	.navbar-brand img {
-		max-height: 50px;
+		display: flex;
+		min-height: 20px;
+		height: 50px;
 	}
 }
 
@@ -382,16 +384,16 @@ nav {
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
-
 	.nav-effect {
-		//opacity: 0.9;
-		transform: scaley(0.8);
-		transform-origin: top center;
-		transition: 1s ease;
+		min-height: 35px;
+		font-size: 14px;
+		img {
+			max-height: 30px;
+		}
+
 	}
+
 	nav {
-
-
 		.nav-item .active {
 			color: $color-bg-blue;
 		}
