@@ -29,15 +29,3 @@ $(document).ready(function() {
     });
 
 });
-
-// $(window).on('scroll', function() {
-//     let nav = $('nav');
-//     let animateTime = 500;
-//     if ($(document).scrollTop() > 200) {
-//         nav.animate({height: '40px'}, animateTime);
-//         nav.addClass('nav-effect');
-//     } else {
-//         nav.removeClass('nav-effect');
-//         nav.animate({Height: '76px'}, animateTime);
-//     }
-// });
