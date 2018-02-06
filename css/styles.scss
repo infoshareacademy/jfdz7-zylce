@@ -23,15 +23,6 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 	padding-top: 75px;
 }
 
-.resized {
-	height: 50px !important;
-	transition-duration: .3s;
-
-}
-.resized-img{
-	height: 40px !important;
-	transition-duration: .3s;
-}
 
 nav {
 	font-family: $font-primary;
@@ -61,10 +52,6 @@ nav {
 	.navbar-brand{
 		display: inline-flex;
 		align-items: center;
-		.navbar-brand-text{
-			font-weight: bold;
-			display: none;
-		}
 	}
 
 	.navbar-toggler-icon .fa-bars {
@@ -404,33 +391,28 @@ nav {
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
-	.nav-effect {
-		opacity: 0.9;
-		height: 40px;
-		font-size: 14px;
-		img {
-			max-height: 30px;
-		}
+	nav.nav-effect a {
+		padding: 0;
+		transition: all 0.5s linear;
+	}
 
+	nav.nav-effect img {
+		max-height: 30px;
+		transition: all 0.5s ease-in ;
+	}
+
+	nav.navbar.nav-effect {
+		opacity: 0.9;
+		height: 45px;
+		font-size: 14px;
+		transition: all 0.5s ease ;
 	}
 
 	nav {
-		//height: 76px;
+		height: 76px;
 		.nav-item .active {
 			color: $color-bg-blue;
 		}
-		//
-		//.nav-item .active-effect:after {
-		//	display: block;
-		//	content: " ";
-		//	position: absolute;
-		//	bottom: -16px;
-		//	width: 100%;
-		//	background-color: $color-bg-blue;
-		//	opacity: 0.1;
-		//	left: 0;
-		//	top: -16px;
-		//}
 
 		.nav-item .active a:hover:after, .nav-item .active:after {
 			display: block;
@@ -444,16 +426,6 @@ nav {
 			top: -16px;
 		}
 
-		//.nav-item .active a:hover:before, .nav-item .active:before {
-		//	display: block;
-		//	content: " ";
-		//	position: absolute;
-		//	bottom: -16px;
-		//	width: 100%;
-		//	border-top: 3px solid $color-bg-blue;
-		//	left: 0;
-		//	top: -16px;
-		//}
 	}
 
 	//Header logo and Welcome text

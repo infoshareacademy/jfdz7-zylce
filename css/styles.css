@@ -10,14 +10,6 @@
   font-weight: bold;
   padding-top: 75px; }
 
-.resized {
-  height: 50px !important;
-  transition-duration: .3s; }
-
-.resized-img {
-  height: 40px !important;
-  transition-duration: .3s; }
-
 nav {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -37,9 +29,6 @@ nav {
   nav .navbar-brand {
     display: inline-flex;
     align-items: center; }
-    nav .navbar-brand .navbar-brand-text {
-      font-weight: bold;
-      display: none; }
   nav .navbar-toggler-icon .fa-bars {
     color: #EDF2F4;
     padding: 4px; }
@@ -258,25 +247,34 @@ nav {
     right: 10px; } }
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .nav-effect {
-    opacity: 0.9;
-    height: 40px;
-    font-size: 14px; }
-    .nav-effect img {
-      max-height: 30px; }
+  nav.nav-effect a {
+    padding: 0;
+    transition: all 0.5s linear; }
 
-  nav .nav-item .active {
-    color: #0e5c90; }
-  nav .nav-item .active a:hover:after, nav .nav-item .active:after {
-    display: block;
-    content: " ";
-    position: absolute;
-    bottom: -16px;
-    width: 100%;
-    background-color: #0e5c90;
-    opacity: 0.1;
-    left: 0;
-    top: -16px; }
+  nav.nav-effect img {
+    max-height: 30px;
+    transition: all 0.5s ease-in; }
+
+  nav.navbar.nav-effect {
+    opacity: 0.9;
+    height: 45px;
+    font-size: 14px;
+    transition: all 0.5s ease; }
+
+  nav {
+    height: 76px; }
+    nav .nav-item .active {
+      color: #0e5c90; }
+    nav .nav-item .active a:hover:after, nav .nav-item .active:after {
+      display: block;
+      content: " ";
+      position: absolute;
+      bottom: -16px;
+      width: 100%;
+      background-color: #0e5c90;
+      opacity: 0.1;
+      left: 0;
+      top: -16px; }
 
   .header-top .zaplanujto-logo {
     max-width: 210px; }

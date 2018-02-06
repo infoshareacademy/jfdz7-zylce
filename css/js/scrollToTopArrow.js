@@ -17,23 +17,27 @@ $(document).ready(function() {
         $page.animate({scrollTop: 0}, animationTime);
     }
 
-
     $window.on('scroll', toggleScrollBtnVisibility);
     $scrollToTopBtn.on('click', scrollToTop);
 
-    $(window).scroll(function () {
-        let fromTopPos = $(this).scrollTop();
-        if (fromTopPos >= 200) {
-            $('nav').addClass('resized');
-            $('.navbar-brand img').addClass('resized-img');
-            $('.navbar-brand-text').fadeIn(500);
+    $(window).on('scroll', function () {
+        if ($(document).scrollTop() >= screen.height-200) {
+            $('nav').addClass('nav-effect');
         } else {
-            $('nav').removeClass('resized');
-            $('.navbar-brand img').removeClass('resized-img');
-            $('.navbar-brand-text').fadeOut(500);
-
-
+            $('nav').removeClass('nav-effect');
         }
     });
 
 });
+
+// $(window).on('scroll', function() {
+//     let nav = $('nav');
+//     let animateTime = 500;
+//     if ($(document).scrollTop() > 200) {
+//         nav.animate({height: '40px'}, animateTime);
+//         nav.addClass('nav-effect');
+//     } else {
+//         nav.removeClass('nav-effect');
+//         nav.animate({Height: '76px'}, animateTime);
+//     }
+// });
