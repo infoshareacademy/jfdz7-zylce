@@ -21,12 +21,15 @@ $(document).ready(function() {
     $window.on('scroll', toggleScrollBtnVisibility);
     $scrollToTopBtn.on('click', scrollToTop);
 
-    let next = screen.height - 120;
     $(window).on('scroll', function() {
-        if ($(document).scrollTop() > next) {
-            $('nav').addClass('nav-effect');
+        let nav = $('nav');
+        let animateTime = 500;
+        if ($(document).scrollTop() > 200) {
+            nav.animate({height: '40px'}, animateTime);
+            nav.addClass('nav-effect');
         } else {
-            $('nav').removeClass('nav-effect');
+            // nav.animate({height: '76px'}, animateTime);
+            // nav.removeClass('nav-effect');
         }
     });
 });

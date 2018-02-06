@@ -386,7 +386,7 @@ nav {
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
 	.nav-effect {
 		opacity: 0.9;
-		min-height: 35px;
+		height: 40px;
 		font-size: 14px;
 		img {
 			max-height: 30px;
@@ -395,6 +395,7 @@ nav {
 	}
 
 	nav {
+		//height: 76px;
 		.nav-item .active {
 			color: $color-bg-blue;
 		}

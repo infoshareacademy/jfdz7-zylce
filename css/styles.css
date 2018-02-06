@@ -245,7 +245,7 @@ nav {
 @media (min-width: 992px) {
   .nav-effect {
     opacity: 0.9;
-    min-height: 35px;
+    height: 40px;
     font-size: 14px; }
     .nav-effect img {
       max-height: 30px; }
