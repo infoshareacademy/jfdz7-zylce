@@ -21,11 +21,11 @@ $(document).ready(function() {
     $scrollToTopBtn.on('click', scrollToTop);
 
     $(window).on('scroll', function () {
-        if ($(document).scrollTop() > 850) {
-            $('nav').addClass('nav-effect').animate({top: 0}, 900)
-        }
-        else {
+        if ($(document).scrollTop() >= screen.height-200) {
+            $('nav').addClass('nav-effect');
+        } else {
             $('nav').removeClass('nav-effect');
         }
     });
+
 });
