@@ -23,11 +23,23 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 	padding-top: 75px;
 }
 
+.resized {
+	height: 50px !important;
+	transition-duration: .3s;
+
+}
+.resized-img{
+	height: 40px !important;
+	transition-duration: .3s;
+}
+
 nav {
 	font-family: $font-primary;
 	background-color: $color-white;
 	box-shadow: 1px 1px 18px $color-bg-blue;
 	font-size: 20px;
+	transition: all ease .5s;
+
 
 	button {
 		background: $color-bg-grey;
@@ -45,6 +57,14 @@ nav {
 
 	.navbar-toggler {
 		border: 1px solid $color-grey-light;
+	}
+	.navbar-brand{
+		display: inline-flex;
+		align-items: center;
+		.navbar-brand-text{
+			font-weight: bold;
+			display: none;
+		}
 	}
 
 	.navbar-toggler-icon .fa-bars {

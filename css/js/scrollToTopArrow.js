@@ -21,15 +21,19 @@ $(document).ready(function() {
     $window.on('scroll', toggleScrollBtnVisibility);
     $scrollToTopBtn.on('click', scrollToTop);
 
-    $(window).on('scroll', function() {
-        let nav = $('nav');
-        let animateTime = 500;
-        if ($(document).scrollTop() > 200) {
-            nav.animate({height: '40px'}, animateTime);
-            nav.addClass('nav-effect');
+    $(window).scroll(function () {
+        let fromTopPos = $(this).scrollTop();
+        if (fromTopPos >= 200) {
+            $('nav').addClass('resized');
+            $('.navbar-brand img').addClass('resized-img');
+            $('.navbar-brand-text').fadeIn(500);
         } else {
-            // nav.animate({height: '76px'}, animateTime);
-            // nav.removeClass('nav-effect');
+            $('nav').removeClass('resized');
+            $('.navbar-brand img').removeClass('resized-img');
+            $('.navbar-brand-text').fadeOut(500);
+
+
         }
     });
+
 });
