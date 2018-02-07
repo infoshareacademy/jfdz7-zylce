@@ -7,19 +7,12 @@ $(document).ready(function(){
 
     var count = 1;
     setInterval(function () {
-
-        $animated.fadeOut(400, function () {
-            $animated.css('backgroundImage', $images[count]);
-            $animated.fadeIn(400);
-
-        });
-
+        $animated.css('backgroundImage', $images[count]);
         count++;
         console.log('Obrazek: ' + count);
         if (count === $images.length ){
             count = 0
         }
-        $('<h1>').stop();
-    }, 5000)
+    }, 3000)
 
 });
