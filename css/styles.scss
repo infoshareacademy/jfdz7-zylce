@@ -117,8 +117,14 @@ nav {
 
 //ABOUT ZAPLANUJTO / 4 ICONS / Eight Additional functions
 .app-functions {
-		min-height: 500px;
-		background-color: $color-bg-light;
+	min-height: 500px;
+	background-color: $color-bg-light;
+	box-sizing: border-box;
+
+
+	.app-description{
+		box-sizing: border-box;
+	}
 
 
 	.app-functions-title p {
@@ -133,6 +139,8 @@ nav {
 	}
 
 	.app-description img:hover {
+		padding-top: 0;
+		padding-bottom: 0;
 		width: 180px;
 
 	}
@@ -140,6 +148,13 @@ nav {
 	.app-description p {
 		font-size: 20px;
 		line-height: 1.3em;
+
+
+	}
+	.app-description:hover p {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		font-weight: bold;
 	}
 
 	.additional-app-function-row {
@@ -173,7 +188,7 @@ nav {
 }
 
 .team {
-
+	box-sizing: border-box;
 	min-height: 450px;
 	background-color: $color-bg-blue;
 	color: $color-white;
@@ -182,6 +197,9 @@ nav {
 	.team-member {
 		padding-top: 30px;
 		left: -1500px;
+	}
+	.team-member:hover {
+		padding-top: 25px;
 	}
 
 	.team-member-text {
@@ -200,16 +218,17 @@ nav {
 	.team-member-photo img {
 		width: 100%;
 		max-width: 230px;
+		transition-duration: 0.3s;
 	}
 
 	.team-member-photo img:hover {
 		position: relative;
-		max-width: 235px;
+		//max-width: 235px;
 		box-shadow: 4px 4px 3px $shadow;
 	}
 
 	.team-member-social-icons {
-		padding-bottom: 50px;
+		//padding-bottom: 50px;
 
 	}
 
@@ -378,6 +397,9 @@ nav {
     right: 10px;
 
   }
+	.team-member:last-child{
+		padding-bottom: 50px;
+	}
 }
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
