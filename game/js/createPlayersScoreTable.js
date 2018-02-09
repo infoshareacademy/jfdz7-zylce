@@ -1,10 +1,7 @@
 const scoreTable = document.getElementById('score-table');
 let table = document.createElement('table');
 
-const sortPlayersByHighestScore = () => {
-    players.sort(function(obj1, obj2) {
-        return obj2.score - obj1.score;});
-};
+const sortPlayersByHighestScore = () => players.sort((prev, next) => next.score - prev.score);
 
 const setClassesToPlayerNameAndScoreField = () => {
     for (let i=1; i<players.length+1; i++) {
