@@ -1,21 +1,24 @@
-const INACTIVITY_MAX_TIME = 10000;
-let isPlayerInactive;
-
-const stopIntervalAfterGameEnds = () => {
-    let finalTime = parseInt(gameTime.innerText);
-    if( finalTime === 0){
-        clearInterval(isPlayerInactive);
-    }
-};
-
-const checkPlayerActivity = () => {
-    isPlayerInactive = setInterval( () => {
-        setTask();
-        stopIntervalAfterGameEnds();
-    }, INACTIVITY_MAX_TIME);
-};
 
 const clickOnIcon = () => {
-    clearInterval(isPlayerInactive);
-    setTimeout(checkPlayerActivity, 0);
+    clearInterval(stop);
+    startTimer = 0;
+    stop = setInterval(counter, 1000);
 };
+
+let startTimer = 0;
+const counter = () => {
+    console.log(startTimer)
+    startTimer++;
+    if (startTimer === 10) {
+        clearInterval(stop);
+        setTask();
+        startTimer = 0;
+        stop = setInterval(counter, 1000);
+    }
+}
+
+stop = setInterval(counter, 1000);
+clearInterval(stop)
+
+
+

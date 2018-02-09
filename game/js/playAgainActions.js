@@ -11,6 +11,8 @@ function playAgainActions() {
     playerNameInput.addEventListener('click', clearInput);
     deleteScoreTable();
     clearCurrentScore();
-}
+    clearInterval(stop);
+    startTimer = 0;
+    }
 
 playAgainBtn.addEventListener('click', playAgainActions);
