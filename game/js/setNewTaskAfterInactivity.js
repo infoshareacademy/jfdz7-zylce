@@ -1,4 +1,3 @@
-
 const clickOnIcon = () => {
     clearInterval(stop);
     startTimer = 0;
@@ -7,7 +6,6 @@ const clickOnIcon = () => {
 
 let startTimer = 0;
 const counter = () => {
-    console.log(startTimer)
     startTimer++;
     if (startTimer === 10) {
         clearInterval(stop);
