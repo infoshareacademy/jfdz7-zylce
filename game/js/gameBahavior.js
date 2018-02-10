@@ -15,6 +15,7 @@ function iconsOnMapEvents() {
         }
     } else {
         setTask();
+        while (isThereAnyGameTaskIconOnMap() === false) { setTask(); }
     }
 }
 
