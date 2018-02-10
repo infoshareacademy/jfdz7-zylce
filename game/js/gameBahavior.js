@@ -11,6 +11,7 @@ function iconsOnMapEvents() {
             }
         } else {
             changeTime(-2);
+            badClick();
             isGameOver();
         }
     } else {

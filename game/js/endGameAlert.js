@@ -12,11 +12,4 @@ let timerStart = setInterval( ()=> {
     }
 }, 1000);
 
-const successClick = document.getElementById('succes-click');
-
-const goodClick = () =>{
-    // if (this.src === document.getElementById('game-task').src){
-        successClick.play();
-    // }
-}
 
