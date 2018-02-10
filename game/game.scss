@@ -96,12 +96,16 @@ section {
 
 .start-screen {
 	.game-rules {
-		width: 50%;
+		width: 70%;
 		margin: 0 auto;
 		line-height: 145%;
 
 		.fa {
 			color: $color-blue;
+		}
+
+		.mini-fa {
+			color: $color-yellow;
 		}
 
 		.rules-title {
@@ -114,10 +118,6 @@ section {
 				$color-yellow -1px 1px 0px,
 				$color-yellow -1px -1px 0px,
 				$color-yellow 1px -1px 0px,
-		}
-
-		.case-rule {
-
 		}
 
 		.action-rule {

@@ -10,7 +10,7 @@ const counter = () => {
     if (startTimer === 10) {
         clearInterval(stop);
         setTask();
-        while (!isThereAnyGameTaskIconOnMap()) {setTask()};
+        while (isThereAnyGameTaskIconOnMap() === false) {setTask()};
         startTimer = 0;
         stop = setInterval(counter, 1000);
     }
