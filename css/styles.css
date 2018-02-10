@@ -13,7 +13,9 @@
 nav {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
-  box-shadow: 1px 1px 18px #0e5c90; }
+  box-shadow: 1px 1px 18px #0e5c90;
+  font-size: 20px;
+  transition: all ease .5s; }
   nav button {
     background: #595959;
     align-items: center;
@@ -24,6 +26,9 @@ nav {
     outline: none; }
   nav .navbar-toggler {
     border: 1px solid #D1D1D1; }
+  nav .navbar-brand {
+    display: inline-flex;
+    align-items: center; }
   nav .navbar-toggler-icon .fa-bars {
     color: #EDF2F4;
     padding: 4px; }
@@ -32,12 +37,13 @@ nav {
     padding: 0 8px; }
   nav .nav-item a {
     color: #0e5c90;
-    font-size: 20px;
     margin: 0 30px; }
   nav .nav-item a:hover, nav .nav-item .active {
     color: #d13232; }
   nav .navbar-brand img {
-    max-height: 50px; }
+    display: flex;
+    min-height: 20px;
+    height: 50px; }
 
 .header-top {
   width: 100%;
@@ -254,23 +260,34 @@ nav {
     padding-bottom: 50px; } }
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .nav-effect {
-    transform: scaley(0.8);
-    transform-origin: top center;
-    transition: 1s ease; }
+  nav.nav-effect a {
+    padding: 0;
+    transition: all 0.5s linear; }
 
-  nav .nav-item .active {
-    color: #0e5c90; }
-  nav .nav-item .active a:hover:after, nav .nav-item .active:after {
-    display: block;
-    content: " ";
-    position: absolute;
-    bottom: -16px;
-    width: 100%;
-    background-color: #0e5c90;
-    opacity: 0.1;
-    left: 0;
-    top: -16px; }
+  nav.nav-effect img {
+    max-height: 30px;
+    transition: all 0.5s ease-in; }
+
+  nav.navbar.nav-effect {
+    opacity: 0.9;
+    height: 45px;
+    font-size: 14px;
+    transition: all 0.5s ease; }
+
+  nav {
+    height: 76px; }
+    nav .nav-item .active {
+      color: #0e5c90; }
+    nav .nav-item .active a:hover:after, nav .nav-item .active:after {
+      display: block;
+      content: " ";
+      position: absolute;
+      bottom: -16px;
+      width: 100%;
+      background-color: #0e5c90;
+      opacity: 0.1;
+      left: 0;
+      top: -16px; }
 
   .header-top .zaplanujto-logo {
     max-width: 210px; }

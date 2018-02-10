@@ -23,10 +23,14 @@ $font-secondary: 'Roboto Condensed', sans-serif;
 	padding-top: 75px;
 }
 
+
 nav {
 	font-family: $font-primary;
 	background-color: $color-white;
 	box-shadow: 1px 1px 18px $color-bg-blue;
+	font-size: 20px;
+	transition: all ease .5s;
+
 
 	button {
 		background: $color-bg-grey;
@@ -45,6 +49,10 @@ nav {
 	.navbar-toggler {
 		border: 1px solid $color-grey-light;
 	}
+	.navbar-brand{
+		display: inline-flex;
+		align-items: center;
+	}
 
 	.navbar-toggler-icon .fa-bars {
 		color: $color-white-dirty;
@@ -58,7 +66,6 @@ nav {
 
 	.nav-item a {
 		color: $color-bg-blue;
-		font-size: 20px;
 		margin: 0 30px;
 	}
 
@@ -67,7 +74,9 @@ nav {
 	}
 
 	.navbar-brand img {
-		max-height: 50px;
+		display: flex;
+		min-height: 20px;
+		height: 50px;
 	}
 }
 
@@ -404,31 +413,28 @@ nav {
 
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) /*and (max-width: 1199px)*/ {
-
-	.nav-effect {
-		//opacity: 0.9;
-		transform: scaley(0.8);
-		transform-origin: top center;
-		transition: 1s ease;
+	nav.nav-effect a {
+		padding: 0;
+		transition: all 0.5s linear;
 	}
+
+	nav.nav-effect img {
+		max-height: 30px;
+		transition: all 0.5s ease-in ;
+	}
+
+	nav.navbar.nav-effect {
+		opacity: 0.9;
+		height: 45px;
+		font-size: 14px;
+		transition: all 0.5s ease ;
+	}
+
 	nav {
-
-
+		height: 76px;
 		.nav-item .active {
 			color: $color-bg-blue;
 		}
-		//
-		//.nav-item .active-effect:after {
-		//	display: block;
-		//	content: " ";
-		//	position: absolute;
-		//	bottom: -16px;
-		//	width: 100%;
-		//	background-color: $color-bg-blue;
-		//	opacity: 0.1;
-		//	left: 0;
-		//	top: -16px;
-		//}
 
 		.nav-item .active a:hover:after, .nav-item .active:after {
 			display: block;
@@ -442,16 +448,6 @@ nav {
 			top: -16px;
 		}
 
-		//.nav-item .active a:hover:before, .nav-item .active:before {
-		//	display: block;
-		//	content: " ";
-		//	position: absolute;
-		//	bottom: -16px;
-		//	width: 100%;
-		//	border-top: 3px solid $color-bg-blue;
-		//	left: 0;
-		//	top: -16px;
-		//}
 	}
 
 	//Header logo and Welcome text

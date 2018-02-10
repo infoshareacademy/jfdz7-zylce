@@ -5,6 +5,5 @@ $(document).ready(function() {
     function collapseNav() {
         $navCollapse.collapse('hide');
     }
-
     $navLink.on('click', collapseNav);
 });

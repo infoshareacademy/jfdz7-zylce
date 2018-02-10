@@ -1,6 +1,7 @@
 function iconsOnMapEvents() {
     if (isThereAnyGameTaskIconOnMap()) {
         if (this.src === document.getElementById('game-task').src) {
+            clickOnIcon();
             countScore();
             this.remove();
             if (!isThereAnyGameTaskIconOnMap()) {
