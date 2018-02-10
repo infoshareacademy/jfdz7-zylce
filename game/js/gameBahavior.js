@@ -2,6 +2,7 @@ function iconsOnMapEvents() {
     if (isThereAnyGameTaskIconOnMap()) {
         if (this.src === document.getElementById('game-task').src) {
             clickOnIcon();
+            goodClick();
             countScore();
             this.remove();
             if (!isThereAnyGameTaskIconOnMap()) {
@@ -10,10 +11,12 @@ function iconsOnMapEvents() {
             }
         } else {
             changeTime(-2);
+            badClick();
             isGameOver();
         }
     } else {
         setTask();
+        while (isThereAnyGameTaskIconOnMap() === false) { setTask(); }
     }
 }
 

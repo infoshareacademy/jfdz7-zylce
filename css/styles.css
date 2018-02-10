@@ -76,7 +76,10 @@ nav {
 
 .app-functions {
   min-height: 500px;
-  background-color: #F6F6DA; }
+  background-color: #F6F6DA;
+  box-sizing: border-box; }
+  .app-functions .app-description {
+    box-sizing: border-box; }
   .app-functions .app-functions-title p {
     font-size: 25px;
     font-weight: bold; }
@@ -85,10 +88,16 @@ nav {
     padding: 0 0;
     display: none; }
   .app-functions .app-description img:hover {
+    padding-top: 0;
+    padding-bottom: 0;
     width: 180px; }
   .app-functions .app-description p {
     font-size: 20px;
     line-height: 1.3em; }
+  .app-functions .app-description:hover p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold; }
   .app-functions .additional-app-function-row {
     margin-bottom: 20px; }
   .app-functions .additional-app-function-container {
@@ -109,6 +118,7 @@ nav {
     font-size: 15px; }
 
 .team {
+  box-sizing: border-box;
   min-height: 450px;
   background-color: #0e5c90;
   color: #ffffff;
@@ -116,6 +126,8 @@ nav {
   .team .team-member {
     padding-top: 30px;
     left: -1500px; }
+  .team .team-member:hover {
+    padding-top: 25px; }
   .team .team-member-text {
     width: 100%;
     font-size: 24px;
@@ -127,13 +139,11 @@ nav {
     padding: 0 0; }
   .team .team-member-photo img {
     width: 100%;
-    max-width: 230px; }
+    max-width: 230px;
+    transition-duration: 0.3s; }
   .team .team-member-photo img:hover {
     position: relative;
-    max-width: 235px;
     box-shadow: 4px 4px 3px #0F3156; }
-  .team .team-member-social-icons {
-    padding-bottom: 50px; }
   .team .team-member-text, .team i {
     color: #ffffff; }
   .team .social-icons {
@@ -244,7 +254,10 @@ nav {
   #scroll-to-top {
     position: fixed;
     bottom: 15px;
-    right: 10px; } }
+    right: 10px; }
+
+  .team-member:last-child {
+    padding-bottom: 50px; } }
 /*Bootstrap4 - LG & XL!Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   nav.nav-effect a {

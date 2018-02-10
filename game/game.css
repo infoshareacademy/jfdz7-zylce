@@ -122,7 +122,16 @@ section {
 
 .game-screen {
   background-image: url("gfx/game_bg.jpg"); }
-
+  .game-screen .timer-alert {
+    color: #CC1100;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 1s; }
+@keyframes blink {
+  from {
+    opacity: 1.0; }
+  to {
+    opacity: 0.0; } }
 .score-screen {
   position: relative;
   text-align: center; }

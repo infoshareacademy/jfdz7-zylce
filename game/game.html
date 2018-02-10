@@ -88,6 +88,18 @@
 			<button class="play-again-btn" id="play-again-btn" type="button">Zagraj ponownie! <i class="fa fa-play-circle fa-align-left"></i> </button>
 		</div>
     </section>
+	<audio id="time-beep">
+		<source src="sfx/beep.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="succes-click">
+		<source src="sfx/succesClick.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="wrong-click">
+		<source src="sfx/wrongClick.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
 
 <script src="js/fadeInAndHideScreens.js"></script>
 <script src="js/createUserOnStartScreen.js"></script>
@@ -109,5 +121,7 @@
 <script src="js/showLastPlayerScore.js"></script>
 <script src="js/playAgainActions.js"></script>
 <script src="js/createPlayersScoreTable.js"></script>
+<script src="js/endGameAlert.js"></script>
+<script src="js/gameSounds.js"></script>
 </body>
 </html>
