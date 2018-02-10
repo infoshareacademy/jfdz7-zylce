@@ -8,7 +8,7 @@
 	<link rel="Stylesheet" type="text/css" href="game.css"/>
 
 </head>
-<body>
+<body id="game">
     <section id="start-screen" class="start-screen">
 		<div class="top-bar">
 			<div class="timer-area inactive">
@@ -43,9 +43,9 @@
 			<br />
 			<span class="action-rule"><i class="fa fa-star-o" aria-hidden="true"></i> po każdym kliknięciu prawidłowej ikony otrzymasz 1 punkt,</span>
 			<br /><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i>
-				<span class="case-rule">Kliknięcie nieprawidłowej ikony:</span>
-			<br />
-				<span class="action-rule"><i class="fa fa-clock-o" aria-hidden="true"></i> skróci czas o 2 sekundy,</span>
+				<span class="case-rule">Kliknięcie nieprawidłowej ikony <i class="fa fa-clock-o mini-fa" aria-hidden="true"></i> skróci czas o 2 sekundy,</span>
+			<br /><i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true"></i>
+				<span class="case-rule">Jeśli w ciągu 10 sekund nie zdobędziesz punktu <i class="fa fa-refresh mini-fa" aria-hidden="true"></i> <em>ZADANIE</em> zmieni się,</span></span>
 			<br />
 				<span class="case-rule"> Koniec gry nastąpi, gdy skończy się czas.</span>
 		</div>
@@ -88,8 +88,6 @@
 			<button class="play-again-btn" id="play-again-btn" type="button">Zagraj ponownie! <i class="fa fa-play-circle fa-align-left"></i> </button>
 		</div>
     </section>
-
-
 
 <script src="js/fadeInAndHideScreens.js"></script>
 <script src="js/createUserOnStartScreen.js"></script>
