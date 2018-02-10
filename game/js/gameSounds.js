@@ -7,5 +7,4 @@ const goodClick = () => {
 
 const badClick = () => {
     wrongClick.play();
-    console.log('badclick');
 };
