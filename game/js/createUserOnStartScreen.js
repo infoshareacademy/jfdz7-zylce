@@ -14,6 +14,9 @@ function startGameActions() {
     clearInterval(cancel);
     cancel = setInterval(decrementSeconds, 1000);
     setTimeout(setGame(), 6000);
+    clearInterval(stop)
+    stop = setInterval(counter, 1000);
+
 }
 
 
