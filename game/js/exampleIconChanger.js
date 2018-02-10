@@ -1,6 +1,6 @@
 exampeIcon = document.getElementById('example-icon');
 
-const taskIcons = ['gfx/task_cinema.jpg', 'gfx/task_concert.jpg', 'gfx/task_sport.jpg', 'gfx/task_theatre.jpg'];
+const taskIcons = ['gfx/task_cinema.jpg', 'gfx/task_concert.jpg', 'gfx/task_sport.jpg', 'gfx/task_theatre.jpg', 'gfx/task_exhibition.jpg', 'gfx/task_party.jpg', 'gfx/task_restaurant.jpg'];
 
 function srcChanger() {
     for (let i = 0; i < taskIcons.length; i++) {
