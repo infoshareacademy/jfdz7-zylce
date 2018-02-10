@@ -63,11 +63,13 @@ section {
       font-size: 18px; }
 
 .start-screen .game-rules {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   line-height: 145%; }
   .start-screen .game-rules .fa {
     color: #0F3156; }
+  .start-screen .game-rules .mini-fa {
+    color: #FFC125; }
   .start-screen .game-rules .rules-title {
     font-size: 26px;
     margin-bottom: 8px;
