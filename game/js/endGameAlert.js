@@ -1,5 +1,5 @@
 const beepSound = document.getElementById('time-beep');
-const MAX_TO_END = 10;
+const MAX_TO_END = 5;
 
 let timerStart = setInterval( ()=> {
     const timer = parseInt(document.getElementById('game-time').innerText);
