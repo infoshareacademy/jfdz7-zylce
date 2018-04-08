@@ -73,6 +73,8 @@ nav {
   .header-top .join-us-btn:hover {
     color: #0e5c90;
     background-color: #ffffff; }
+  .header-top .enter-app-btn {
+    padding-bottom: 20px; }
 
 .app-functions {
   min-height: 500px;
